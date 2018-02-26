@@ -1,0 +1,2476 @@
+* {  margin: 0;  padding: 0;  word-wrap: break-word;  }
+html,body{min-height: 100%;  background: #f5f5f5;  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;  }
+body{
+    padding-top: 82px;
+}
+body::-webkit-scrollbar{ width: 0;  }
+p {  text-align: justify;  }
+button,input{  background: none;  outline: 0;  }
+h1{  font-size: 24px;  padding:1em 0;  }
+h2{  font-size: 21px;  padding:1em 0;font-weight: normal;  }
+h3{  font-size: 18px;  padding:1em 0;font-weight: normal;  }
+h4{  font-size: 16px;  padding:0.5em 0;  }
+h5{  font-size: 15px;  color: #666666;  }
+/*小号文本*/
+.small, small {  font-size: 80%;  }
+/*普通链接*/
+a {  color: #2bb8ed;  text-decoration: none;  }
+a:hover{  text-decoration: none;  }
+a:active{  outline: 0;  }
+/*列表*/
+li {  list-style: none;  }
+/*媒体文件*/
+img {  vertical-align: top;  border:0;  }
+.cl:after, .clearfix:after {  content: ".";  display: block;  height: 0;  clear: both;  visibility: hidden  }
+.cl, .clearfix {  zoom: 1  }
+/*------------------------- superSlide 轮播基础样式 ------------------------------------*/
+.slideBox{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.bd ul{
+    height:100%;
+}
+.bd li{
+    height:100%;
+}
+.bd img{
+    /* 因js裁剪图片删除 */
+    /*width: 100%;*/
+    /*height:100%;*/
+    /*object-fit: cover;*/
+}
+.slideBox .hd{
+    /*overflow:hidden;*/
+    position:absolute;
+    bottom:25px;
+    left:0;
+    right:0;
+    z-index:1;
+}
+.slideBox .hd ul{
+    text-align: center;
+    line-height: 12px;
+}
+.slideBox .hd ul li{
+    display: inline-block;
+    vertical-align: top;
+    margin:0 6px;
+    width: 8px;
+    height:8px;
+    text-align:center;
+    background:#8b8b8e;
+    cursor:pointer;
+    border-radius: 50%;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+.slideBox .hd ul li.on,.slideBox .hd ul li:hover{
+    background: #fff;
+    color:#fff;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.slideBox .hd ul li.on{
+    border:1px solid #fff;
+    margin-top: -1px;
+}
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle;position: relative; }
+.slideBox .bd img{ /*width:100%;*/  }
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next{
+    position:absolute;
+    left:10%;
+    top:50%;
+    margin-top:-33px;
+    display:block;
+    width:32px;
+    height:53px;
+    background:url(../images/icon-35.png) center center no-repeat;
+    background-size: 100% auto;
+    filter:alpha(opacity=50);
+    opacity:0.5;
+}
+.slideBox .next{ left:auto; right:10%; background-image: url(../images/icon-36.png); }
+.slideBox .prev:hover, .slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;background-color:rgba(0,0,0,0.2)   }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
+/*------------------------- superSlide 轮播基础样式 ------------------------------------*/
+.banner{
+    overflow: hidden;
+}
+
+
+
+
+/*------------------------- width ------------------------------------*/
+.newsTabHeader{  background: #fff;  width:70%;  margin:0 auto;  }
+.serviceContainer{  background: #fff;  padding:0 15% 20px;  }
+.newLifeContainer{ /*max-width: 1300px;*/  margin:0 auto;  }
+/*------------------------- width ------------------------------------*/
+/*------------------------- header ------------------------------------*/
+.header{
+    background: #fff;
+    padding: 0 15%;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 99999;
+    box-shadow: 0 1px 15px #ccc;
+}
+.logo{
+    position: absolute;
+    left:15%;
+    height:40%;
+    top:30%;
+}
+.logo img{
+    height:100%;
+}
+.newsLife-nav{
+    color: #666666;
+    font-size: 15px;
+    line-height:1.5em;
+    text-align: right;
+    margin-right: -1.5em;
+}
+.headerLink{
+    color:inherit;
+    /*padding: 2em 0;*/
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    width: 7em;
+    position: relative;
+}
+.headerLink:hover{
+    background: #f5f5f5;
+    position: relative;
+}
+
+.headerLink:hover:after,.headerLink:hover:before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1em;
+    background: #f5f5f5;
+    content: '';
+}
+.headerLink:hover:after{
+    left:-1em;
+}
+.headerLink:hover:before{
+    right: -1em;
+}
+.headerLink:hover .dropdown{
+    display: block;
+}
+.headerLink span{
+    cursor: pointer;
+}
+.newsLife-nav a{
+    color: inherit;
+    display: block;
+    height:100%;
+    padding:2em 0;
+}
+.newsLife-nav a:hover,.newsLife-nav a:active{  color: #2357a8;  }
+.dropdown{
+    position: absolute;
+    left:-1em;
+    right:-1em;
+    top:100%;
+    margin-top: -1px;
+    text-align: center;
+    background: #f5f5f5;
+    padding:8px 0;
+    font-size: 15px;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.dropdown li{
+    line-height:1em;
+    position: relative;
+}
+.dropdown:after{
+    position: absolute;
+    left: 0;
+    right:0;
+    height:1px;
+    top:0;
+    background: #e8e8e8;
+    z-index: 1;
+    content: '';
+}
+.dropdown li a{
+    padding:15px 0;
+}
+/*------------------------- header ------------------------------------*/
+/*------------------------- footer ------------------------------------*/
+.footer{  padding:30px 15% 50px;  }
+.footerInfo{  overflow: hidden;  }
+.footerTitle{  color: #333333;  font-size: 15px;  line-height: 2em;  }
+.footerLink{  font-size: 13px;  color: #666666;  line-height:1.5em;  margin:1em -1.4em;overflow: hidden;  }
+.footerLink a,.footerLink span{
+    color: inherit;  font-size: inherit;
+    padding: 6px 1.4em;line-height:1em;
+    float: left;
+}
+.footerLink a{
+    cursor: pointer;
+}
+.footerLink a:hover{
+    color: #2357a8;
+}
+.footerSeparator{  position: relative;  }
+.footerSeparator:after{  position: absolute;  left:100%;  top:6px;  bottom:6px;  width:1px;  background: #666;  content: '';  }
+/*------------------------- footer ------------------------------------*/
+/*------------------------- tab ------------------------------------*/
+.tabHeader button{
+    border:0;
+    background: #f5f5f5;
+    outline:none;
+    float: left;
+    position: relative;
+    font-size: 15px;
+    padding:1.1em 0;
+    color: #666666;
+}
+.tabHeader button.check{  display: block;background: #fff;  }
+.tabContainer{  margin:0 auto;  }
+.tabContainer .tabItem{  display: none;  }
+.tabContainer .tabItem.check{  display: block;  }
+/*------------------------- tab ------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.headerBanner{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.newLifeContainer{
+}
+.newsTab{
+}
+.newsTabHeader button{
+    width: 20%;
+}
+.newsTabContainer{
+    background: #fff;
+    padding:2.5em 15%;
+    font-size: 0.2em;
+}
+.newsTabInfo{
+    display: none;
+}
+.news-DCD{
+    display: block;
+}
+.newsSearch{
+    position: relative;
+    text-align: right;
+    margin-bottom:1.8em;
+    padding-right:1px;
+    font-size: 13px;
+}
+.newsSearch .newsSearch-btn{
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    width: 2em;
+    background: url("../images/ico-1.png") left center no-repeat;
+    background-size: auto 50%;
+    font-size: inherit;
+    cursor: pointer;
+}
+.newsSearch input{
+    border:1px solid #d4dfe5;
+    min-width: 15em;
+    padding: 0.5em 2.5em 0.5em 1.5em;
+    font-size: inherit;
+}
+.newsClassify{
+    color: #888888;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.newsClassify span{
+    padding:1em 1em;
+    cursor: pointer;
+}
+.newsClassify strong{
+    color: #000;
+    font-style: normal;
+    padding:1em 1em 1em 0;
+    font-weight: normal;
+}
+.newsClassify em{
+    color: #f25836;
+    font-style: normal;
+    padding:1em 1em;
+    cursor: pointer;
+}
+.newsClassify .checkType{
+    color: #f25836;
+}
+.newsList li{
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+}
+.newsList li:after{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:1px;
+    background: #eeeeee;
+    content: '';
+}
+.newsList{
+    overflow: hidden;
+}
+.newsItemPic{
+    float: left;
+    width: 32%;
+    object-fit: cover;
+}
+.newsTitle{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding:0 0 1em;
+}
+.newsItemInfo{
+    overflow: hidden;
+}
+.newsText{
+    text-align: justify;
+    line-height:1.8em;
+    color: #333333;
+    font-size: 15px;
+    margin-bottom:2em;
+    padding-left: 1.5em;
+}
+.newsTime{
+    position: absolute;
+    right:0;
+    bottom: 50px;
+    color: #888888;
+    font-size: 15px;
+    text-align: right;
+}
+.newsList a{
+    color: inherit;
+}
+.moreNews{
+    font-size: 15px;
+    color: #888888;
+    text-align: center;
+}
+.loadMoreNews{
+    padding:1em 2em 1em 0;
+    border:0;
+    background: url("../images/icon-4.png") right center no-repeat;
+    background-size: 1em auto;
+    color: inherit;
+    margin-top:1em;
+    font-size: inherit;
+    cursor: pointer;
+}
+.news-infoContainer{
+    background: #fff;
+    padding:0 15%;
+}
+.news-infoNav{
+    color: #888888;
+    font-size: 15px;
+    padding-top: 30px;
+}
+.news-infoNav a{
+    color: inherit;
+    line-height:2em;
+}
+.news-infoNav a:hover,.news-infoNav:active{
+    text-decoration: underline;
+}
+.news-infoNav span{
+    color: #666666;
+    line-height:2em;
+}
+.news-infoTitle{
+    color: #000;
+    font-size: 24px;
+    line-height:1.2em;
+    margin-top:1em;
+    text-align: justify;
+}
+.news-infoTime{
+    color: #888888;
+    font-size: 13px;
+    margin-top:1em;
+}
+.news-info{
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.8em;
+    border-top:1px solid #eee;
+    margin-top:1.5em;
+    padding-top:1.5em;
+    padding-bottom: 60px;
+}
+.news-info p{
+    text-indent: 2em;
+    padding:0.5em 0;
+}
+.news-info img{
+    display: block;
+    margin:0 auto;
+    max-width: 100%;
+}
+/*--------------------------- service ----------------------------------*/
+.serviceContainer h1{
+    padding: 35px 0 10px;
+    color: #333333;
+    font-size: 24px;
+    font-weight: normal;
+}
+.serviceDes{
+    font-size: 14px;
+    color: #333333;
+}
+.serviceList{
+    margin-top: 25px;
+}
+.serviceList li{
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 50%;
+    z-index: 1;
+}
+.serviceList li:hover{
+    box-shadow: 0 0 25px #aaa;
+    z-index: 2;
+    transform: scale(1.02);
+}
+.serviceItemPic{
+    float: left;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+}
+.serviceItemPic img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+.serviceItemInfo{
+    width: 100%;
+    height:50%;
+    left:0;
+    top:0;
+    background: #f5f5f5;
+    z-index: 1;
+}
+.serviceItemInfo h3{
+    font-size: 19px;
+    padding:0 0 1em;
+    margin:0 15%;
+    color: #333333;
+    text-align: left;
+    font-weight: normal;
+}
+.serviceItemInfo p{
+    font-size: 14px;
+    margin:0 15%;
+    color: #333333;
+    text-align: justify;
+    line-height: 2em;
+}
+.serviceList li:nth-child(2n-1) .serviceItemInfo{
+    position: absolute;
+    top:50%;
+}
+.serviceFooter{
+    background: #fff;
+}
+    /*--------------------------- service ----------------------------------*/
+.aboutContainer{
+    background: #fff;
+}
+.aboutTabHeader{
+}
+.aboutTabHeader button{
+    width: 50%;
+}
+
+.aboutTabContainer{
+    padding:0 15%;
+}
+.aboutTabContainer .aboutTabItem{
+    display: none;
+    overflow: hidden;
+}
+.aboutTabContainer .about-Introduction{
+    display: block;
+    margin-top: 40px;
+    padding-bottom: 55px;
+}
+.about-Introduction-info{
+    overflow: hidden;
+}
+.about-Introduction-info p{
+    color: #343434;
+    line-height: 2em;
+    padding:1em 0;
+    text-indent: 2em;
+    padding-right:2.5em;
+}
+.about-Introduction-info p:first-child{
+    padding-top:0;
+    margin-top:-0.5em;
+}
+.about-Introduction-pic{
+    float: right;
+    width: 330px;
+}
+.about-Introduction-pic img{
+    width: 100%;
+}
+.aboutTitle{
+    width: 80%;
+    margin:0 auto;
+}
+.aboutTeam{
+    padding:10px 0;
+}
+.aboutTeam li{
+    position: relative;
+    margin: 35px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutTeam img{
+    width: 250px;
+    margin:0 25px;
+}
+.aboutTeam-info{
+    margin:0 25px;
+    text-align: left;
+}
+.aboutTeam-info span{
+    font-size: 15px;
+    color: #999;
+    margin-top:-15px;
+}
+.aboutTeam-info p{
+    margin-top:15px;
+    color: #323232;
+    line-height: 2em;
+}
+.aboutTeam li:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.myContainer{
+    background: #fff;
+    padding:0 10%;
+}
+.tabContainer .tabItem{
+    display: none;
+}
+.tabContainer .check{
+    display: block;
+}
+.recruitment li{
+    padding: 25px;
+    border-bottom:1px solid #eee;
+}
+.recruitment p,.recruitment dd{
+    font-size: 15px;
+    line-height: 2em;
+    color: #313131;
+}
+.recruitment dt{
+    font-size: 15px;
+    padding:0.5em 0;
+    font-weight: bold;
+    margin-top:1em;
+}
+.video-nav{
+    width: 70%;
+    margin:0 auto;
+    padding:1em 0;
+}
+.videoContainer{
+    width: 70%;
+    margin:0 auto;
+}
+.videoTitle{
+    padding-left:1em;
+    background: #fff;
+    color: #333;
+    font-weight: normal;
+}
+/* ----------------- Video list--------------------- */
+.videoList ul{
+    margin:0 -5px;
+}
+.videoList li{
+    float: left;
+    width: 50%;
+    padding:5px;
+    box-sizing: border-box;
+    background: transparent;
+}
+.videoList li:first-child{
+    width: 100%;
+}
+.videoList li:first-child .videoPlay{
+    left:50%;
+    bottom:50%;
+    margin-bottom: -20px;
+    margin-left:-20px;
+}
+.videoContainer .videoList li:first-child{
+    border-top:0;
+}
+.videoInfo{
+    cursor: pointer;
+}
+.videoInfo:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    margin-top: -1px;
+}
+.videoContainer .videoInfo:hover{
+    box-shadow: none;
+    margin-top:0;
+}
+.video{
+    overflow: hidden;
+    position: relative;
+}
+.videoPic{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.videoPlay{
+    position: absolute;
+    width: 60px;
+    height:40px;
+    left:   27px;
+    bottom: 17px;
+    background: url("../images/icon-5.png") center center no-repeat;
+    background-size: 100% auto;
+    border:0;
+    cursor: pointer;
+}
+.videoPlay:hover,.videoInfo:hover .videoPlay{
+    background-image: url("../images/icon-13.png");
+}
+.videoTag{
+    position: absolute;
+    top:15px;
+    right:15px;
+    font-size: 14px;
+    color: #f78f3c;
+    line-height:1em;
+    border:1px solid #f78f3c;
+    border-radius: 2em;
+    padding:3px 1em;
+}
+.videoBrief{
+    background: #fff;
+    padding:15px 20px;
+}
+.videoName{
+    font-size: 17px;
+    color: #000000;
+    line-height: 1.4em;
+    cursor: pointer;
+    height: 2.8em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.videoName:hover{
+    color: #2357a8;
+}
+.videoContainer .videoName{
+    font-size: 23px;
+    margin-bottom:1em;
+}
+.videoDes{
+    font-size: 14px;
+    color: #666666;
+    line-height:2em;
+    height: 2em;
+
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+/* ----------------- Video list--------------------- */
+/* ----------------- Video play--------------------- */
+.videoPlayView{
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999999;
+    display: none;
+}
+.videoPlayView h3{
+    color: #000;
+    font-weight: 500;
+    margin-right:1em;
+}
+.videoView{
+    position: absolute;
+    left: 18%;
+    right:18%;
+    top:10%;
+    bottom:15%;
+    z-index: 1;
+}
+.videoView-out{
+    /*width: 50%;*/
+    height:100%;
+    /*display: table;*/
+    /*margin:0 auto;*/
+}
+.videoView-in{
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+    height:100%;
+}
+.videoViewTitle{
+    position: relative;
+    padding:0 21px;
+    background: #fff;
+}
+.videoViewTitle .videoClose{
+    position: absolute;
+    top:50%;
+    right:1em;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    border:0;
+    background:url("../images/icon-2.png") center center no-repeat;
+    background-size: 100%;
+}
+.videoViewTitle .videoClose:hover{
+    background-image: url("../images/icon-2-hover.png");
+}
+.videoView video{
+    max-width: 100%;
+    height:100%;
+}
+.videoPlayContainer{
+    position: relative;
+    height:100%;
+    text-align: center;
+    background: #000;
+}
+.videoPlayMask{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+}
+.videoPlayMask button{
+    width: 60px;
+    height:40px;
+    background: url("../images/icon-5.png") center center no-repeat;
+    background-size: 100% auto;
+    border:0;
+    cursor: pointer;
+}
+
+.videoPlayMask button:hover{
+    background-image: url("../images/icon-13.png");
+}
+/*
+animation: openVideo 1s 1 forwards;
+*/
+/* ----------------- Video play--------------------- */
+.IndexContainer{
+    padding:0 15%;
+}
+.indexColumnHeader{
+    position: relative;
+    background: none;
+    padding:0;
+    margin:2.3em 0 1em;
+    font-size: 20px;
+    color: #333333;
+    font-weight: normal;
+}
+.indexColumnHeader a{
+    color: #4a4a4a;
+    font-size: 15px;
+    position: absolute;
+    right:0;
+    bottom:0;
+    background: url("../images/icon-3.png") right center no-repeat;
+    background-size: auto .7em;
+    padding-right:1em;
+    line-height: 1em;
+    padding-top: 2px;
+}
+.indexColumnHeader a:hover{
+    color: #2357a8;
+    background-image: url("../images/icon-3-hover.png");
+}
+.indexVideo li:first-child{
+    width: 50%;
+}
+.indexVideo li:first-child .videoPlay{
+    left:   27px;
+    bottom: 17px;
+    margin-bottom: 0;
+    margin-left:0;
+}
+.indexVideo .videoName{
+    height: 1.4em;
+    -webkit-line-clamp: 1;
+}
+
+/* 首页新闻模块 */
+.indexNewsList{
+    margin: -5px;
+}
+.indexNewsList a{
+    color:inherit;
+}
+.indexNewsList dt{
+    float: left;
+    width: 66.6666%;
+    /*overflow: hidden;*/
+    margin:5px 0;
+    min-height: 340px;
+}
+.indexNewsList dt img{
+    width: 100%;
+}
+.indexNewsList dt a{
+    color: inherit;
+}
+.indexNewsList dd{
+    float: left;
+    width: 33.3333%;
+    /*overflow: hidden;*/
+    margin:5px 0;
+}
+.indexNewsList dd img{
+    width: 100%;
+}
+.indexNewsInfo{
+    margin:0 5px;
+    background: #fff;
+    height:100%;
+    position: relative;
+}
+.indexNewsInfo:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    margin-top: -1px;
+}
+.indexNewsInfo .next,.indexNewsInfo .prev{
+    width:20px;
+    height:30px;
+    margin-top: -15px;
+}
+.indexNewsInfo .next{
+    right: 20px;
+}
+.indexNewsInfo .prev{
+    left: 20px;
+}
+.indexNewsList dd .indexNewsInfo:hover .indexNewsBrief:after{
+    display: block;
+}
+.indexNewsList dt .indexNewsInfo{
+    height:100%;
+}
+.indexNewsSwipe{
+    height:100%;
+}
+.indexNewsSwipe .hd{
+    display: none;
+}
+.indexNewsSwipe_info{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+.indexNewsSwipe .indexNewsSwipe_info img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.indexNewsSwipe_container,.indexNewsSwipe_container .mask,.indexSwipe_containerInfo{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+}
+.indexNewsSwipe_container{
+    z-index: 1;
+}
+.indexNewsSwipe_container .mask{
+    z-index: 1;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+    background: #000;
+}
+.indexNewsSwipe_container .indexSwipe_containerInfo{
+    z-index: 2;
+    color: #fff;
+    top:auto;
+    padding:0 15px 25px;
+}
+.indexSwipe_containerInfo em{
+    font-style: normal;
+    color: #f5f5f5;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 15px;
+}
+.indexSwipe_containerInfo p{
+    color: #ddd;
+    font-size: 13px;
+    line-height: 2em;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    max-height: 4em;
+}
+.indexNewsBrief{
+    padding: 15px 15px 40px;
+}
+.indexNewsBrief:after{
+    position: absolute;
+    bottom:0;
+    right:15px;
+    height: 40px;
+    width: 20px;
+    background: url("../images/icon-37.png") right center no-repeat;
+    background-size: 6px auto;
+    content: '';
+    display: none;
+}
+.indexNewsPic{
+    overflow: hidden;
+}
+.indexNewsList .indexNewsPic img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.indexNewsTitle{
+    display: block;
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+    height: 48px;
+    overflow: hidden;
+    text-align: justify;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+.indexNewsText{
+    color: #333333;
+    font-size: 13px;
+    line-height:20px;
+    height: 60px;
+    overflow: hidden;
+    margin:0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+/* 首页新闻模块 */
+.indexSwipeInfo div{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    color: #fff;
+    padding:0 15px 25px;
+    text-align: justify;
+    font-size: 13px;
+}
+.indexSwipeTitle{
+    font-size: 17px;
+    padding:0;
+}
+.indexSwipeText{
+    font-size: 13px;
+    margin-top:1em;
+    line-height:1.5em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.indexPlatformsList{
+    margin:0 -1px;
+    padding:20px 0;
+}
+.indexPlatformsItem{
+    float: left;
+    width:16.6666%;
+    border:1px solid #f5f5f5;
+    box-sizing: border-box;
+    position: relative;
+}
+.indexPlatformsItemInfo{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.indexPlatformsType{
+    position: absolute;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    left:8%;
+    top:10%;
+}
+.indexPlatformsType:after{
+    position: absolute;
+    left:0;
+    bottom:-5px;
+    height: 2px;
+    background: #fff;
+    width: 1.2em;
+    border-radius: 5px;
+    content: '';
+}
+.indexPlatformsTypeInfo{
+    display: none;
+    position: absolute;
+    left:8%;
+    bottom:10%;
+    right:8%;
+}
+.indexPlatformsName{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+.indexPlatformsText{
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.5em;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.indexPlatformsLink{
+    display: inline-block;
+    border:1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    padding:0.5em 1.5em 0.5em 0.5em;
+    margin-top: 15px;
+    line-height:1em;
+    position: relative;
+}
+.indexPlatformsLink:after{
+    position: absolute;
+    right:.5em;
+    top:50%;
+    margin-top: -6px;
+    width: 9px;
+    height: 12px;
+    background: url("../images/icon-16.png") center center no-repeat;
+    background-size: 100% auto;
+    content: '';
+}
+.indexPlatformsList .enter{
+    animation: platformsHover 0.5s 1 forwards;
+    border-color: transparent;
+    z-index: 1;
+}
+.indexPlatformsList .leave{
+    animation: platformsLeave 0.5s 1 forwards;
+}
+.indexPlatformsList .enter .indexPlatformsItemInfo{
+    background: rgba(0,0,0,0.2);
+    background: url(../images/bg-1.png) left bottom repeat-x;
+    background-size: auto 100%;
+}
+.indexPlatformsList .enter .indexPlatformsTypeInfo{
+    display: block;
+}
+@keyframes platformsHover {
+    from{
+        transform: scale(1.0);
+        z-index: 0;
+    }
+    to{
+        transform: scale(1.1);
+        z-index: 1;
+    }
+}
+@keyframes platformsLeave {
+    from{
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    to{
+        transform: scale(1.0);
+        z-index: 0;
+    }
+}
+.indexPlatformsItem img{
+    width: 100%;
+}
+/* 专业公司 美好家孵化器 */
+.company_header{
+    background: #f5f5f5;
+    padding: 0 10%;
+}
+.company_header a{
+    float: left;
+    width: 16.66666%;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    padding:16px 0;
+}
+.company_header span{
+    display: block;
+    text-align: center;
+    padding-top: 3em;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+}
+.company_header .check{
+    cursor: text;
+}
+.jywy{
+    background-image: url("../images/icon-17.png");
+}
+.sykj{
+    background-image: url("../images/icon-18.png");
+}
+.jyly{
+    background-image: url("../images/icon-19.png");
+}
+.jyjd{
+    background-image: url("../images/icon-20.png");
+}
+.jydy{
+    background-image: url("../images/icon-21.png");
+}
+.mhj {
+    background-image: url("../images/icon-22.png");
+}
+.company_header .check{
+    background: #fff;
+    color: #2357a8;
+}
+.company_header a:hover{
+    color: #888888;
+}
+.company_header a:hover .jywy{background-image: url("../images/icon-17-hover.png");color: #888888;}
+.company_header a:hover .sykj{background-image: url("../images/icon-18-hover.png");color: #888888;}
+.company_header a:hover .jyly{background-image: url("../images/icon-19-hover.png");color: #888888;}
+.company_header a:hover .jyjd{background-image: url("../images/icon-20-hover.png");color: #888888;}
+.company_header a:hover .jydy{background-image: url("../images/icon-21-hover.png");color: #888888;}
+.company_header a:hover .mhj {background-image: url("../images/icon-22-hover.png");color: #888888;}
+
+.company_header a.check .jywy{background-image: url("../images/icon-17-check.png");color: #2357a8;}
+.company_header a.check .sykj{background-image: url("../images/icon-18-check.png");color: #2357a8;}
+.company_header a.check .jyly{background-image: url("../images/icon-19-check.png");color: #2357a8;}
+.company_header a.check .jyjd{background-image: url("../images/icon-20-check.png");color: #2357a8;}
+.company_header a.check .jydy{background-image: url("../images/icon-21-check.png");color: #2357a8;}
+.company_header a.check .mhj {background-image: url("../images/icon-22-check.png");color: #2357a8;}
+.aboutMHJ{
+    background: #f5f5f5;
+    padding:0 15%;
+}
+.aboutMHJ_title{
+    text-align: center;
+    font-size: 25px;
+    line-height: 3em;
+}
+.aboutMHJ_container{
+    background: #fff;
+    padding:50px 70px;
+    box-sizing: border-box;
+}
+.aboutMHJ_container .demoPic{
+    margin:20px auto;
+}
+.aboutMHJ_container p{
+    font-size: 15px;
+    color: #333333;
+    line-height:2em;
+    margin:15px 0;
+}
+.aboutMHJ_container img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+/* 专业公司 建业东英 */
+.JYDY_swipe .hd{
+    bottom: 70px;
+}
+.JYDY_container{
+    position: relative;
+    top: -45px;
+    padding:0 15%;
+}
+.JYDY_cardView{
+    padding:20px 20px 0;
+    background: #fff;
+}
+.JYDY_cardList{
+    margin: 0 -10px;
+}
+.JYDY_card{
+    float: left;
+    width: 33.3333%;
+    padding:0 10px;
+    box-sizing: border-box;
+}
+.cardTitle{
+    font-size: 35px;
+    color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-position: right 17px;
+    background-size: auto 110%;
+}
+.cardTitle img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.JYDY_card1 .cardTitle{
+    background-color:#ff8e3b;
+    background-image: url("../images/icon-23.png");
+}
+.JYDY_card2 .cardTitle{
+    background-color:#4f8ed0;
+    background-image: url("../images/icon-24.png");
+}
+.JYDY_card3 .cardTitle{
+    background-color:#4db998;
+    background-image: url("../images/icon-25.png");
+}
+.JYDY_card p{
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.8em;
+    text-align: justify;
+    padding: 20px;
+}
+.JYDY_cardHomeList{
+    margin:0 -10px;
+}
+.JYDY_cardHome{
+    float: left;
+    width:33.3333%;
+    text-align: center;
+    color: #2357a8;
+    font-size: 15px;
+    padding: 2.5em 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.JYDY_cardHome:after{
+    position: absolute;
+    left: 20px;
+    right:20px;
+    top:0;
+    height:1px;
+    background:#dadada ;
+    content: '';
+}
+.JYDY_cardHome a{
+    color: inherit;
+}
+.JYDY_cardHome a:hover,.JYDY_cardHome a:active{
+    text-decoration: underline;
+}
+.JYDY_demo{
+    padding:60px 80px;
+    background: #fff;
+    margin-top: 20px;
+}
+.JYDY_demo img{
+    width: 100%;
+    height:100%;
+    display: block;
+}
+.demoPic{
+    margin:5px auto;
+}
+.JYDY_demo strong {
+    font-size: 21px;
+    color: #333333;
+    font-weight: 500;
+    text-align: left;
+}
+.JYDY_demo p{
+    font-size: 15px;
+    color: #333333;
+    line-height:1.8em;
+    margin:1em 0;
+    text-align: justify;
+}
+/* 专业公司 建业物业 */
+.JYWY_des{
+    background: #f5f5f5;
+    padding:0 15% 110px;
+}
+.JYWY_header{
+    text-align: center;
+    color: #333333;
+    font-size: 24px;
+    line-height:1.5em;
+    padding:70px 0 0;
+}
+.JYWY_header p{
+    font-size: inherit;
+    text-align: inherit;
+}
+.JYWY_des_pic{
+    width: 60%;
+    margin-left:40%;
+    overflow: hidden;
+    position: relative;
+}
+.JYWY_des_info{
+    position: relative;
+    margin-top:60px;
+}
+.JYWY_des_pic img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.JYWY_des_text{
+    position: absolute;
+    left:0;
+    top:40px;
+    bottom:40px;
+    width: 48%;
+    background: #fff;
+    font-size: 13px;
+    line-height:1.8em;
+    z-index: 2;
+}
+.JYWY_des_text p{
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.JYWY_des_text a{
+    position: absolute;
+    right: 50px;
+    bottom:25px;
+    font-size: 14px;
+    color: #004f9c;
+    line-height:50px;
+}
+.JYWY_des_text a:hover,.JYWY_des_text a:active{
+    text-decoration: underline;
+}
+.JYWY_des_text_in{
+    margin:50px;
+}
+.middleOut{
+    width:100%;
+    height:100%;
+    display: table;
+}
+.middleIn{
+    display: table-cell;
+    vertical-align: middle;
+}
+.JYWY_service{
+    background: #fff;
+    padding:0 15% 70px;
+}
+.JYWY_service_other_swipe{
+    overflow: hidden;
+    position: relative;
+    margin-top: 40px;
+}
+.JYWY_service_swipe_position{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: -1;
+}
+.JYWY_service_swipe{
+    height:100%;
+}
+
+.JYWY_service_swipe .slideBox .prev{
+    left:3.25%;
+}
+.JYWY_service_swipe .slideBox .next{
+    right:3.25%;
+}
+
+.JYWY_service_other_swipe .check{
+    z-index: 1;
+}
+.JYWY_service_other{
+    margin:10px -5px;
+}
+.JYWY_service_other .check:after{
+    position: absolute;
+    left:50%;
+    bottom:100%;
+    width: 29px;
+    height:20px;
+    background: url("../images/icon-31.png") center center no-repeat;
+    background-size: 100% auto;
+    margin-left: -14.5px;
+    z-index: 2;
+    content: '';
+}
+.JYWY_service_other_item{
+    float: left;
+    width: 33.3333%;
+    padding:0 5px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.JYWY_service_other_item img{
+    width: 100%;
+    height:100%;
+    object-fit:cover
+}
+.JYWY_service_other_item_mask{
+    position: absolute;
+    left:5px;
+    right:5px;
+    top:0;
+    bottom:0;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    color: #fff;
+}
+.JYWY_service_other_item_mask strong{
+    font-size: 20px;
+    font-weight: normal;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.JYWY_service_other_item_mask p{
+    font-size: 14px;
+    text-align: center;
+}
+/* 专业公司 建业旅游 */
+.JYLV_aboutUs{
+    padding:50px 15% 70px;
+}
+.JYLV_aboutUs_header{
+    text-align: center;
+    font-size: 25px;
+    color: #333333;
+    margin-bottom: 85px;
+}
+.JYLV_aboutUs_header span{
+    padding-bottom:0.5em;
+    position: relative;
+}
+.JYLV_aboutUs_header span:after{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    width:2em;
+    margin-left:-1em;
+    height:2px;
+    background: #074e9c;
+    content: '';
+}
+.JYLY_aboutUs_item{
+    float: left;
+    width: 33.3333%;
+    position: relative;
+}
+.JYLY_aboutUs_item_icon{
+    position: absolute;
+    right:100%;
+    top:3em;
+    width: 80px;
+    text-align: center;
+    margin-top: -16px;
+}
+.JYLY_aboutUs_item_icon img{
+    height: 32px;
+}
+.JYLY_aboutUs_item_text{
+    margin-left:80px;
+}
+.JYLY_aboutUs_item_text dd{
+    position: relative;
+    font-size: 15px;
+    line-height: 2em;
+    margin:1em 2em 1em 0;
+}
+.JYLY_aboutUs_item_text em{
+    font-size: 19px;
+    color: #333333;
+    font-style: normal;
+}
+.JYLY_aboutUs_item_text p{
+    /*height:8em;*/
+}
+.JYLY_aboutUs_item .more{
+    color: #074e9c;
+    font-size: 13px;
+    background: url("../images/icon-29.png") 0 center no-repeat;
+    background-size: 1em;
+    padding-left:1.5em;
+    display: inline-block;
+    margin-left: 80px;
+}
+.JYLY_aboutUs_item .more:hover{
+    text-decoration: underline;
+}
+.JYLY_aboutUs_item_text .more:hover,.JYLY_aboutUs_item_text .more:hover{
+    text-decoration: underline;
+}
+.JYLY_travel{
+    background: #fff;
+}
+.JYLY_travel_item{
+    float: left;
+    width: 33.3333%;
+}
+.JYLY_travel_item img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.JYLY_travel_item_info{
+    position: relative;
+    overflow: hidden;
+}
+.JYLY_travel_item_info:hover .JYLY_travel_item_mask{
+    left:0;
+}
+.JYLY_travel_item_mask{
+    position: absolute;
+    left:100%;
+    top:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 2em;
+}
+.JYLY_travel_item_mask a{
+    display: block;
+    width: 6em;
+    margin:1.5em auto;
+    padding:0.5em;
+    border:1px solid #fff;
+    color:inherit;
+}
+.JYLY_travel_item_name{
+    color: #333333;
+    font-size: 14px;
+    padding:1em 0;
+    text-align: center;
+}
+.travelType{
+    background: #fff;
+    padding-top: 75px;
+}
+.travelType .tabHeader button{
+    width: 20%;
+    color: #074e9c;
+    font-size: 17px;
+    height: 50px;
+    position: relative;
+    background: #eeeeee;
+    padding:0;
+}
+.travelType .tabHeader button:hover{
+    color: rgba(7,78,156,0.7)
+}
+.travelType .tabHeader button.check{
+    color: #fff;
+    background: #074e9c;
+}
+.travelTypeInfo{
+    position: relative;
+    overflow: hidden;
+}
+.travelTypeInfo:hover .travelTypeMask{
+    display: block;
+}
+.travelTypeInfo img{
+    width: 100%;
+    object-fit: cover;
+}
+.travelTypeMask{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 15px;
+    background:rgba(0,0,0,0.4);
+    color: #fff;
+    text-align: center;
+    /*display: none;*/
+}
+.travelTypeMask p{
+    text-align: center;
+}
+.travelTypeTitle{
+    text-align: center;
+    line-height: 2em;
+    font-size: 18px;
+}
+.travelTypeText{
+    text-align: center;
+    line-height: 2em;
+    font-size: 14px;
+}
+.travelTypeMask a{
+    color: #fff;
+    border:1px solid #fff;
+    padding:.5em 1em;
+    display: inline-block;
+    margin-top: 10px;
+}
+/* 专业公司 嵩云科技 */
+.soonContainer{
+    background: url("../images/bg-2.png") 0 70px no-repeat;
+    background-size: 100% auto;
+}
+.aboutSoon{
+    width: 70%;
+    margin:0 auto;
+}
+.SY_title{
+    text-align: center;
+    color: #333333;
+    font-size: 25px;
+    padding-top: 60px;
+}
+.SY_title span{
+    position: relative;
+}
+.SY_title span:after{
+    position: absolute;
+    bottom:-15px;
+    left:50%;
+    width:2.5em;
+    margin-left: -1.25em;
+    height:1px;
+    background: #333333;
+    box-shadow: 0 0 2px #999;
+    content: '';
+}
+.SYKJ{
+    margin:0 50px;
+    /*padding: 15px 0 130px;*/
+    margin-top: 55px;
+    position: relative;
+    font-size: 14px;
+    color: #333333;
+    padding-top:1%;
+}
+.SYKJ_card1{
+    border:1px solid #316483;
+    width: 60%;
+    height:66%;
+    margin-left:10%;
+    /*margin-top: 25px;*/
+}
+.SYKJ_card1 img{
+    width: 100%;
+    visibility: hidden;
+}
+.SYKJ_card2{
+    position: absolute;
+    width: 44%;
+    height:59%;
+    top:0;
+    right: 0;
+    background:#316483;
+    box-sizing: border-box;
+    color: #fff;
+}
+.SYKJ_card2 p{
+    margin:40px 40px 0 25%;
+    font-size: 14px;
+    line-height: 2em;
+}
+.SYKJ_card3{
+    width: 60%;
+    left:0;
+    bottom:0;
+    position: absolute;
+}
+.SYKJ_card3 img{
+    width: 100%;
+}
+.SYKJ_card3 p{
+    margin:0 25%;
+    margin-bottom: 50px;
+    line-height: 2em;
+}
+.SYSwipeView{
+    margin-top: 40px;
+    padding:0 15%;
+}
+.SYSwipe{
+    margin:55px 0 30px;
+}
+
+
+.SYSwipe .hd{
+    top:0;
+    right:0;
+    bottom:auto;
+    left:auto;
+    width: 30px;
+    padding-top: 20px;
+}
+.SYSwipe .hd ul li{
+    background: none;
+    border-radius: 0;
+    font-size: 14px;
+    margin:0;
+    width: auto;
+    height:auto;
+    padding:10px 0;
+    color: #999999;
+}
+.SYSwipe .hd ul li.on{
+    color: #2357a8;
+    background: none;
+    border:none;
+}
+.SYSwipe .hd ul li,.SYSwipe .hd ul li:hover{
+    background: none;
+}
+.SYSwipe .next{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    top:auto;
+    left:auto;
+    width:30px;
+    height:30px;
+    border:1px solid #838383;
+    background: transparent url("../images/icon-33.png") center center no-repeat;
+}
+.SYSwipe .prev{
+    position: absolute;
+    right:0;
+    bottom: 30px;
+    top:auto;
+    left:auto;
+    width:30px;
+    height:30px;
+    border:1px solid #838383;
+    border-bottom:0;
+    background: transparent url("../images/icon-34.png") center center no-repeat;
+}
+.SYSwipe_item{
+    margin:0 50px;
+    position: relative;
+    height:100%;
+}
+.SYSwipe_item_l{
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:34%;
+    background: #326283;
+}
+.SYSwipe_slogan{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:36%;
+    color: #fff;
+}
+.SYSwipe_slogan p{
+    padding-left:15%;
+    font-size: 16px;
+    position: absolute;
+    bottom:50%;
+    margin-bottom: 8px;
+    line-height: 1em;
+    left:0;
+    right:0;
+}
+.SYSwipe_slogan h3{
+    text-align: right;
+    font-size: 22px;
+    padding:0 30px 0 0;
+    margin-top: 8px;
+    line-height: 1em;
+    position: absolute;
+    top:50%;
+    left:0;
+    right:0;
+}
+.SYSwipe_card{
+    position: absolute;
+    top:37.25%;
+    /*bottom:8%;*/
+    right:40px;
+    left: -50px;
+}
+.SYSwipe_card img{
+    width: 100%;
+}
+.SYSwipe_item_r{
+    margin-left:34%;
+    position: relative;
+    height:100%;
+}
+.SYSwipe_info{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    padding:0 40px 75px;
+    box-sizing: border-box;
+}
+.SYSwipe_title{
+    color: #333333;
+    font-size: 23px;
+    line-height: 1em;
+    position: absolute;
+    top:18%;
+    right: 40px;
+    left: 40px;
+    margin-top: 8px;
+}
+.SYSwipe_text{
+    font-size: 14px;
+    color: #333333;
+    line-height: 2em;
+    position: absolute;
+    top:18%;
+    right: 40px;
+    left: 40px;
+    margin-top: 56px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+}
+.SYSwipe_go{
+    background: #326283;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    padding:0.5em 3em;
+    position: absolute;
+    bottom: 45px;
+}
+.SYSwipe_go:hover,.SYSwipe_go:active{
+    opacity: 0.9;
+}
+
+/* 专业公司 建业酒店 */
+.JYJD_hotel_container{
+    margin:0 auto;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+.JYJD_hotel_container img{
+    width: 54%;
+}
+.JYJD_hotel_after{
+    left:77%;
+    margin-left: 30px;
+    right:0;
+}
+.JYJD_hotel_before{
+    right:77%;
+    margin-right: 30px;
+    left:0;
+}
+.JYJD_hotel_after,.JYJD_hotel_before{
+    position: absolute;
+    top:   5%;
+    bottom:5%;
+    overflow: hidden;
+}
+.JYJD_hotel_after img,.JYJD_hotel_before img{
+    height:100%;
+    width: auto;
+}
+.JYJD_hotel_des{
+    position: relative;
+    margin:-75px auto 0;
+    width: 45%;
+    padding:30px 50px;
+    background: #f5f5f5;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.JYJD_hotel_des_title{
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.JYJD_hotel_des_text{
+    color: #333333;
+    font-size: 14px;
+    line-height: 2em;
+}
+.JYJD_hotel_go{
+    text-align: right;
+    font-size: 14px;
+    color: #b87f4e;
+    margin-top: 10px;
+}
+.JYJD_hotel_go a{
+    color: inherit;
+}
+.JYJD_hotel_go a:hover,.JYJD_hotel_go a:active{
+    text-decoration: underline;
+}
+.JYJD_Swipe_view{
+    margin:90px 15% 0;
+}
+.JYJD_Swipe_tab{
+    padding:10px 0;
+    border-bottom:2px solid #b87f4e;
+    position: relative;
+}
+.JYJD_Swipe_tab:before{
+    position: absolute;
+    left:0;
+    top:10px;
+    bottom: 10px;
+    width:2px;
+    background: #b87f4e;
+    content: '';
+}
+.JYJD_Swipe_tab:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.JYJD_Swipe_tab_item{
+    float: left;
+    width:14.28%;
+    position: relative;
+    text-align: center;
+    height: 4em;
+    line-height:1.5em;
+    cursor: pointer;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+.JYJD_Swipe_tab_item:after{
+    position: absolute;
+    left:100%;
+    top:0;
+    bottom:0;
+    width:2px;
+    background: #b87f4e;
+    content: '';
+}
+.JYJD_Swipe_tab_item:hover{
+    opacity: 0.7;
+}
+.JYJD_Swipe_tab_item.check:hover{
+    opacity: 1;
+}
+.JYJD_Swipe_tab .check{
+    background: #b87f4e;
+    color: #fff;
+}
+.JYJD_Swipe_tab .check:before{
+    position: absolute;
+    left:50%;
+    width: 15px;
+    height:10px;
+    bottom: -20px;
+    background: url("../images/icon-32.png") center center no-repeat;
+    background-size: 100% auto;
+    z-index: 2;
+    margin-left: -7px;
+    content: '';
+}
+.JYJD_Swipe_container{
+    position: relative;
+    margin-top: 30px;
+}
+.JYJD_Swipe_item_position{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+}
+
+
+.JYJD_Swipe_itemView{
+    position: relative;
+    height: 200px;
+    margin:20px 0;
+}
+.JYJD_Swipe_item{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 0;
+    background: #f5f5f5;
+}
+.JYJD_Swipe_container .check{
+    z-index: 1;
+}
+.JYJD_Swipe_view .slideBox .prev{
+    left:3.25%;
+}
+.JYJD_Swipe_view .slideBox .next{
+    right:3.25%;
+}
+
+.bigPicShow img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* 本例子css */
+.picScroll-left{ overflow:hidden; position:relative;
+    margin:0;
+    padding:0 60px;   }
+.picScroll-left .hd{
+    display: none;
+}
+
+.picScroll-left .bd ul{ overflow:hidden; zoom:1; }
+.picScroll-left .bd ul li{ margin:0; float:left; _display:inline; overflow:hidden; text-align:center;  }
+.picScroll-left .bd ul li .pic{  padding:0 10px;box-sizing: border-box;   }
+.picScroll-left .bd ul li .pic img{ width:100%; height:100%;object-fit: cover; display:block;}
+.picScroll-left .bd ul li .pic a:hover img{ border-color:#999;  }
+.picScroll-left .bd ul li .title{ line-height:24px;   }
+
+.picScroll-left .prev,.picScroll-left .next{
+    position: absolute;
+    top:50%;
+    width: 30px;
+    height:30px;
+    margin-top: -15px;
+    background: #b87f4e;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:auto 35%;
+}
+.picScroll-left .prev:hover,.picScroll-left .next:hover{
+    background-color: #a57246;
+}
+.picScroll-left .prev{
+    left:0;
+    background-image: url(../images/icon-38.png);
+}
+.picScroll-left .next{
+    right:0;
+    background-image: url(../images/icon-39.png);
+}
+/* 联系我们 */
+.contactTab{
+    background: #fff;
+    padding-bottom: 60px;
+}
+.contactTab .tabHeader button{
+    width: 50%;
+}
+.contact_about{
+    margin-top:60px;
+}
+.contact_about_info em{
+    font-style: normal;
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 25px;
+    display: block;
+}
+.contact_about_pic{
+    float: left;
+    width: 50%;
+}
+.contact_about_pic img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.contact_about_info{
+    float: left;
+    width: 50%;
+    padding-left:80px;
+    box-sizing: border-box;
+    padding-top: 13px;
+    font-size: 15px;
+    color: #333333;
+    line-height: 2em;
+}
+.contactTab .tabContainer{
+    width: 70%;
+}
+.wxCode{
+    font-size: 14px;
+    color: #666666;
+    margin-top: 20px;
+}
+.wxCode img{
+    width: 9em;
+}
+.wxCode p{
+    margin:0;
+    color: inherit;
+    font-size: inherit;
+}
+.contact_about_info .em{
+    font-size: 19px;
+    display: inline-block;
+}
+.brand{
+    margin-top: 20px;
+}
+.jobs{
+    padding-top: 25px;
+}
+.jobSearch{
+    text-align: right;
+}
+.jobs .newsSearch{
+    text-align: left;
+    display: inline-block;
+}
+.jobsListHeader{
+    background: #f5f5f5;
+    font-size: 14px;
+    color: #333333;
+}
+.jobTitle{
+    float: left;
+    width: 40%;
+    position: relative;
+    padding:8px 0;
+    text-indent: 4em;
+}
+.jobType,.jobAddress,.jobAction{
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+    padding:8px 0;
+}
+.jobType:after,.jobAddress:after,.jobAction:after{
+    position: absolute;
+    left:0;
+    top:8px;
+    bottom:8px;
+    width: 1px;
+    background: #cccccc;
+    content: '';
+}
+.jobsItem{
+    border-bottom:1px solid #f1f1f1;
+}
+.jobBrief{
+    /*background: inherit;*/
+    font-size: 14px;
+    color: #333333;
+    padding:0;
+    position: relative;
+}
+.jobBasic{
+    cursor: pointer;
+    padding:20px 0;
+}
+.jobBasic .jobTitle{
+    width: 40%;
+}
+.jobBasic .jobType,.jobBasic .jobAddress{
+    width: 20%;
+}
+.jobBrief .jobType:after,.jobBrief .jobAddress:after,.jobBrief .jobAction:after{
+    display: none;
+}
+.jobBrief button,.contact_apply button{
+    display: inline;
+    border:1px solid #c3c3c3;
+    width: 100px;
+    height: 26px;
+    font-size: inherit;
+}
+.jobBrief button:hover,.contact_apply button:hover{
+    color: #fff;
+    background: #2357a8;
+    border-color: #2357a8;
+}
+.jobBrief .jobTitle,.jobBrief .jobType,.jobBrief .jobAddress{
+    height:1em;
+    line-height:1em;
+    padding:0;
+}
+.jobBrief .jobAction{
+    line-height:1em;
+    position: absolute;
+    right:10%;
+    top:50%;
+    width: auto;
+    margin-right: -50px;
+    margin-top: -13px;
+    padding:0;
+}
+
+.jobBrief:hover{
+    background: #fafafa;
+}
+.jobBrief:hover .jobTitle span{
+    background: url("../images/icon-30-default.png") right center no-repeat;
+    padding-right: 2em;
+    background-size: 1em auto;
+}
+.jobBrief:hover .jobTitle .show{
+    background-image: url("../images/icon-30.png");
+}
+.jobBrief .jobTitle .show{
+    background: url("../images/icon-30.png") right center no-repeat;
+    padding-right: 2em;
+    background-size: 1em auto;
+}
+.jobInfo{
+    padding:40px 60px;
+    background: #f5f5f5;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.8em;
+    display: none;
+}
+.jobInfo dl{
+    border-bottom:1px solid #e2e2e2;
+    padding-bottom:30px;
+    margin-bottom: 30px;
+}
+.jobInfo dl:last-child{
+    border-bottom:0;
+}
+/* 企业文化 */
+.culture{
+    padding: 105px 10%;
+    position: relative;
+}
+.culture img{
+    width: 100%;
+}
+.cultureInfo{
+    position: absolute;
+    left:10%;
+    right:10%;
+    top:105px;
+    bottom:105px;
+}
+.cultureName{
+    color: #f5f5f5;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1em;
+}
+.cultureDes{
+    color: #333333;
+    font-size: 18px;
+    line-height:1em;
+}
+.cultureInfo span{
+    position: absolute;
+    white-space: nowrap;
+}
+.cultureName_c{
+    left:50%;
+    top:50%;
+    width: 5em;
+    margin-left:-2.5em;
+    margin-top:-0.5em;
+}
+.cultureName_t{
+    left:50%;
+    top:9.6%;
+    width: 5em;
+    margin-left:-2.5em;
+    margin-top:-0.5em;
+}
+.cultureName_b{
+    left:50%;
+    bottom:9.6%;
+    width: 5em;
+    margin-left:-2.5em;
+    margin-bottom:-0.5em;
+}
+.cultureName_l{
+    left:25.1%;
+    top:50%;
+    width: 5em;
+    margin-left:-2.5em;
+    margin-top:-0.5em;
+}
+.cultureName_r{
+    right:24.2%;
+    top:50%;
+    width: 5em;
+    margin-right:-2.5em;
+    margin-top:-0.5em;
+}
+.cultureDes_t{
+    top:8%;
+    left:66%;
+    margin-top:-0.5em;
+}
+.cultureDes_r{
+    right:-4.5em;
+    top:59.2%;
+}
+.cultureDes_l{
+    top:53.8%;
+    right:90.7%;
+    margin-top: -0.5em;
+}
+.cultureDes_b{
+    right:68.8%;
+    bottom:5.4%;
+    margin-bottom: -0.5em;
+}
+.team{
+
+}
+.teamTitle{
+    padding-top:70px;
+    margin-bottom:30px;
+    color: #999999;
+    font-size: 26px;
+    text-align: center;
+}
+.teamPicList .teamPic{
+    float: left;
+    width: 6.6666%;
+    background: #fff;
+    position: relative;
+}
+.userPicShow{
+    position: absolute;
+    top:  -25%;
+    right:-25%;
+    width: 150%;
+    height:150%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    z-index: 2;
+    display: none;
+}
+.teamPicList .teamPic:after{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index: 1;
+    background: #000;
+    opacity: 0.1;
+    filter:alpha(opacity=10);
+    content: '';
+}
+.teamPicList img{
+    width: 100%;
+
+}
+/* statement 免责声明 */
+.statementContainer{
+    width:70%;
+    margin:0 auto;
+    font-size: 15px;
+    line-height: 1.8em;
+    color: #333333;
+    padding:40px 0;
+    padding-bottom:224px;
+    overflow: auto;
+}
+.statementTitle{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 0 1em;
+}
+.statementArticle p{
+    margin-bottom: 2em;
+}
+.statementFooter{
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    background: #f5f5f5;
+}
