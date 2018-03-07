@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <link rel="stylesheet" href="css/style.css">
     <style>
-
+        .videoSS{
+            height: 100%;
+            /*display: none;*/
+        }
     </style>
 </head>
 <body>
@@ -67,26 +70,28 @@
     </div>
 </div>
 
-<div class="indexSwipe-header indexSwipe">
 
-    <div id="indexSwipe" class="slideBox">
-        <div class="hd">
-            <ul><li></li><li></li><li></li></ul>
-        </div>
-        <div class="bd">
-            <ul>
-                <li><a href="#"><img src="images/banner-1.png" /></a></li>
-                <li><a href="#"><img src="images/banner-2.png" /></a></li>
-                <li><a href="#"><img src="images/banner-3.png" /></a></li>
-            </ul>
-        </div>
-        <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
-        <a class="prev" href="javascript:void(0)"></a>
-        <a class="next" href="javascript:void(0)"></a>
 
+
+<div class="sliderView indexBanner">
+    <div class="prev"></div>
+    <div class="next"></div>
+    <!-- 插入轮播的图片们 -->
+
+    <div class="sliderBlock active">
+        <div class="fullSlider" style="background-image: url(images/banner-1.png)"></div>
+    </div>
+    <div class="sliderBlock">
+        <div class="fullSlider" style="background-image: url(images/banner-2.png)"></div>
+    </div>
+    <div class="sliderBlock">
+        <div class="fullSlider" style="background-image: url(images/banner-3.png)"></div>
     </div>
 
+    <!-- 插入轮播的页码们 -->
+    <div class="pagination"></div>
 </div>
+
 
 <div class="newLifeContainer">
     <div class="IndexContainer">
@@ -96,12 +101,11 @@
                 <span>视频专区</span>
                 <a href="video.html" class="moreVideo">查看全部</a>
             </h3>
-            <div class="videoList clearfix">
-                <ul id="videoList">
+            <div class="videoList">
+                <ul id="videoList" class="clearfix">
                     <li>
                         <div class="videoInfo">
-                            <div class="video">
-                                <img src="images/video-1.png" alt="" class="videoPic">
+                            <div class="video" style="background-image:url(images/video-1.png)">
                                 <button class="videoPlay"
                                         uri="http://video.pearvideo.com/mp4/short/20171207/cont-1217697-11228138-hd.mp4"
                                         title="建业与您开启智能健康新生活"></button>
@@ -114,10 +118,22 @@
                     </li>
                     <li>
                         <div class="videoInfo">
-                            <div class="video">
-                                <img src="images/video-1.png" alt="" class="videoPic">
+                            <div class="video" style="background-image:url(images/video-1.png)">
                                 <button class="videoPlay"
-                                        uri="http://122.114.109.183//newlife/u/cms/www/201801/18100933wv3n.mp4"
+                                        uri="http://video.pearvideo.com/mp4/short/20171207/cont-1217697-11228138-hd.mp4"
+                                        title="建业与您开启智能健康新生活"></button>
+                            </div>
+                            <div class="videoBrief">
+                                <p class="videoName">建业与您开启智能健康新生活</p>
+                                <p class="videoDes">建业“轻一点”运动体能APP全新上线，您的私人运动健康管家。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="videoInfo">
+                            <div class="video" style="background-image:url(images/video-1.png)">
+                                <button class="videoPlay"
+                                        uri="http://video.pearvideo.com/mp4/short/20171207/cont-1217697-11228138-hd.mp4"
                                         title="建业与您开启智能健康新生活"></button>
                             </div>
                             <div class="videoBrief">
@@ -138,67 +154,68 @@
             <dl class="indexNewsList clearfix">
                 <dt>
                     <div class="indexNewsInfo">
-                        <div id="indexNewsSwipe" class="indexNewsSwipe slideBox">
-                            <div class="hd">
-                                <ul><li></li><li></li><li></li></ul>
-                            </div>
-                            <div class="bd">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <div class="indexNewsSwipe_info">
-                                                <img src="images/img-26.png" />
-                                                <div class="indexNewsSwipe_container">
-                                                    <div class="mask"></div>
-                                                    <div class="indexSwipe_containerInfo">
-                                                        <em>2017年建业物业经营冲刺会圆满召开</em>
-                                                        <p>11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="indexNewsSwipe_info">
-                                                <img src="images/img-26.png" />
-                                                <div class="indexNewsSwipe_container">
-                                                    <div class="mask"></div>
-                                                    <div class="indexSwipe_containerInfo">
-                                                        <em>2017年建业物业经营冲刺会圆满召开</em>
-                                                        <p>11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="indexNewsSwipe_info">
-                                                <img src="images/img-26.png" />
-                                                <div class="indexNewsSwipe_container">
-                                                    <div class="mask"></div>
-                                                    <div class="indexSwipe_containerInfo">
-                                                        <em><a href="#">2017年建业物业经营冲刺会圆满召开</a></em>
-                                                        <p>11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
-                            <a class="prev" href="javascript:void(0)"></a>
-                            <a class="next" href="javascript:void(0)"></a>
 
+                        <div class="sliderView indexNews_swipe">
+                            <div class="prev"></div>
+                            <div class="next"></div>
+                            <!-- 插入轮播的图片们 -->
+
+                            <div class="sliderBlock active">
+                                <div class="fullSlider" style="background-image: url(images/banner-1.png)">
+                                    <a href="#">
+                                        <div class="indexNewsSwipe_info">
+                                            <div class="indexNewsSwipe_container">
+                                                <div class="mask"></div>
+                                                <div class="indexSwipe_containerInfo">
+                                                    <em>2017年建业物业经营冲刺会圆满召开</em>
+                                                    <p>11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sliderBlock">
+                                <div class="fullSlider" style="background-image: url(images/banner-2.png)">
+                                    <a href="#">
+                                        <div class="indexNewsSwipe_info">
+                                            <div class="indexNewsSwipe_container">
+                                                <div class="mask"></div>
+                                                <div class="indexSwipe_containerInfo">
+                                                    <em>2017年建业物业经营冲刺会圆满召开</em>
+                                                    <p>11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sliderBlock">
+                                <div class="fullSlider" style="background-image: url(images/banner-3.png)">
+                                    <a href="#">
+                                        <div class="indexNewsSwipe_info">
+                                            <div class="indexNewsSwipe_container">
+                                                <div class="mask"></div>
+                                                <div class="indexSwipe_containerInfo">
+                                                    <em>2017年建业物业经营冲刺会圆满召开</em>
+                                                    <p>11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。11月22日，建业物业2017年经营冲刺会在物业总公司会议室成功召开。物业公司总经理许静、副总经理张礼辉、助理总经理刘德军，各职能部门、专业化公司及分公司总经理共计35人参加了此次会议。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- 插入轮播的页码们 -->
+                            <div class="pagination"></div>
                         </div>
+
                     </div>
                 </dt>
                 <dd class="">
                     <div class="indexNewsInfo">
                         <div class="indexNewsPic">
-                            <a href="#"><img src="images/img-3.png" alt=""></a>
+                            <a href="#"><div class="indexNewsPic_img" style="background-image: url(images/img-3.png)"></div></a>
                         </div>
                         <div class="indexNewsBrief">
                             <em class="indexNewsTitle"><a href="#">腾讯汽车发布千乘计划2.0战略 智能汽车矩阵集体亮相</a></em>
@@ -211,7 +228,7 @@
                 <dd class="">
                     <div class="indexNewsInfo">
                         <div class="indexNewsPic">
-                            <img src="images/img-3.png" alt="">
+                            <a href="#"><div class="indexNewsPic_img" style="background-image: url(images/img-3.png)"></div></a>
                         </div>
                         <div class="indexNewsBrief">
                             <em class="indexNewsTitle">腾讯汽车发布千乘计划2.0战略 智能汽车矩阵集体亮相</em>
@@ -222,7 +239,7 @@
                 <dd class="">
                     <div class="indexNewsInfo">
                         <div class="indexNewsPic">
-                            <img src="images/img-3.png" alt="">
+                            <a href="#"><div class="indexNewsPic_img" style="background-image: url(images/img-3.png)"></div></a>
                         </div>
                         <div class="indexNewsBrief">
                             <em class="indexNewsTitle">腾讯汽车发布千乘计划2.0战略 智能汽车矩阵集体亮相</em>
@@ -233,7 +250,7 @@
                 <dd class="">
                     <div class="indexNewsInfo">
                         <div class="indexNewsPic">
-                            <img src="images/img-3.png" alt="">
+                            <a href="#"><div class="indexNewsPic_img" style="background-image: url(images/img-3.png)"></div></a>
                         </div>
                         <div class="indexNewsBrief">
                             <em class="indexNewsTitle">腾讯汽车发布千乘计划2.0战略 智能汽车矩阵集体亮相</em>
@@ -333,12 +350,21 @@
                     <button class="videoClose"></button>
                 </div>
                 <div class="videoPlayContainer">
-                    <div class="videoPlayMask">
+                    <div class="videoPlayMask"  style="display: none">
                         <div class="middleOut">
                             <div class="middleIn">
                                 <button></button>
                             </div>
                         </div>
+                    </div>
+                    <div class="videoSS">
+                        <!--http://static.video.qq.com/TPout.swf?auto=1&vid=s06003g3i54-->
+                        <object data="http://static.video.qq.com/TPout.swf?auto=1&vid=s06003g3i54" type="application/x-shockwave-flash"
+                                style="width: 100%;height: 100%;">
+                            <param name="movie" value="http://static.video.qq.com/TPout.swf?auto=1&vid=s06003g3i54"/>
+                            <!--<embed src="http://static.video.qq.com/TPout.swf?auto=1&vid=s06003g3i54"/>-->
+                            <embed src="http://static.video.qq.com/TPout.swf?auto=1&vid=s06003g3i54" quality="high" width="460" height="372" align="middle" allowScriptAccess="sameDomain" allowFullscreen="true" type="application/x-shockwave-flash"></embed>
+                        </object>
                     </div>
                     <video id="video" src="#" controls></video>
                 </div>
@@ -379,11 +405,19 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
 <script src="js/common.js"></script>
+
+
+
 <script>
-    $('.indexSwipe').setSize(1920,600);
-    $('.video').setSize(760,465);
+
+
+
+    $('.indexBanner').setSize(1920,750);
+    slideshow('.indexBanner',5000);
+
+    $('.video').setSize(575,355);
     $('.indexNewsPic').each(function () {
-       $(this).setSize(500,300)
+       $(this).setSize(570,340)
     });
 
 
@@ -396,13 +430,7 @@
     },17);
 
 
-
-
-
-
-    jQuery("#indexSwipe").slide({mainCell:".bd ul", autoPlay:true,trigger:"click"});
-    jQuery("#indexNewsSwipe").slide({mainCell:".bd ul", autoPlay:true,trigger:"click"});
-
+    slideshow('.indexNews_swipe',5000);
 
 
 
@@ -412,6 +440,9 @@
     var videoPlayView = $('.videoPlayView');
 
     videoList.delegate('.videoInfo','click',function(){
+
+        $('.videoSS').show();
+
         var videoUrl = $(this).find('.videoPlay').attr('uri'),
             videoName = $(this).find('.videoPlay').attr('title');
         videoPlayView.find('video').attr('src',videoUrl);
@@ -433,8 +464,6 @@
     });
 
 
-
-
     /* 平台列表 hover 效果 */
     var platforms = $('.indexPlatformsList .indexPlatformsItem');
     platforms.each(function () {
@@ -448,4 +477,5 @@
 
 
 </script>
+
 </html>

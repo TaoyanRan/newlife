@@ -5,6 +5,14 @@
     <title>新生活 - 专业公司 - 嵩云科技</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+
+
+
+    </style>
 </head>
 <body>
 
@@ -114,59 +122,73 @@
             </div>
 
         </div>
+
         <div class="SYSwipeView">
 
             <div class="SY_title"><span>产品介绍</span></div>
-
-            <div class="SYSwipe">
-                <div id="SYSwipe" class="slideBox">
-                    <div class="hd"><ul><li>01</li><li>02</li><li>03</li></ul></div>
-                    <div class="bd">
-                        <ul>
-                            <li>
-                                <div class="SYSwipe_item">
-                                    <div class="SYSwipe_item_l">
-                                        <div class="SYSwipe_slogan">
-                                            <div class="">
-                                                <div class="">
-                                                    <p>新型生活方式服务平台</p>
-                                                    <h3>“一家”智慧社区</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="SYSwipe_card">
-                                            <img notSize="true" src="images/img-25.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="SYSwipe_item_r">
-                                        <img notSize="true" src="images/img-24.png" />
-                                        <div class="SYSwipe_info">
-                                            <div class="SYSwipe_title">“一家”APP</div>
-                                            <div class="SYSwipe_text">
-                                                <p>
-                                                    及时、准确、全面地发现并满足客户的生活需求，破冰邻里关系，把邻里的温情带回现代的生活。
-                                                    <br>通过社区增值服务、物业基础服务、邻里社交圈、一公里生活圈、优选定制、邻趣游戏6部分内容，打造物业服务、社区服务、邻里圈、优选定制四大模块的用户服务体系。
-                                                    <br>通过社区增值服务、物业基础服务、邻里社交圈、一公里生活圈、优选定制、邻趣游戏6部分内容，打造物业服务、社区服务、邻里圈、优选定制四大模块的用户服务体系。
-                                                </p>
-                                            </div>
-                                            <a href="#" class="SYSwipe_go">进入官网</a>
-                                        </div>
-                                    </div>
-
-
-
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
-                    <a class="prev" href="javascript:void(0)"></a>
-                    <a class="next" href="javascript:void(0)"></a>
-                </div>
-            </div>
         </div>
     </div>
 
+    <div class="soonBottomBanner">
+
+        <!-- page6 -->
+        <div class="page">
+            <div class="section bg6">
+                <div class="mid">
+                    <div class="slide_container">
+                        <div id="slide" class="slide index-slide" alt="star" scale="0.53">
+
+                            <div class="img">
+                                <div class="soonBottomBanner_img" style="background-image: url(images/000-1.png)"></div>
+                                <div class="soonBottomBanner_info" style="border-bottom-color: #3a9cd6;">
+                                    <div class="middleOut">
+                                        <div class="middleIn">
+                                            <h2 style="color: #3a9cd6;">智能型云POS机</h2>
+                                            <p>至尊卡是2009年发行使用，用于体现客户身份象征，解决客户刷卡消费、储存资金问题，客户持至尊卡可在任一使用至尊综合支付产品的联盟商家进行消费。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="img">
+                                <div class="soonBottomBanner_img" style="background-image: url(images/000-2.png)"></div>
+                                <div class="soonBottomBanner_info" style="border-bottom-color: #704322;">
+                                    <div class="middleOut">
+                                        <div class="middleIn">
+                                            <h2 style="color: #704322">“一家”APP</h2>
+                                            <p>及时、准确、全面地发现并满足客户的生活需求，破冰邻里关系，把邻里的温情带回现代的生活。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="img">
+                                <div class="soonBottomBanner_img" style="background-image: url(images/000-3.png)"></div>
+                                <div class="soonBottomBanner_info" style="border-bottom-color: #dd3644;">
+                                    <div class="middleOut">
+                                        <div class="middleIn">
+                                            <h2 style="color: #dd3644">建业足球</h2>
+                                            <p>河南建业足球俱乐部，是中国足球超级联赛16支参赛球队之一，河南省第一支职业足球队。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="slide-bt"></div>
+                        </div>
+                        <div class="y_left" onclick="left()"  ></div>
+                        <div class="y_right" onclick="right()"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page6 -->
+
+
+
+    </div>
 
 </div>
 
@@ -203,9 +225,10 @@
 </body>
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/pc_slider.js"></script>
 <script src="js/common.js"></script>
 <script>
-    $('.bannerSwipe').setSize(1920,600);
+    $('.bannerSwipe').setSize(1920,750);
     $('.SYSwipe').setSize(1480,680); // 100px 外间距
     $('.SYKJ').setSize(1536,900);
 

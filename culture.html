@@ -62,9 +62,7 @@
         </div>
     </div>
 </div>
-<div class="banner">
-    <img src="images/banner-2.png" alt="" class="headerBanner">
-</div>
+<div class="banner" style="background-image: url(images/banner-2.png)"></div>
 
 
 <div class="tab contactTab">
@@ -76,23 +74,38 @@
     <div class="tabContainer">
         <div class="tabItem check">
             <div class="culture">
-                <img src="images/img-19.png" alt="">
+
                 <div class="cultureInfo">
-                    <div class="cultureName">
-                        <span class="cultureName_c">建业新生活</span>
-                        <span class="cultureName_t">企业价值观</span>
-                        <span class="cultureName_l">企业愿景</span>
-                        <span class="cultureName_r">企业定位</span>
-                        <span class="cultureName_b">企业使命</span>
+                    <div class="cultureMask"></div>
+
+
+                    <div class="cultureItem cultureItem_c">
+                        <div class="cultureRound"><span>建业新生活</span></div>
                     </div>
-                    <div class="cultureDes">
-                        <span class="cultureDes_t">绿色  |  尊贵  |  共享  |  快乐</span>
-                        <span class="cultureDes_r">家庭新型生活解决方案平台</span>
-                        <span class="cultureDes_l">根植中原，造福百姓</span>
-                        <span class="cultureDes_b">让生活更美好</span>
+                    <div class="cultureItem cultureItem_t">
+                        <div class="cultureRound"><span>企业价值观</span></div>
+                        <div class="cultureDes cultureDes_t">绿色  |  尊贵  |  共享  |  快乐</div>
+                    </div>
+                    <div class="cultureItem cultureItem_r">
+                        <div class="cultureRound"><span>企业定位</span></div>
+                        <div class="cultureDes cultureDes_r">家庭新型生活解决方案平台</div>
+                    </div>
+                    <div class="cultureItem cultureItem_l">
+                        <div class="cultureRound"><span>企业愿景</span></div>
+                        <div class="cultureDes cultureDes_l">根植中原，造福百姓</div>
+                    </div>
+                    <div class="cultureItem cultureItem_b">
+                        <div class="cultureRound"><span>企业使命</span></div>
+                        <div class="cultureDes cultureDes_b">根植中原，造福百姓</div>
                     </div>
 
+
+
+
                 </div>
+
+
+
             </div>
         </div>
 
@@ -102,7 +115,7 @@
                 
                 <div class="teamPicList clearfix">
                     <!--<div class="teamPic">
-                        <div class="userPicShow"></div>
+                        <div class="userPicShow mask1"></div><div class="userPicShow mask2"></div>
                         <img src="images/pic/pic1.jpg" alt="">
                     </div>-->
 
@@ -147,7 +160,9 @@
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
 <script src="js/common.js"></script>
 <script>
-    $('.banner').setSize(1920,600);
+
+
+    $('.banner').setSize(1920,750);
     // 企业文化 和 团队照片 切换
     $('.tabHeader button').each(function (i) {
         $(this).click(function () {
@@ -159,7 +174,7 @@
     // 创建照片墙
 
     for(var i=0;i<75;i++){
-        $('.teamPicList').append('<div class="teamPic"><div class="userPicShow"></div><img src="images/pic/pic' + (i+1) +'.jpg" alt=""></div>')
+        $('.teamPicList').append('<div class="teamPic"><div class="userPicShow mask1"></div><div class="userPicShow mask2"></div><img src="images/pic/pic' + (i+1) +'.jpg" alt=""></div>')
     }
 
     $('.teamPicList img').each(function () {
@@ -170,14 +185,6 @@
 
 
 
-    // 照片墙 hover 效果
-    $('.teamPicList div').each(function () {
-        $(this).hover(function () {
-            var hoverImgSrc = $(this).find('img').attr('src');
-            $(this).find('.userPicShow').css('backgroundImage','url(' + hoverImgSrc + ')').show()
-        },function () {
-            $(this).find('.userPicShow').hide()
-        })
-    })
+
 </script>
 </html>
