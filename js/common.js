@@ -125,19 +125,19 @@ function slideshow(dom,between) {
     function changeSlide() { //切换图片的函数
         slideOff();
         current++; //自增1
-        if(current>=3) current=0;
+        if(current>=sliders.length) current=0;
         slideOn();
     }
     prev.click(function () { // 上一个slider
         slideOff();
         current--;
-        if(current < 0) current = 2;
+        if(current < 0) current = sliders.length - 1;
         slideOn()
     });
     next.click(function () { // 下一个slider
         slideOff();
         current++; //自增1
-        if(current>=3) current=0;
+        if(current>=sliders.length) current=0;
         slideOn()
     });
 
