@@ -387,7 +387,22 @@ img {  vertical-align: top;  border:0;  }
     padding:1.1em 0;
     color: #666666;
 }
-.tabHeader button.check{  display: block;background: #fff;  }
+.tabHeader button.check{
+    display: block;background: #fff;
+    position: relative;
+    color: #064e99;
+}
+.tabHeader button.check:after{
+    position: absolute;
+    top: 50%;
+    margin-top: 1.5em;
+    height: 1px;
+    width: 6em;
+    left: 50%;
+    margin-left: -3em;
+    background: #064e99;
+    content: '';
+}
 .tabContainer{  margin:0 auto;  }
 .tabContainer .tabItem{  display: none;  }
 .tabContainer .tabItem.check{  display: block;  }
