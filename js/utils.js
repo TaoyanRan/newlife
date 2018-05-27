@@ -53,6 +53,13 @@ function axisColumn_2() {
     $('.axisColumn-2').on("mouseleave", function(){
         CHANGENEWS = setInterval(changeNews,changeNresData.time);
     });
-}
+};
+
+
+window.onload = function () {
+
+    var meta = document.getElementsByTagName('meta');
+    meta["viewport"].setAttribute('content',"width=320,initial-scale=0.5,minimum-scale=0.1,maximum-scale=10,user-scalable=yes");
+};
 
 
