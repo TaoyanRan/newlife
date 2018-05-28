@@ -15,7 +15,7 @@ body{
     line-height: 1em;
     padding: .7em 2.3em;
     cursor: pointer;
-    box-shadow: 0 0 8px #efefef;
+    box-shadow: 0 0 8px #eee;
     border-radius: 4px;
 }
 .more img{
@@ -35,7 +35,7 @@ body{
     vertical-align: middle;
 }
 body{
-    padding-top: 54px;
+    padding-top: 58px;
 }
 
 /*** --------------------- tab Begin --------------------- ***/
@@ -63,7 +63,7 @@ body{
     left: 0;
     right: 0;
     top: 0;
-    height: 54px;
+    height: 58px;
     box-shadow: 0 0 15px #ccc;
     z-index: 10;
     /*overflow: hidden;*/
@@ -88,7 +88,7 @@ body{
     text-align: center;
 }
 .navLink a{
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1em;
     padding: 20px 0;
     display: inline-block;
@@ -131,15 +131,17 @@ body{
 .moduleName{
     position: relative;
     text-align: center;
-    font-size: 30px;
+    font-size: 0;
     color: #ff840b;
+
 }
 .moduleName i{
     text-transform: uppercase;
     font-style: normal;
     opacity: .2;
-    font-size: 2em;
-    /*text-shadow: 0 0 10px #ff840b;*/
+    font-size: 60px;
+    line-height: 60px;
+    display: inline-block;
 }
 .moduleName span{
     position: absolute;
@@ -147,7 +149,8 @@ body{
     top: 50%;
     right: 0;
     margin-top: -.5em;
-    line-height: 1em;
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
 }
 /*** --------------------- moduleName End --------------------- ***/
@@ -161,7 +164,7 @@ body{
     /*width: 62.5%;*/
     margin: 0 auto;
     color: #333333;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5em;
 }
 .other a{
@@ -188,11 +191,11 @@ body{
     background-size: 80%;
 }
 .other dd{
-    padding-top: 17px;
+    padding-top: 11px;
 }
 .footerLink{
     background: #09499b;
-    font-size: 10px;
+    font-size: 14px;
     padding-bottom: 20px;
 }
 .footerLink dt{
@@ -203,7 +206,7 @@ body{
     display: inline-block;
     color: #fff;
     padding: 10px 25px;
-    font-size: 13px;
+    font-size: 18px;
     position: relative;
 }
 .footerLink dt span i{
@@ -254,7 +257,7 @@ body{
 }
 .footerBar dl{
     color: #999999;
-    font-size: 9px;
+    font-size: 12px;
     overflow: hidden;
     /*width: 62.5%;*/
     margin: 0 auto;
@@ -304,13 +307,13 @@ body{
 /*** --------------------- footer End --------------------- ***/
 
 /*** --------------------- 栅格布局 Begin --------------------- ***/
-.row{ overflow: hidden; }
-.col{ float:left;padding:15px;box-sizing:border-box; }
-.col_2{ width: 50%; }
-.col_3{ width: 400px; }
-.col_4{ width: 25%; }
-.col_5{ width: 20%; }
-.col_6{ width: 200px; }
+.customRow{ overflow: hidden; }
+.customCol{ float:left;padding:15px;box-sizing:border-box; }
+.customCol_2{ width: 50%; }
+.customCol_3{ width: 400px; }
+.customCol_4{ width: 25%; }
+.customCol_5{ width: 20%; }
+.customCol_6{ width: 200px; }
 
 /*** --------------------- 栅格布局 End --------------------- ***/
 
@@ -343,19 +346,19 @@ body{
     background: #1e4877;
     font-size: 14px;
 }
-.homeVideo_tab .tabContainer::-webkit-scrollbar {/*滚动条整体样式*/
-    width: 5px;     /*高宽分别对应横竖滚动条的尺寸*/
+/*.homeVideo_tab .tabContainer::-webkit-scrollbar {!*滚动条整体样式*!
+    width: 5px;     !*高宽分别对应横竖滚动条的尺寸*!
     height: 1px;
 }
-.homeVideo_tab .tabContainer::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+.homeVideo_tab .tabContainer::-webkit-scrollbar-thumb {!*滚动条里面小方块*!
     border-radius: 10px;
     background-color: #ff840c;
 }
-.homeVideo_tab .tabContainer::-webkit-scrollbar-track {/*滚动条里面轨道*/
+.homeVideo_tab .tabContainer::-webkit-scrollbar-track {!*滚动条里面轨道*!
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-    /*border-radius: 10px;*/
-    /*background: #EDEDED;*/
-}
+    !*border-radius: 10px;*!
+    !*background: #EDEDED;*!
+}*/
 .homeVideo_tab .tabHeader{
     position: absolute;
     top: 0;
@@ -455,10 +458,10 @@ body{
     background: url(../images/homeService-bg.png) 0 200px no-repeat;
     background-size: 100%;
 }
-.homeServiceInfo .row{
+.homeServiceInfo .customRow{
     margin: 0 auto;
 }
-.homeService .col{
+.homeService .customCol{
     padding: 0;
 }
 .homeService ul{
@@ -597,7 +600,7 @@ body{
 .homeCompanyInfoList{
     width: 600%;
 }
-.homeCompanyInfoList .col{
+.homeCompanyInfoList .customCol{
     padding: 0;
 }
 .homeCompanyPic{
@@ -841,7 +844,7 @@ body{
 .homeCultureTabContainer dt{
     float: left;
     width: 510px;
-    margin-right: 100px;
+    margin-right: 40px;
 }
 .homeCultureTabContainer dt img{
     width: 100%;
@@ -868,7 +871,8 @@ body{
     color: #fff;
 }
 .homeCulture_textList li:hover .homeCulture_des,.homeCulture_textList li.active .homeCulture_des{
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
 .homeCulture_textName{
     position: relative;
@@ -920,6 +924,7 @@ body{
     top: 50%;
     margin-top: -.5em;
     left: 115px;
+    font-size: 16px;
     transition: font-size 0.2s ease-in-out;
 }
 /* 首页 - 我们的文化 - 公司简介 */
@@ -1037,7 +1042,7 @@ body{
 /*** --------------------- 新闻列表 - 时间轴形式 Begin --------------------- ***/
 /* --- 默认状态 ---*/
 .news_axis{
-    margin: 150px auto 0;
+    margin: 120px auto 0;
     position: relative;
 }
 .news_axis:after{
@@ -1305,6 +1310,9 @@ body{
 .news{
     margin: 0 auto;
 }
+.newsModuleName{
+    margin-top: 80px;
+}
 .newsModuleName span:after{
     position: absolute;
     left: 50%;
@@ -1316,7 +1324,7 @@ body{
     content: '';
 }
 .newsNav{
-    padding-bottom: 44px;
+    padding-bottom: 50px;
     padding-top: 36px;
     border-bottom: 1px solid #ededed;
 }
@@ -1619,6 +1627,7 @@ body{
     padding: 40px 0;
     position: relative;
     cursor: default;
+    background: #eeeeee;
 }
 .jywy_about_honour li:after{
     position: absolute;
@@ -1636,10 +1645,10 @@ body{
     background: #09499b;
     color: #fefefe;
 }
-.jywy_about_honour li.active sub{
+.jywy_about_honour li.active sup{
     color: #fefefe;
 }
-.jywy_about_honour sup,.jywy_about_honour sub{
+.jywy_about_honour sup{
     font-size: 14px;
     color: #999999;
     vertical-align: top;
@@ -1962,12 +1971,14 @@ body{
     text-align: center;
     border: 1px solid #d4d4d4;
     width: 720px;
-    box-sizing: border-box;
 }
 .jyjd_management_honour div{
     padding: 40px 0;
     position: relative;
     cursor: default;
+    width: 240px;
+    box-sizing: border-box;
+    background: #eee;
 }
 .jyjd_management_honour div:after{
     position: absolute;
@@ -2115,7 +2126,7 @@ body{
     top: 0;
     overflow: hidden;
     float: left;
-    box-shadow: 0 0 10px #cccccc;
+    /*box-shadow: 0 0 10px #cccccc;*/
 }
 .jydy_about_l:after,.jydy_about_l:before{
     position: absolute;
@@ -2264,6 +2275,13 @@ body{
     text-indent: 2em;
     text-align: justify;
     padding: 0 15px;
+}
+.jydy_about_desText{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 52px;
 }
 .jydy_about_item_text_title{
     position: absolute;
@@ -2900,12 +2918,12 @@ body{
 .aboutTeam_container:after{
     left: 0;
     right: 50%;
-    margin-right: 600px;
+    margin-right: 700px;
 }
 .aboutTeam_container:before{
     right: 0;
     left: 50%;
-    margin-left: 600px;
+    margin-left: 700px;
 }
 .aboutTeam_swipe{
     margin: 0 auto;
@@ -2915,64 +2933,6 @@ body{
 }
 
 
-.aboutTeamList{
-    overflow: hidden;
-    padding: 120px 0;
-}
-.aboutTeamList img{
-    display: none;
-    width: 150px;
-    position: absolute;
-    left: 5px;
-    right: 5px;
-    bottom: 0;
-    z-index: 3;
-}
-.aboutTeamList li{
-    float: left;
-    width: 160px;
-    height: 92px;
-    position: relative;
-    background: #fff;
-    margin: 30px 10px;
-}
-.aboutTeamList li,.aboutTeamList li:after,.aboutTeamList li:before{
-    /*border-radius: 2px;*/
-    /*box-shadow: 0 0 5px #fff;*/
-}
-.aboutTeamList li:after,.aboutTeamList li:before,.aboutTeamMask:after,.aboutTeamMask:before{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: inherit;
-    z-index: 1;
-    content: '';
-}
-.aboutTeamList li:after,.aboutTeamMask:after{
-    -webkit-transform: rotate(60deg);
-    -khtml-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    -ms-transform: rotate(60deg);
-    -o-transform: rotate(60deg);
-    transform: rotate(60deg);
-}
-.aboutTeamList li:before,.aboutTeamMask:before{
-    -webkit-transform: rotate(-60deg);
-    -khtml-transform: rotate(-60deg);
-    -moz-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
-    -o-transform: rotate(-60deg);
-    transform: rotate(-60deg);
-}
-.aboutTeamList li.offset{
-    margin-left: 100px;
-}
-.aboutTeamList li:hover .aboutTeamMask{
-    /*background: #ff840c;*/
-    display: block;
-}
 
 
 
@@ -3006,31 +2966,27 @@ body{
 }
 
 /*-----*/
-.test_aboutTeamList{
-    /*border: 1px solid red;*/
+.aboutTeamList{
     overflow: hidden;
     margin: 0 auto;
-    padding: 35px 0;
-    /*background: #eee;*/
-    width: 1176px;
-    /*background: url(../images/aboutTeam_bg.png) center center no-repeat;*/
-    /*background-size:  cover;*/
+    padding: 110px 0;
+    /*width: 1176px;*/
 }
-.test_aboutTeamList li{
+.aboutTeamList li{
     float: left;
-    width: 161px;
-    height: 175px;
+    width:  160px;
+    height: 174px;
     background: url(../images/aboutTeamUser_bg.png) center center no-repeat;
     background-size: 100%;
-    margin: -15px 10px 0 10px;
+    margin: -20px 10px 0 10px;
     position: relative;
     /*border: 1px solid red;*/
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 }
-.test_aboutTeamList li.offset{
+.aboutTeamList li.offset{
     margin-left: 100px;
 }
-.test_aboutTeamList li:after{
+.aboutTeamList li:after{
     position: absolute;
     top: 0;
     left: 0;
@@ -3043,43 +2999,25 @@ body{
     transition: opacity 0.2s ease-in-out;
     content: '';
 }
-.test_aboutTeamList li:hover:after,.test_aboutTeamList li:hover .test_aboutTeamList_userInfo{
+.aboutTeamList li:hover:after,.aboutTeamList li:hover .aboutTeamList_userInfo{
    opacity: 1;
 }
-.test_aboutTeamPic{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    z-index: 2;
-    text-align: center;
-    vertical-align: bottom;
-}
-.test_aboutTeamPic img{
-    width: 80%;
-    position: absolute;
-    bottom: 10px;
-    left: 10%;
-    /*border-radius: 20px;*/
-}
-.test_aboutTeamList em,.test_aboutTeamList span{
+.aboutTeamList em,.aboutTeamList span{
     display: block;
     margin: 5px 0;
     text-align: center;
     font-style: normal;
     font-weight: normal;
 }
-.test_aboutTeamList em{
+.aboutTeamList em{
     font-size: 20px;
     color: #ff840c;
 }
-.test_aboutTeamList span{
+.aboutTeamList span{
     font-size: 16px;
     color: #ffffff;
 }
-.test_aboutTeamList_userInfo{
+.aboutTeamList_userInfo{
     position: absolute;
     top: 0;
     left: 0;
@@ -3097,6 +3035,7 @@ body{
 /*** --------------------- 联系我们 Begin --------------------- ***/
 .concatUs{
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 .concatUs_address{
     position: relative;
@@ -3148,6 +3087,7 @@ body{
     padding-top: 20px;
     font-size: 16px;
     color: #999999;
+
 }
 .concatUs_Info li{
     float: left;
@@ -3399,8 +3339,166 @@ body{
 }
 /*** --------------------- 免责声明 End --------------------- ***/
 
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
+/*** --------------------- 视频 Begin --------------------- ***/
+.videoRecommendView{
+    background: url(../images/banner-news.png) center center no-repeat;
+    background-size: cover;
+    height: 645px;
+    padding: 30px 0 50px;
+    box-sizing: border-box;
+}
+.videoModule{
+    margin: 0 auto;
+}
+.videoNav{
+    font-size: 24px;
+    color: #cccccc;
+    line-height: 1em;
+}
+.videoNav a{
+    color: inherit;
+}
+.videoVideoView{
+    margin-top: 15px;
+}
+.videoModuleName{
+    margin-top: 100px;
+}
+
+.videoOther{
+    margin: 60px auto 0;
+    overflow: hidden;
+}
+.videoOther_more{
+    overflow: hidden;
+    /*margin-left: 5px;*/
+}
+.videoOther_title{
+    font-size: 24px;
+    color: #666666;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+.videoOther_moreInfo{
+    border: 1px solid #cccccc;
+}
+.videoOther_news{
+    float: left;
+    margin-right: 5px;
+}
+.videoOther_news ul{
+    overflow: hidden;
+    width: 960px;
+    margin-left: -5px;
+    margin-top:  -15px;
+}
+.videoOther_news li:first-child{
+    height: 403px;
+}
+.videoOther_news li:hover .videoOther_info h2{
+    color: #ff840c;
+}
+.videoOther_news li:hover{
+    border-color: #ff840c;
+}
+.videoOther_news li{
+    position: relative;
+    border: 1px solid #dddddd;
+    float: left;
+    width: 233px;
+    height: 193px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+.videoOther_news li:first-child{
+    width: 473px;
+}
+.videoOther_news li:first-child .videoOther_pic{
+    height: 346px;
+}
+.videoOther_pic{
+    width:  100%;
+    height: 136px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.videoOther_info{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 5px 15px;
+}
+.videoOther_info h2{
+    font-size: 18px;
+    color: #333333;
+    font-weight: normal;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin-bottom: 3px;
+}
+.videoOther_info p{
+    font-size: 16px;
+    color: #666666;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.videoOther_moreList{
+    overflow: hidden;
+    padding: 16px 0;
+}
+.videoOther_moreList li{
+    font-size: 16px;
+    color: #333333;
+    position: relative;
+    line-height: 30px;
+    margin: 0 15px;
+    padding-left: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.videoOther_moreList li:after{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top:   -4px;
+    border-top:    4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left:   9px solid #ff840c;
+    content: '';
+}
+.videoOther_moreRecommend_pic{
+    height: 136px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.videoOther_moreRecommend_pic img{
+    width: 100%;
+}
+.videoOther_moreRecommend_title{
+    font-size: 18px;
+    color: #333333;
+    padding: 10px 0 20px;
+    margin: 0 15px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #e4e4e4;
+}
+/*** --------------------- 视频 End --------------------- ***/
 
 /*** --------------------- Begin --------------------- ***/
 /*** --------------------- End --------------------- ***/
