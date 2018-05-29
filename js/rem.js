@@ -19,7 +19,7 @@
 
                 var meta = document.getElementsByTagName('meta');
                 var scale = .4;
-                meta["viewport"].setAttribute('content',"width=device-width,initial-scale=" + scale + ",minimum-scale=" + scale + ",maximum-scale=" + scale + ",user-scalable=yes");
+                meta["viewport"].setAttribute('content',"width=device-width,initial-scale=" + scale + ",minimum-scale=0.1,maximum-scale=3,user-scalable=yes");
             }
 
 

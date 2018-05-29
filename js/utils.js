@@ -1,6 +1,8 @@
 // tab切换
 function changeTab(tabParentDom) {
+    // console.log('changeTab(' +tabParentDom +')');
     $(tabParentDom + ' .tabHeader .tabItem').each(function (i) {
+        // console.log('item ',i);
         $(this).click(function () {
             $(tabParentDom + ' .tabHeader .tabItem').removeClass('active').eq(i).addClass('active');
             $(tabParentDom + ' .tabContainer .tabItem').removeClass('active').eq(i).addClass('active')
@@ -55,11 +57,101 @@ function axisColumn_2() {
     });
 };
 
+$.fn.extend({
+    swipe: function (params) {
+        var _this = $(this);
+        // console.log('hello swipe');
+        // console.log(params.autoPlay);
+        params = params ? params : {};
+        if(params.autoPlay == true || params.autoPlay == undefined){
+            params.autoPlay = 3000
+        }
+        if(params.navigation || params.navigation == undefined){
+            params.navigation = true
+        }
+        if(params.pagination || params.pagination == undefined){
+            params.pagination = true
+        }
 
-window.onload = function () {
+        var init = {
+            autoPlay: params.autoPlay ? params.autoPlay : false,
+            navigation: params.navigation ? params.navigation : false, // 左右切换
+            pagination: params.pagination ? params.pagination : false, // 圆点切换
+            slideLength: _this.find('.slide').length
+        };
+        // console.log('init >>>>>',init);
+        // 默认index
+        _this.find('.swipeContainer').attr('index',0);
+        // 创建左右箭头
+        if(init.pagination){
+            _this.find('.pagination').append('<span class="prev"></span><span class="next"></span>')
+        }
+        // 创建圆点
+        if(init.navigation){
+            for(var i=0;i<init.slideLength;i++){
+                var active = i== 0 ? 'active' : '';
+                _this.find('.navigation').append('<span class="' + active + '"></span>');
+            }
+        }
 
-    var meta = document.getElementsByTagName('meta');
-    meta["viewport"].setAttribute('content',"width=320,initial-scale=0.5,minimum-scale=0.1,maximum-scale=10,user-scalable=yes");
-};
+        var autoPlay;
 
+        if(init.autoPlay){
+            autoPlay = setInterval(function () {
+                swipeChange(1)
+            },init.autoPlay)
+        }
+
+        function swipeChange(number) {
+            // console.log('change swipe');
+            number = number ? number : 1;
+            var index = _this.find('.swipeContainer').attr('index');
+            var sliders = init.slideLength;
+            index = parseFloat(index);
+            // console.log(index,sliders);
+            index += number;
+            if(index >= sliders){ index = 0 }else if(index < 0){ index = sliders - 1 }
+            _this.find('.swipeContainer').attr('index',index);
+            _this.find('.navigation span').removeClass('active').eq(index).addClass('active');
+            _this.find('.slide').removeClass('active').eq(index).addClass('active');
+        }
+
+
+        _this.find('.prev').click(function () {
+            // console.log('prev');
+            swipeChange(-1)
+        });
+        _this.find('.next').click(function () {
+            // console.log('next');
+            swipeChange(1)
+        });
+        _this.hover(function () {
+            if(init.autoPlay){
+                clearInterval(autoPlay)
+            }
+        },function () {
+            if(init.autoPlay){
+                autoPlay = setInterval(function () {
+                    swipeChange(1)
+                },init.autoPlay)
+            }
+        });
+
+        _this.find('.navigation span').each(function (i) {
+            $(this).click(function () {
+                _this.find('.navigation span').removeClass('active').eq(i).addClass('active');
+                _this.find('.slide').removeClass('active').eq(i).addClass('active');
+                _this.find('.swipeContainer').attr('index',i);
+            })
+        });
+    },
+
+    setSize: function (w,h) {
+        var domW  = $(this).outerWidth();
+        var domH = domW * h / w;
+        $(this).height(domH);
+        // console.log(domW,domH);
+        console.log('>>>>>>>>',$(this).selector,w,h);
+    }
+});
 

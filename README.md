@@ -7,8 +7,18 @@
 
 # 代码更改 05281551
 * 所有页面：
-`row` 类 替换为 `customRow`
-`col` 类 替换为 `customCol`
-`col_{n}` 类 替换为 `customCol_{n}`
-- index.html：
-建业视频下面增加更多，跳转到视频列表页面（页面确认后更新）
+
+
+    `row` 类 替换为 `customRow`
+    `col` 类 替换为 `customCol`
+    `col_{n}` 类 替换为 `customCol_{n}`
+    - index.html：
+    建业视频下面增加更多，跳转到视频列表页面（页面确认后更新）
+
+# 代码更改 05291150
+index.html：
+
+    banner增加轮播
+    我们的动态增加轮播，效果未确认
+    我们的动态tab切换逻辑修改
+    我们的服务去掉默认选中第一个状态

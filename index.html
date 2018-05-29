@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 
     <script src="js/rem.js"></script>
-    <!--<link rel="stylesheet" href="js/amazeui.css">-->
-    <!--<link rel="stylesheet" href="js/amazeui.tree.css">-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -31,12 +29,20 @@
 </div>
 <!---------------------- header end ---------------------->
 
-<div class="banner">
-    <img src="images/banner-home.png" alt="">
+
+<div class="swipe" id="banner">
+    
+    <div class="swipeContainer">
+        <div class="slide active"><img src="images/banner-home.png" alt=""></div>
+        <div class="slide"><img src="images/banner-news.png" alt=""></div>
+        <div class="slide"><img src="images/banner-jywy.png" alt=""></div>
+        <div class="slide"><img src="images/banner-about.png" alt=""></div>
+    </div>
+    <div class="navigation"><!-- 圆点 --></div>
+    <div class="pagination"><!-- 上一页下一页 --></div>
+    
 </div>
 <!---------------------- banner or bannerSwipe ---------------------->
-
-
 
 <div>
 
@@ -315,7 +321,38 @@
                         </dd>
                     </dl>
 
-                    <h1 style="padding: .7rem 0;text-align: center;">这里有个轮播1，统一做</h1>
+                    <div class="homeNewsSwipe">
+                        <div class="swipe" id="homeNewsSwipe0">
+                            <div class="swipeContainer">
+                                <div class="slide active">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                    </ul>
+                                </div>
+                                <div class="slide">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-02.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-02.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-02.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-02.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                    </ul>
+                                </div>
+                                <div class="slide">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navigation"><!-- 圆点 --></div>
+                            <div class="pagination"><!-- 上一页下一页 --></div>
+                        </div>
+                    </div>
                 </li>
 
                 <li>
@@ -327,7 +364,38 @@
                         </dd>
                     </dl>
 
-                    <h1 style="padding: .7rem 0;text-align: center;">这里有个轮播2，统一做</h1>
+                    <div class="homeNewsSwipe">
+                        <div class="swipe" id="homeNewsSwipe1">
+                            <div class="swipeContainer">
+                                <div class="slide active">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-02.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-02.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-02.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-02.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                    </ul>
+                                </div>
+                                <div class="slide">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                    </ul>
+                                </div>
+                                <div class="slide">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navigation"><!-- 圆点 --></div>
+                            <div class="pagination"><!-- 上一页下一页 --></div>
+                        </div>
+                    </div>
                 </li>
 
                 <li>
@@ -339,7 +407,38 @@
                         </dd>
                     </dl>
 
-                    <h1 style="padding: .7rem 0;text-align: center;">这里有个轮播3，统一做</h1>
+                    <div class="homeNewsSwipe">
+                        <div class="swipe" id="homeNewsSwipe2">
+                            <div class="swipeContainer">
+                                <div class="slide active">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                    </ul>
+                                </div>
+                                <div class="slide">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                    </ul>
+                                </div>
+                                <div class="slide">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navigation"><!-- 圆点 --></div>
+                            <div class="pagination"><!-- 上一页下一页 --></div>
+                        </div>
+                    </div>
                 </li>
 
                 <li>
@@ -351,7 +450,38 @@
                         </dd>
                     </dl>
 
-                    <h1 style="padding: .7rem 0;text-align: center;">这里有个轮播4，统一做</h1>
+                    <div class="homeNewsSwipe">
+                        <div class="swipe" id="homeNewsSwipe3">
+                            <div class="swipeContainer">
+                                <div class="slide active">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-01.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">河南建业物业管理有限公司</a></p></li>
+                                    </ul>
+                                </div>
+                                <div class="slide">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-03.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">物业管理有限公司</a></p></li>
+                                    </ul>
+                                </div>
+                                <div class="slide">
+                                    <ul class="cl">
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                        <li><div class="homeNewsSwipePic"><img src="images/testPic-04.png"></div><p class="homeNewsSwipePic_text"><a href="news/gskx.html">建业物业</a></p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navigation"><!-- 圆点 --></div>
+                            <div class="pagination"><!-- 上一页下一页 --></div>
+                        </div>
+                    </div>
                 </li>
 
 
@@ -386,55 +516,79 @@
 
                         <div class="customCol customCol_6 homeCompanyInItem">
                             <div class="customRow">
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
                             </div>
                         </div>
 
                         <div class="customCol customCol_6 homeCompanyInItem">
                             <div class="customRow">
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
                             </div>
                         </div>
 
                         <div class="customCol customCol_6 homeCompanyInItem">
                             <div class="customRow">
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
                             </div>
                         </div>
 
                         <div class="customCol customCol_6 homeCompanyInItem">
                             <div class="customRow">
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
                             </div>
                         </div>
 
                         <div class="customCol customCol_6 homeCompanyInItem">
                             <div class="customRow">
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
                             </div>
                         </div>
 
                         <div class="customCol customCol_6 homeCompanyInItem">
                             <div class="customRow">
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
-                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div><div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div>
+                                <div class="customCol customCol_4 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
                             </div>
                         </div>
 
@@ -458,7 +612,7 @@
 
         <div class="homeServiceInfo">
             <div class="customRow containerWidth">
-                <div class="customCol customCol_6 homeServiceItem active">
+                <div class="customCol customCol_6 homeServiceItem">
                     <ul>
                         <li class="homeServicePic"><img src="images/videoPic.png" alt=""></li>
                         <li class="homeServiceName"><div class="middleOut"><div class="middleIn"><p><span>智慧社区</span><br><small>Intelligent Community</small></p></div></div></li>
@@ -690,10 +844,10 @@
         })
     });
     // 我们的动态tab切换
-    $('.homeNewsTabHeader li').each(function (i) {
+    $('.homeNewsTabHeader > li').each(function (i) {
         $(this).click(function () {
-            $('.homeNewsTabHeader li').removeClass('active').eq(i).addClass('active');
-            $('.homeNewsTabConatainer li').removeClass('active').eq(i).addClass('active');
+            $('.homeNewsTabHeader > li').removeClass('active').eq(i).addClass('active');
+            $('.homeNewsTabConatainer > li').removeClass('active').eq(i).addClass('active');
         })
     });
     // 企业文化和公司介绍切换
@@ -710,6 +864,13 @@
         })
     });
 
+    $('#banner').setSize(1920,570);
+    $('#banner').swipe();
+    $('.homeNewsTabConatainer dt').setSize(440,225);
+    $('#homeNewsSwipe0').swipe({ autoPlay: false });
+    $('#homeNewsSwipe1').swipe({ autoPlay: false });
+    $('#homeNewsSwipe2').swipe({ autoPlay: false });
+    $('#homeNewsSwipe3').swipe({ autoPlay: false });
 
 
 

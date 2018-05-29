@@ -142,6 +142,7 @@ body{
     font-size: 60px;
     line-height: 60px;
     display: inline-block;
+    font-family: Arial;
 }
 .moduleName span{
     position: absolute;
@@ -628,21 +629,22 @@ body{
     font-size: 24px;
     color: #09499b;
     width: 325px;
-    margin: -12px 20px 12px;
+    margin: -12px 20px 12px 0;
     float: left;
 }
 .homeNewsTabConatainer{
     overflow: hidden;
     box-shadow:  0 0 8px #efefef;
-    padding: 25px 50px;
+    padding: 25px 50px 0;
     margin-right: 8px;
     font-size: 14px;
     color: #666666;
     line-height: 1.5em;
 }
 .homeNewsTabHeader li{
-    height:      98px;
-    line-height: 98px;
+    height:      100px;
+    line-height: 100px;
+    width: 320px;
     margin: 12px 0;
     background: #fff;
     box-shadow: 0 0 5px #efefef;
@@ -651,7 +653,7 @@ body{
     cursor: pointer;
 }
 .homeNewsTabHeader div{
-    margin-left: 98px;
+    margin-left: 100px;
     text-align: center;
 }
 .homeNewsTabHeader i{
@@ -702,6 +704,7 @@ body{
 .homeNewsTabConatainer dt{
     float: left;
     width: 58%;
+    overflow: hidden;
     margin-right: 30px;
 }
 .homeNewsTabConatainer img{
@@ -709,6 +712,61 @@ body{
 }
 .homeNewsTabConatainer dd{
     overflow: hidden;
+}
+
+.homeNewsSwipe{
+    /*box-shadow: 0 0 1px red;*/
+    margin-top: 20px;
+    width: 740px;
+    height: 170px;
+}
+.homeNewsSwipe ul{
+}
+.homeNewsSwipe li{
+    display: block;
+    float: left;
+    width: 140px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+.homeNewsSwipe ul li:first-child{
+    margin-left: 0;
+}
+.homeNewsSwipePic{
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+}
+.homeNewsSwipePic_text{
+    line-height: 30px;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.homeNewsSwipePic_text a{
+    color: inherit;
+}
+.homeNewsSwipe li:hover .homeNewsSwipePic_text{
+    color: #ff840c;
+}
+.homeNewsSwipe .pagination .prev{
+    width: 9px;
+    height: 19px;
+    margin-top: -10px;
+    left: -34px;
+    background: url(../images/homeNewsSwipe_prev.png) center center no-repeat;
+    background-size: 100%;
+}
+.homeNewsSwipe .pagination .next{
+    width: 9px;
+    height: 19px;
+    margin-top: -10px;
+    right: -34px;
+    background: url(../images/homeNewsSwipe_next.png) center center no-repeat;
+    background-size: 100%;
 }
 /*** --------------------- 首页 - 我们的动态 End --------------------- ***/
 
@@ -2902,7 +2960,7 @@ body{
 .aboutTeam_container{
     background: #09203F url(../images/aboutTeam_bg.png) center center no-repeat;
     background-size: 100%;
-    /*height: 1000px;*/
+    height: 836px;
     position: relative;
     margin-top: 60px;
 }
@@ -2929,12 +2987,28 @@ body{
     margin: 0 auto;
     height: 100%;
     width: 1170px;
+    box-shadow: 0 0 10px red;
     /*box-shadow: 0 0 1px red;*/
+    position: relative;
 }
-
-
-
-
+.team_prev,.team_next{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 70px;
+    z-index: 3;
+    background-size: 100%;
+    cursor: pointer;
+}
+.team_prev{
+    left: -55px;
+    background: url(../images/team_icon_prev.png) center center no-repeat;
+}
+.team_next{
+    right: -55px;
+    background: url(../images/team_icon_next.png) center center no-repeat;
+}
 
 .aboutTeamMask{
     position: absolute;
@@ -2966,11 +3040,37 @@ body{
 }
 
 /*-----*/
+.aboutTeamListView{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+.aboutTeamListView_container{
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    margin-left: 0;
+    transition: margin-left 0.3s ease-in-out;
+}
 .aboutTeamList{
     overflow: hidden;
     margin: 0 auto;
     padding: 110px 0;
-    /*width: 1176px;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*opacity: 0;*/
+    display: inline-block;
+    width: 1170px;
+
+}
+.aboutTeamList.active{
+    /*opacity: 1;*/
 }
 .aboutTeamList li{
     float: left;
@@ -3318,15 +3418,42 @@ body{
 }
 .exempt{
     margin: 140px auto 100px;
+    overflow: hidden;
+    padding: 15px;
+}
+.exemptNav{
+    float: left;
+    width: 195px;
+    min-height: 500px;
+    background: #fff;
+    box-shadow: 0 0 15px #eee;
+    margin-right: 90px;
+}
+.exemptNav a{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    text-align: center;
+    color: #333333;
+    width: 100%;
+}
+.exemptNav a.active{
+    background: #ff840c;
+    color: #fff;
+    margin-right: 60px;
 }
 .exemptTextView{
-
+    overflow: hidden;
+    margin-right: 40px;
 }
 .exemptTextView h2{
     text-align: center;
     font-size: 24px;
     color: #333;
     line-height: 1em;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeebea;
 }
 .exemptTextView p{
     font-size: 18px;
@@ -3335,7 +3462,6 @@ body{
     line-height: 30px;
     margin-top: 35px;
     text-align: justify;
-    padding: 0 40px;
 }
 /*** --------------------- 免责声明 End --------------------- ***/
 
@@ -3511,7 +3637,85 @@ body{
 
 /*** --------------------- Begin --------------------- ***/
 /*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------- 轮播 -----------------------------------------------------------------------------------------------------------------*/
+.swipe{
+    position: relative;
+    /*height: 570px;*/
+    width: 100%;
+    height: 100%;
+}
+.swipeContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /*z-index: 1;*/
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.slide.active{
+    z-index: 2;
+    opacity: 1;
+}
+.slide img{ /* 测试代码 */
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 45px;
+    text-align: center;
+    z-index: 3;
+    font-size: 0;
+}
+.navigation span{
+    display: inline-block;
+    width: 10px;
+    height:10px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 5px #e9e7e7;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: width 0.5s ease-in-out;
+}
+.navigation span.active{
+    width: 20px;
+}
+.pagination .prev,.pagination .next{
+    position: absolute;
+    top: 50%;
+    width:  50px;
+    height: 50px;
+    margin-top: -25px;
+    background: rgba(0,0,0,.5);
+    z-index: 3;
+    cursor: pointer;
+
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-size: 30px;
+}
+.pagination .prev{
+    left: 50px;
+}
+.pagination .next{
+    right: 50px;
+}
 /*** --------------------- Begin --------------------- ***/
 /*** --------------------- End --------------------- ***/
 
