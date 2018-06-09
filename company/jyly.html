@@ -29,8 +29,17 @@
 </div>
 <!---------------------- header end ---------------------->
 
-<div class="banner">
-    <img src="../images/banner-news.png" alt="">
+<div class="swipe banner" id="banner">
+
+    <div class="swipeContainer">
+        <div class="slide active"><img src="../images/banner-home.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-news.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-jywy.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-about.png" alt=""></div>
+    </div>
+    <div class="navigation"><!-- 圆点 --></div>
+    <div class="pagination"><!-- 上一页下一页 --></div>
+
 </div>
 <!---------------------- banner or bannerSwipe ---------------------->
 
@@ -39,25 +48,26 @@
 <div>
 
     <div class="companyHeader containerWidth">
-        <ul class="companyNav row">
-            <li class="col col_6"><a href="jywy.html"><span>建业物业</span></a></li>
-            <li class="col col_6"><a href="sykj.html"><span>嵩云科技</span></a></li>
-            <li class="col col_6"><a href="javascript:void(0)" class="active"><span>建业旅游</span></a></li>
-            <li class="col col_6"><a href="jyjd.html"><span>建业酒店管理</span></a></li>
-            <li class="col col_6"><a href="jydy.html"><span>建业东英</span></a></li>
-            <li class="col col_6"><a href="mhj.html"><span>美好家孵化器</span></a></li>
+        <ul class="companyNav customRow">
+            <li class="customCol customCol_6"><a href="jywy.html"><span>建业物业</span></a></li>
+            <li class="customCol customCol_6"><a href="sykj.html"><span>嵩云科技</span></a></li>
+            <li class="customCol customCol_6"><a href="javascript:void(0)" class="active"><span>建业旅游</span></a></li>
+            <li class="customCol customCol_6"><a href="jyjd.html"><span>建业酒店管理</span></a></li>
+            <li class="customCol customCol_6"><a href="jydy.html"><span>建业东英</span></a></li>
+            <!--<li class="customCol customCol_6"><a href="mhj.html"><span>美好家孵化器</span></a></li>-->
         </ul>
     </div>
 
 
     <div class="jyly_about containerWidth">
-        <h2 class="moduleName companyModuleName"><i>tourism</i><span>关于建业旅游</span></h2>
+        <h2 class="moduleName companyModuleName"><i>tourism</i><span>建业旅游</span></h2>
         <div class="jyly_about_info">
-            <div class="jyly_about_l"><img src="../images/test-jyly-pic.png" alt=""></div>
-            <div class="jyly_about_r"><img src="../images/test-jyly-pic.png" alt=""></div>
+            <div class="jyly_about_l" style="background-image: url(../images/test-jyly-pic.png)"></div>
+            <div class="jyly_about_r" style="background-image: url(../images/test-jyly-pic.png)"></div>
             <div class="jyly_about_c">
                 <h2><span>建业旅游</span></h2>
                 <p>河南建业新生活旅游服务有限公司，创办于2016年5月18日，注册资金一亿元人民币为建业集团投资设立的子公司。建业旅游秉承建业集团“追求卓越，坚忍图成”的企业精神与“根植中原，造福百姓”的核心价值观，依托建业品牌优势、客户资源及服务网络整合内外部优质资源，为客户提供个性化、差异化、定制化的旅游服务。</p>
+                <p>Company uphold the company group "the pursuit of excellence, perseverance figure into" spirit of enterprise and "grounding zhongyuan, serving the people" core values, relying on the company brand advantage, network integration of internal and external quality resources, customer resources and services to provide personalized, differentiated, customized travel service.</p>
                 <div class="jyly_about_link"><a href="#">进入官网</a></div>
             </div>
         </div>
@@ -67,9 +77,9 @@
         <h2 class="moduleName companyModuleName"><i>service</i><span>我们的服务</span></h2>
         <div class="jyly_service_info">
 
-            <ul class="row">
+            <ul class="customRow">
 
-                <li class="col col_4 active">
+                <li class="customCol customCol_4 active">
                     <div class="jyly_service_item" style="background-image: url(../images/test-jyly-pic.png)">
                         <div class="jyly_service_item_info">
                             <h4>巴厘岛冲浪</h4>
@@ -78,7 +88,7 @@
                         <h3>旅游度假</h3>
                     </div>
                 </li>
-                <li class="col col_4">
+                <li class="customCol customCol_4">
                     <div class="jyly_service_item" style="background-image: url(../images/test-jyly-pic.png)">
                         <div class="jyly_service_item_info">
                             <h4>巴厘岛冲浪</h4>
@@ -87,7 +97,7 @@
                         <h3>旅游度假</h3>
                     </div>
                 </li>
-                <li class="col col_4">
+                <li class="customCol customCol_4">
                     <div class="jyly_service_item" style="background-image: url(../images/test-jyly-pic.png)">
                         <div class="jyly_service_item_info">
                             <h4>巴厘岛冲浪</h4>
@@ -110,29 +120,26 @@
 
 
 
-
-
-
-
-
-
-
 <!---------------------- footer begin ---------------------->
 <div class="footer">
-    <ul class="other containerWidth row">
-        <li class="col col_3">
+    <ul class="other containerWidth customRow">
+        <li class="customCol customCol_3">
             <dl>
                 <dt><img src="../images/wxCode.png" alt=""></dt>
-                <dd><div><div><span>扫描二维码</span><br><span>关注最新讯息</span></div></div></dd>
+                <dd>
+                    <div>
+                        <div><span>扫描二维码</span><br><span>关注最新讯息</span></div>
+                    </div>
+                </dd>
             </dl>
         </li>
-        <li class="col col_3">
+        <li class="customCol customCol_3">
             <dl>
                 <dt class="icon_tel"></dt>
                 <dd><p><span>服务热线</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
             </dl>
         </li>
-        <li class="col col_3">
+        <li class="customCol customCol_3">
             <dl>
                 <dt class="icon_cooperation"></dt>
                 <dd><p><span>品牌合作</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
@@ -163,22 +170,15 @@
             <dt><a href="../index.html"><img class="footerLogo" src="../images/footer-logo.png" alt=""></a></dt>
             <dd>
                 <div class="footerBarInfo">
-                    <!--<div class="footerBarLink">-->
-                    <!--<a href="about.html">关于我们</a>-->
-                    <!--<a href="contact.html">联系我们</a>-->
-                    <!--<a href="exempt.html">免责声明</a>-->
-                    <!--</div>-->
-                    <!--<div>-->
+                    <div class="footerBarLink"><a href="../about.html">关于我们</a><a href="../contact.html">联系我们</a><a href="../exempt.html">免责声明</a></div>
+                    <div><span>copyright©2017河南建业新生活服务有限公司</span><span>豫ICP备 18005200号</span><span>技术支持by嵩云科技</span></div>
+
                     <!--<span>copyright©2017河南建业新生活服务有限公司</span>-->
                     <!--<span>豫ICP备 18005200号</span>-->
                     <!--<span>技术支持by嵩云科技</span>-->
-                    <!--</div>-->
-                    <span>copyright©2017河南建业新生活服务有限公司</span>
-                    <span>豫ICP备 18005200号</span>
-                    <span>技术支持by嵩云科技</span>
-                    <a href="../about.html">关于我们</a>
-                    <a href="../contact.html">联系我们</a>
-                    <a href="../exempt.html">免责声明</a>
+                    <!--<a href="../about.html">关于我们</a>-->
+                    <!--<a href="../contact.html">联系我们</a>-->
+                    <!--<a href="../exempt.html">免责声明</a>-->
 
                 </div>
             </dd>

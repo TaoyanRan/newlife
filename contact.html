@@ -28,14 +28,22 @@
 </div>
 <!---------------------- header end ---------------------->
 
-<div class="banner">
-    <img src="images/banner-home.png" alt="">
+<div class="swipe banner" id="banner">
+
+    <div class="swipeContainer">
+        <div class="slide active"><img src="images/banner-home.png" alt=""></div>
+        <div class="slide"><img src="images/banner-news.png" alt=""></div>
+        <div class="slide"><img src="images/banner-jywy.png" alt=""></div>
+        <div class="slide"><img src="images/banner-about.png" alt=""></div>
+    </div>
+    <div class="navigation"><!-- 圆点 --></div>
+    <div class="pagination"><!-- 上一页下一页 --></div>
+
 </div>
 <!---------------------- banner or bannerSwipe ---------------------->
 
 
 <div>
-
 
     <div class="companyHeader containerWidth">
         <ul class="companyNav customRow aboutNav">
@@ -43,7 +51,6 @@
             <li class="customCol customCol_2"><a href="joinus.html"><span>招贤纳士</span></a></li>
         </ul>
     </div>
-
 
     <div class="concatUs containerWidth">
         <h2 class="moduleName aboutModuleName"><i>Contact</i><span>联系我们</span></h2>
@@ -60,23 +67,21 @@
             </div>
         </div>
 
-        <ul class="concatUs_Info containerWidth">
+        <ul class="concatUs_Info">
 
             <li class="concatUs_type">
                 <em>联系方式</em>
                 <p class="concatUs_type_tel"><a href="tel:0371-9617777">0371-9617777</a></p>
                 <p class="concatUs_type_address">中国郑州市农业东路建业总部港E座</p>
-                <p class="concatUs_type_email"><a href="www.ccnewlife.com.cn">www.ccnewlife.com.cn</a></p>
+                <p class="concatUs_type_email"><a href="mailto:www.ccnewlife.com.cn">www.ccnewlife.com.cn</a></p>
             </li>
             <li class="concatUs_cooperate">
                 <em>商务合作</em>
                 <p>
-                    <span>战略合作</span><br>
-                    <span>合作电话:</span>
+                    <span>战略合作:</span>
                     <a href="tel:0371-86592615">0371-86592615</a>
                 </p>
                 <p>
-                    <span>战略合作</span><br>
                     <span>品牌合作:</span>
                     <a href="tel:0371-9617777">0371-9617777</a>
                 </p>
@@ -93,12 +98,7 @@
 
     </div>
 
-
-
-
 </div>
-
-
 
 
 <!---------------------- footer begin ---------------------->
@@ -147,22 +147,22 @@
             <dt><a href="index.html"><img class="footerLogo" src="images/footer-logo.png" alt=""></a></dt>
             <dd>
                 <div class="footerBarInfo">
-                    <!--<div class="footerBarLink">-->
-                    <!--<a href="about.html">关于我们</a>-->
-                    <!--<a href="contact.html">联系我们</a>-->
-                    <!--<a href="exempt.html">免责声明</a>-->
-                    <!--</div>-->
-                    <!--<div>-->
+                    <div class="footerBarLink">
+                        <a href="about.html">关于我们</a>
+                        <a href="contact.html">联系我们</a>
+                        <a href="exempt.html">免责声明</a>
+                    </div>
+                    <div>
+                        <span>copyright©2017河南建业新生活服务有限公司</span>
+                        <span>豫ICP备 18005200号</span>
+                        <span>技术支持by嵩云科技</span>
+                    </div>
                     <!--<span>copyright©2017河南建业新生活服务有限公司</span>-->
                     <!--<span>豫ICP备 18005200号</span>-->
                     <!--<span>技术支持by嵩云科技</span>-->
-                    <!--</div>-->
-                    <span>copyright©2017河南建业新生活服务有限公司</span>
-                    <span>豫ICP备 18005200号</span>
-                    <span>技术支持by嵩云科技</span>
-                    <a href="about.html">关于我们</a>
-                    <a href="contact.html">联系我们</a>
-                    <a href="exempt.html">免责声明</a>
+                    <!--<a href="about.html">关于我们</a>-->
+                    <!--<a href="contact.html">联系我们</a>-->
+                    <!--<a href="exempt.html">免责声明</a>-->
 
                 </div>
             </dd>
@@ -173,6 +173,7 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/utils.js"></script>
 <script>
+
 
 </script>
 </html>

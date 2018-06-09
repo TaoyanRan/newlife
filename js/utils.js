@@ -145,13 +145,79 @@ $.fn.extend({
             })
         });
     },
-
     setSize: function (w,h) {
         var domW  = $(this).outerWidth();
         var domH = domW * h / w;
         $(this).height(domH);
         // console.log(domW,domH);
-        console.log('>>>>>>>>',$(this).selector,w,h);
+        console.log('>>>>>>>>',$(this).selector,w,h,domW,domH);
+    },
+    mySlider: function () {
+        var selector = $(this).selector;
+
+        var sliderContainer = $(selector + ' .sliderContainer');
+        var sliderWrapper   = $(selector + ' .sliderWrapper');
+        var sliderItem      = $(selector + ' .sliderItem');
+        var prev            = $(selector + ' .prev');
+        var next            = $(selector + ' .next');
+
+        var minScroll = sliderContainer.width();
+        var appendSliderItem  = sliderItem.eq(0).prop("outerHTML");
+        var prependSliderItem = sliderItem.eq(sliderItem.length - 1).prop("outerHTML");
+
+        sliderWrapper.append(appendSliderItem);
+        sliderWrapper.prepend(prependSliderItem);
+        sliderItem.each(function () {
+            $(this).width($(this).parent().parent().width())
+        });
+
+
+        sliderWrapper.width(sliderWrapper.parent().width() * sliderWrapper.children().length);
+
+        sliderContainer.scrollLeft(minScroll);
+        var maxScroll = sliderWrapper.parent().width() * (sliderWrapper.children().length - 1);
+
+        next.click(function () {
+            if($(this).attr('disabled')){
+                return false
+            }
+            changeSlider(1)
+        });
+
+        prev.click(function () {
+            if($(this).attr('disabled')){
+                return false
+            }
+            changeSlider(-1)
+        });
+
+
+        function changeSlider(direction) {
+            prev.attr('disabled','disabled');
+            next.attr('disabled','disabled');
+
+            var nowScroll = sliderContainer.scrollLeft();
+            var endScroll = nowScroll + minScroll * direction;
+
+            sliderContainer.animate({
+                'scrollLeft': endScroll
+            },function () {
+                if(endScroll <= 0){
+                    sliderContainer.scrollLeft(maxScroll - minScroll);
+                }else if(endScroll >= maxScroll){
+                    sliderContainer.scrollLeft(minScroll);
+                }
+                prev.removeAttr('disabled');
+                next.removeAttr('disabled');
+            });
+
+        }
     }
 });
+
+// banner
+$('.banner').setSize(1920,635);
+if($('#banner')){
+    $('#banner').swipe();
+}
 

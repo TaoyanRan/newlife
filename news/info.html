@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 
     <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -26,15 +27,19 @@
     </div>
 </div>
 <!---------------------- header end ---------------------->
+<!--<div class="swipe banner" id="banner">
 
-<div class="banner">
-    <img src="../images/banner-news.png" alt="">
-</div>
+    <div class="swipeContainer">
+        <div class="slide active"><img src="../images/banner-home.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-news.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-jywy.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-about.png" alt=""></div>
+    </div>
+    <div class="navigation">&lt;!&ndash; 圆点 &ndash;&gt;</div>
+    <div class="pagination">&lt;!&ndash; 上一页下一页 &ndash;&gt;</div>
+
+</div>-->
 <!---------------------- banner or bannerSwipe ---------------------->
-
-
-
-
 
 
 <div class="article containerWidth">
@@ -85,13 +90,10 @@
 
 
 
+
+
+
 </div>
-
-
-
-
-
-
 
 
 <!---------------------- footer begin ---------------------->
@@ -100,7 +102,11 @@
         <li class="customCol customCol_3">
             <dl>
                 <dt><img src="../images/wxCode.png" alt=""></dt>
-                <dd><div><div><span>扫描二维码</span><br><span>关注最新讯息</span></div></div></dd>
+                <dd>
+                    <div>
+                        <div><span>扫描二维码</span><br><span>关注最新讯息</span></div>
+                    </div>
+                </dd>
             </dl>
         </li>
         <li class="customCol customCol_3">
@@ -140,22 +146,15 @@
             <dt><a href="../index.html"><img class="footerLogo" src="../images/footer-logo.png" alt=""></a></dt>
             <dd>
                 <div class="footerBarInfo">
-                    <!--<div class="footerBarLink">-->
-                    <!--<a href="about.html">关于我们</a>-->
-                    <!--<a href="contact.html">联系我们</a>-->
-                    <!--<a href="exempt.html">免责声明</a>-->
-                    <!--</div>-->
-                    <!--<div>-->
+                    <div class="footerBarLink"><a href="../about.html">关于我们</a><a href="../contact.html">联系我们</a><a href="../exempt.html">免责声明</a></div>
+                    <div><span>copyright©2017河南建业新生活服务有限公司</span><span>豫ICP备 18005200号</span><span>技术支持by嵩云科技</span></div>
+
                     <!--<span>copyright©2017河南建业新生活服务有限公司</span>-->
                     <!--<span>豫ICP备 18005200号</span>-->
                     <!--<span>技术支持by嵩云科技</span>-->
-                    <!--</div>-->
-                    <span>copyright©2017河南建业新生活服务有限公司</span>
-                    <span>豫ICP备 18005200号</span>
-                    <span>技术支持by嵩云科技</span>
-                    <a href="../about.html">关于我们</a>
-                    <a href="../contact.html">联系我们</a>
-                    <a href="../exempt.html">免责声明</a>
+                    <!--<a href="../about.html">关于我们</a>-->
+                    <!--<a href="../contact.html">联系我们</a>-->
+                    <!--<a href="../exempt.html">免责声明</a>-->
 
                 </div>
             </dd>
@@ -164,10 +163,12 @@
 </div>
 </body>
 <script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="../js/utils.js"></script>
 
 <script>
 
+    // $('#banner').swipe()
 
 
 </script>

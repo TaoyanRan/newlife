@@ -28,8 +28,17 @@
 </div>
 <!---------------------- header end ---------------------->
 
-<div class="banner">
-    <img src="images/banner-home.png" alt="">
+<div class="swipe banner" id="banner">
+
+    <div class="swipeContainer">
+        <div class="slide active"><img src="images/banner-home.png" alt=""></div>
+        <div class="slide"><img src="images/banner-news.png" alt=""></div>
+        <div class="slide"><img src="images/banner-jywy.png" alt=""></div>
+        <div class="slide"><img src="images/banner-about.png" alt=""></div>
+    </div>
+    <div class="navigation"><!-- 圆点 --></div>
+    <div class="pagination"><!-- 上一页下一页 --></div>
+
 </div>
 <!---------------------- banner or bannerSwipe ---------------------->
 
@@ -50,7 +59,7 @@
 
 
         <div class="aboutView1">
-            <div class="aboutView1_pic"><img src="images/aboutView-01.png" alt=""></div>
+            <div class="aboutView1_pic" style="background-image: url(images/aboutView-01.png)"></div>
             <div class="aboutView1_card">
                 <h2>Jian Ye</h2>
                 <p>NEW LIFE & SERVICE COMPANY</p>
@@ -62,7 +71,7 @@
         </div>
 
         <div class="aboutView2">
-            <div class="aboutView2_pic"><img src="images/aboutView-02.png" alt=""></div>
+            <div class="aboutView2_pic" style="background-image: url(images/aboutView-02.png)"></div>
             <div class="aboutView_des">
                 <p>建业新生活公司目前拥有六家专业公司: <em>建业美好家孵化器、建业物业、嵩云科技、建业旅游、建业酒店管理和建业东英</em>，从而在生活服务领域提供一系列相关的产品和服务。</p>
                 <p>建业新生活公司将通过美丽乡村、资产配置、度假休闲、旅游商务、娱乐休闲、智能家居、绿色健康及酒店式高端等一系列全维度的高品质生活服务和产品，盛享建业集团全资源、大商业生态环境，不断创新和优化来满足客户日益升级的多元生活需求，实现建业集团向“<em>新型生活方式服务商</em>”转型的战略目标，将以建业品牌信用为纽带，打造建业“幸福矩阵”; 创建生活共享、智慧共融、商务合作、投资共赢的共享平台，为中原人民创造全新的生活方式和幸福源泉。</p>
@@ -125,22 +134,22 @@
             <dt><a href="index.html"><img class="footerLogo" src="images/footer-logo.png" alt=""></a></dt>
             <dd>
                 <div class="footerBarInfo">
-                    <!--<div class="footerBarLink">-->
-                    <!--<a href="about.html">关于我们</a>-->
-                    <!--<a href="contact.html">联系我们</a>-->
-                    <!--<a href="exempt.html">免责声明</a>-->
-                    <!--</div>-->
-                    <!--<div>-->
+                    <div class="footerBarLink">
+                        <a href="about.html">关于我们</a>
+                        <a href="contact.html">联系我们</a>
+                        <a href="exempt.html">免责声明</a>
+                    </div>
+                    <div>
+                        <span>copyright©2017河南建业新生活服务有限公司</span>
+                        <span>豫ICP备 18005200号</span>
+                        <span>技术支持by嵩云科技</span>
+                    </div>
                     <!--<span>copyright©2017河南建业新生活服务有限公司</span>-->
                     <!--<span>豫ICP备 18005200号</span>-->
                     <!--<span>技术支持by嵩云科技</span>-->
-                    <!--</div>-->
-                    <span>copyright©2017河南建业新生活服务有限公司</span>
-                    <span>豫ICP备 18005200号</span>
-                    <span>技术支持by嵩云科技</span>
-                    <a href="about.html">关于我们</a>
-                    <a href="contact.html">联系我们</a>
-                    <a href="exempt.html">免责声明</a>
+                    <!--<a href="about.html">关于我们</a>-->
+                    <!--<a href="contact.html">联系我们</a>-->
+                    <!--<a href="exempt.html">免责声明</a>-->
 
                 </div>
             </dd>
@@ -152,7 +161,6 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/utils.js"></script>
 <script>
-
 
 
 </script>

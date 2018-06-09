@@ -2,26 +2,24 @@
 	var docEl = doc.documentElement,
 		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
 		recalc = function() {
-			var clientWidth = docEl.clientWidth;
-            console.log(clientWidth)
-			if(!clientWidth) return;
-			if(clientWidth >= 1280){
-                // docEl.style.fontSize = clientWidth / 13.66 + 'px';
-                // docEl.style.fontSize = clientWidth / 19.2 + 'px';
-                docEl.style.fontSize = '100px';
 
-            }else if(clientWidth < 640){
-				docEl.style.fontSize = clientWidth / 7.5 + 'px';
-			}
+            var clientWidth = docEl.clientWidth;
+            console.log(clientWidth);
+            if(!clientWidth) return;
 
-
-			if(clientWidth <= 960){
-
-                var meta = document.getElementsByTagName('meta');
-                var scale = .4;
-                meta["viewport"].setAttribute('content',"width=device-width,initial-scale=" + scale + ",minimum-scale=0.1,maximum-scale=3,user-scalable=yes");
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) || /(Android)/i.test(navigator.userAgent)) {
+                docEl.style.fontSize = clientWidth / 7.5 + 'px'; // 默认iPhone6 750设计稿
+                console.log('mobile',docEl.style.fontSize)
+            }else {
+                docEl.style.fontSize = clientWidth / 16 + 'px'; // 主题内容 62.5% = 10rem
+                console.log('PC',docEl.style.fontSize);
             }
 
+
+
+            // var meta = document.getElementsByTagName('meta');
+            // var scale = .4;
+            // meta["viewport"].setAttribute('content',"width=device-width,initial-scale=" + scale + ",minimum-scale=0.1,maximum-scale=3,user-scalable=yes");
 
 		};
 

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 
     <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -28,9 +29,17 @@
     </div>
 </div>
 <!---------------------- header end ---------------------->
+<div class="swipe banner" id="banner">
 
-<div class="banner">
-    <img src="../images/banner-news.png" alt="">
+    <div class="swipeContainer">
+        <div class="slide active"><img src="../images/banner-home.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-news.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-jywy.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-about.png" alt=""></div>
+    </div>
+    <div class="navigation"><!-- 圆点 --></div>
+    <div class="pagination"><!-- 上一页下一页 --></div>
+
 </div>
 <!---------------------- banner or bannerSwipe ---------------------->
 
@@ -43,12 +52,12 @@
         <div class="newsNav">
             <div class="containerWidth newsNav_container">
                 <div class="news_search"><div class="search"><input type="text"><span class="searchIcon"></span></div></div>
-                <div class="newsLink alignLeft">
+                <div class="newsLink"><!-- alignLeft -->
                     <a href="javascript:void(0)" class="active">公司快讯</a>
                     <a href="mtbd.html">媒体报道</a>
                     <a href="jtxw.html">集团新闻</a>
                     <a href="shry.html">所获荣誉</a>
-                    <a href="hydt.html">行业动态</a>
+                    <!--<a href="hydt.html">行业动态</a>-->
                 </div>
             </div>
         </div>
@@ -57,10 +66,7 @@
 
     <div class="news">
         <div class="gskx">
-            <div class="gskx_title">
-                <div>最新资讯</div>
-                <div>news</div>
-            </div>
+            <!--<div class="gskx_title"><div>最新资讯</div><div>news</div></div>-->
             <ul class="gskx_newsList customRow containerWidth">
                 <li class="customCol customCol_2">
                     <div class="gskx_newsPic"><img src="../images/test-news-pic-01.png" alt=""></div>
@@ -219,16 +225,21 @@
         </div>
     </div>
 
+
+    <div class="articlePagination">
+
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </div>
+
 </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -238,7 +249,11 @@
         <li class="customCol customCol_3">
             <dl>
                 <dt><img src="../images/wxCode.png" alt=""></dt>
-                <dd><div><div><span>扫描二维码</span><br><span>关注最新讯息</span></div></div></dd>
+                <dd>
+                    <div>
+                        <div><span>扫描二维码</span><br><span>关注最新讯息</span></div>
+                    </div>
+                </dd>
             </dl>
         </li>
         <li class="customCol customCol_3">
@@ -278,22 +293,15 @@
             <dt><a href="../index.html"><img class="footerLogo" src="../images/footer-logo.png" alt=""></a></dt>
             <dd>
                 <div class="footerBarInfo">
-                    <!--<div class="footerBarLink">-->
-                    <!--<a href="about.html">关于我们</a>-->
-                    <!--<a href="contact.html">联系我们</a>-->
-                    <!--<a href="exempt.html">免责声明</a>-->
-                    <!--</div>-->
-                    <!--<div>-->
+                    <div class="footerBarLink"><a href="../about.html">关于我们</a><a href="../contact.html">联系我们</a><a href="../exempt.html">免责声明</a></div>
+                    <div><span>copyright©2017河南建业新生活服务有限公司</span><span>豫ICP备 18005200号</span><span>技术支持by嵩云科技</span></div>
+
                     <!--<span>copyright©2017河南建业新生活服务有限公司</span>-->
                     <!--<span>豫ICP备 18005200号</span>-->
                     <!--<span>技术支持by嵩云科技</span>-->
-                    <!--</div>-->
-                    <span>copyright©2017河南建业新生活服务有限公司</span>
-                    <span>豫ICP备 18005200号</span>
-                    <span>技术支持by嵩云科技</span>
-                    <a href="../about.html">关于我们</a>
-                    <a href="../contact.html">联系我们</a>
-                    <a href="../exempt.html">免责声明</a>
+                    <!--<a href="../about.html">关于我们</a>-->
+                    <!--<a href="../contact.html">联系我们</a>-->
+                    <!--<a href="../exempt.html">免责声明</a>-->
 
                 </div>
             </dd>
@@ -302,6 +310,7 @@
 </div>
 </body>
 <script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="../js/utils.js"></script>
 
 <script>
@@ -309,7 +318,7 @@
 
 
 
-    axisColumn_2()
+    axisColumn_2();
 
 
 

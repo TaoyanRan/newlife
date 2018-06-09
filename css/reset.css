@@ -39,6 +39,7 @@ img,a{
 img{
     vertical-align: top;
     border: 0;
+    max-width: 100%;
 }
 a,a:active,a:hover {
     text-decoration: none;
