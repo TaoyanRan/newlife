@@ -1396,7 +1396,7 @@ body{
 }
 
 /* -- 时间轴 - 单轴两列 -- */
-.axisColumn-2{ overflow: hidden;height: 9.4rem; }
+.axisColumn-2{ overflow: hidden;max-height: 9.4rem; }
 .axisColumn-2 .axisColumn_l,.axisColumn_r{ float: left;width: 50%; }
 
 .axisColumn-2 .axisColumn_l li { padding: 15px 25px 20px 0;box-sizing: border-box; }
