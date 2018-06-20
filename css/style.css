@@ -2206,6 +2206,7 @@ body{
 }
 .jyjd_management_info{
     overflow: hidden;
+    position: relative;
 }
 .jyjd_management_info_pic{
     float: left;
@@ -2237,7 +2238,11 @@ body{
     z-index: 3;
 }
 .jyjd_management_info_container{
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 3.75rem;
     overflow: hidden;
 }
 .jyjd_management_honour{
@@ -2287,13 +2292,19 @@ body{
 }
 .jyjd_management_textView{
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100px;
 }
 .jyjd_management_text_pic{
     width:  2rem;
-    height: 3.2916rem;
+    height: 100%;
     overflow: hidden;
     float: left;
+    background: url(../images/test_jyjd_02.png) center center no-repeat;
+    background-size: cover;
 }
 .jyjd_management_text_pic img{
     width: 100%;
@@ -2379,20 +2390,24 @@ body{
     bottom: 0;
     background: #09499b;
 }
+.jydy_about_info .jydy_about_bg{
+    width: auto;
+    left: 600px;
+}
 .jydy_about_bg:after{
     position: absolute;
     right: 100%;
     width: 0;
     height: 0;
-    border-bottom: 4.25rem solid #09499b;
-    border-left:   4.25rem solid transparent;
+    border-bottom: 360px solid #09499b;
+    border-left:   360px solid transparent;
     content: '';
 }
 .jydy_about_bg:before{
     position: absolute;
     right: 100%;
-    width: 4.25rem;
-    top:   4.25rem;
+    width: 360px;
+    top:   360px;
     bottom: 0;
     background: #09499b;
     content: '';
@@ -2400,6 +2415,8 @@ body{
 .jydy_about_l{
     width:  4.1666rem;
     height: 4.1666rem;
+    width:  350px;
+    height: 350px;
     position: absolute;
     left: 0;
     top: 0;
@@ -2410,7 +2427,7 @@ body{
 .jydy_about_l:after,.jydy_about_l:before{
     position: absolute;
     left: 50%;
-    top: 1.4166rem;
+    top: 130px;
     width:  1300px;
     height: 1300px;
     z-index: 1;
@@ -2447,11 +2464,11 @@ body{
 }
 .jydy_jyjt{
     top: 0;
-    height: 1.1466rem;
+    height: 130px;
     color: #fff;
 }
 .jydy_jydy{
-    top: 1.1466rem;
+    top: 200px;
     bottom: 0;
     color: #09499b;
 }
@@ -2484,11 +2501,11 @@ body{
 }
 .jydy_about_r{
     overflow: hidden;
-    margin-left: 4.1666rem;
+    margin-left: 350px;
 }
 .jydy_about_r ul{
     overflow: hidden;
-    margin-top: .9166rem;
+    margin-top: 60px;
 }
 .jydy_about_r li{
     float: left;
@@ -2500,6 +2517,8 @@ body{
     height:160px;
     overflow: hidden;
     position: relative;
+    background: url(../images/test-jydy-02.png) center center no-repeat;
+    background-size: cover;
 }
 .jydy_about_item img{
     width: 100%;
@@ -2509,10 +2528,10 @@ body{
     left: 0;
     bottom: 0;
     width: 2rem;
-    height: .5833rem;
+    height: 40px;
     font-size: 30px;
     color: #ffffff;
-    line-height: .5833rem;
+    line-height: 40px;
     background: #f79332;
     padding-left: 20px;
     box-sizing: border-box;
@@ -2521,8 +2540,8 @@ body{
     position: absolute;
     left: 100%;
     top: 0;
-    width:  .25rem;
-    height: .3383rem;
+    width:  15px;
+    height: 25px;
     background: #f79332;
     content: '';
 }
@@ -2532,8 +2551,8 @@ body{
     bottom: 0;
     width: 0;
     height: 0;
-    border-top:   .25rem solid #f79332;
-    border-right: .25rem solid transparent;
+    border-top:   15px solid #f79332;
+    border-right: 15px solid transparent;
     content: '';
 }
 .jydy_about_honour sup{
@@ -2569,8 +2588,9 @@ body{
     font-size: 15px;
     color: #fff;
     text-align: center;
-    padding: 14px 0;
     background: #f79332;
+    height: 40px;
+    line-height: 40px;
 }
 
 
