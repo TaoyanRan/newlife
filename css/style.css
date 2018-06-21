@@ -3219,14 +3219,14 @@ body{
     line-height: 1em;
     font-weight: normal;
     color: #fffefe;
-    font-family: Arial;
+    /*font-family: Arial;*/
 }
 .aboutView1_card p{
     text-indent: 0;
     font-size: 16px;
     color: #fffefe;
     margin-top: 8px;
-    font-family: Arial;
+    /*font-family: Arial;*/
     line-height: 1em;
 }
 .aboutView2_pic{
