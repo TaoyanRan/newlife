@@ -90,18 +90,31 @@
 
         <div class="jyjd_hotel">
             <h2 class="moduleName companyModuleName"><i>hotel</i><span>我们的酒店</span></h2>
-            <ul class="jyjd_hotel_list customRow">
-                <li class="customCol customCol_3 active">
-                    <img src="../images/test_jyjd_03.png" alt=""><div class="jyjd_hotel_text"><div class="middleOut"><div class="middleIn"><span>鄢陵建业花满地温泉酒店</span></div></div></div>
-                </li>
-                <li class="customCol customCol_3">
-                    <img src="../images/test_jyjd_03.png" alt=""><div class="jyjd_hotel_text"><div class="middleOut"><div class="middleIn"><span>鄢陵建业花满地温泉酒店</span></div></div></div>
-                </li>
-                <li class="customCol customCol_3">
-                    <img src="../images/test_jyjd_03.png" alt=""><div class="jyjd_hotel_text"><div class="middleOut"><div class="middleIn"><span>鄢陵建业花满地温泉酒店</span></div></div></div>
-                </li>
 
-            </ul>
+
+            <div class="jyjd_hotel_list_view">
+                <div class="jyjd_hotel_list_swipe">
+                    <div class="jyjd_hotel_list active">
+                        <ul>
+                            <li><div class="jdPic" style="background-image: url(../images/test_jyjd_03.png)"></div><div class="jyjd_hotel_text"><div class="middleOut"><div class="middleIn"><span>酒店1</span></div></div></div></li>
+                            <li><div class="jdPic" style="background-image: url(../images/test_jyjd_03.png)"></div><div class="jyjd_hotel_text"><div class="middleOut"><div class="middleIn"><span>酒店2</span></div></div></div></li>
+                            <li><div class="jdPic" style="background-image: url(../images/test_jyjd_03.png)"></div><div class="jyjd_hotel_text"><div class="middleOut"><div class="middleIn"><span>酒店3</span></div></div></div></li>
+                            <li><div class="jdPic" style="background-image: url(../images/test_jyjd_03.png)"></div><div class="jyjd_hotel_text"><div class="middleOut"><div class="middleIn"><span>酒店4</span></div></div></div></li>
+                            <li><div class="jdPic" style="background-image: url(../images/test_jyjd_03.png)"></div><div class="jyjd_hotel_text"><div class="middleOut"><div class="middleIn"><span>酒店5</span></div></div></div></li>
+                            <li><div class="jdPic" style="background-image: url(../images/test_jyjd_03.png)"></div><div class="jyjd_hotel_text"><div class="middleOut"><div class="middleIn"><span>酒店6</span></div></div></div></li>
+                            <li><div class="jdPic" style="background-image: url(../images/test_jyjd_03.png)"></div><div class="jyjd_hotel_text"><div class="middleOut"><div class="middleIn"><span>酒店7</span></div></div></div></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <div class="next"></div>
+                    <div class="prev"></div>
+                </div>
+            </div>
+
+
+
         </div>
 
     </div>
@@ -182,18 +195,73 @@
 <script src="../js/utils.js"></script>
 
 <script>
-    // 酒店管理 悬浮
-    $('.jyjd_management_honour div').each(function (i) {
-        $(this).hover(function () {
-            $('.jyjd_management_honour div').removeClass('active').eq(i).addClass('active')
+
+
+    function jyjd_hotel_list(item) {
+        var width = 100 / item;
+        var swipe = $('.jyjd_hotel_list_view');
+        var next = $('.jyjd_hotel_list_view .next');
+        var prev = $('.jyjd_hotel_list_view .prev');
+        var wrapper = $('.jyjd_hotel_list');
+        var ul = $('.jyjd_hotel_list ul');
+        var li = $('.jyjd_hotel_list li');
+
+        li.css('width',width + '%');
+        for(var ali = 0;ali<item-1;ali++){
+            ul.append(li.eq(ali).prop("outerHTML"));
+            ul.prepend(li.eq(li.length - ali - 1).prop("outerHTML"));
+        }
+
+        var length = $('.jyjd_hotel_list_view ul li').length;
+        var distance = $('.jyjd_hotel_list_view').width() * width / 100;
+        var i = item - 1;
+        ul.css('left',-distance * i + 'px');
+
+        function nextItem() {
+            i++;
+            ul.stop(true).animate({
+                'left': -distance * i + 'px'
+            },function () {
+                if(i >= length - item){
+                    i = item - 2;
+                    ul.css('left',-distance * i + 'px');
+                }
+            });
+        }
+
+        function prevItem() {
+            i--;
+            ul.stop(true).animate({
+                'left': -distance * i + 'px'
+            },function () {
+                if(i < 0){
+                    i = length - item - (item - 1);
+                    ul.css('left',-distance * i + 'px');
+                }
+            });
+        }
+
+        next.click(function () {
+            nextItem()
+        });
+
+        prev.click(function () {
+            prevItem()
+        });
+
+        var t = setInterval(nextItem,3000);
+        swipe.hover(function () {
+            clearInterval(t)
+        },function () {
+            t = setInterval(nextItem,3000)
         })
-    });
-    // 我们的酒店 悬浮
-    $('.jyjd_hotel_list li').each(function (i) {
-        $(this).hover(function () {
-            $('.jyjd_hotel_list li').removeClass('active').eq(i).addClass('active')
-        })
-    });
+
+
+
+    }
+    jyjd_hotel_list(3);
+
+    $('.jdPic').setSize(370,240)
 
 
 

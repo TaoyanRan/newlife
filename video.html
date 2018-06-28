@@ -228,7 +228,7 @@
             console.log($(this).attr('datasrc'));
             var videoSrc = $(this).attr('datasrc');
             var videoTitle = $(this).attr('dataname');
-            $('#videoPlay video').attr('src',videoSrc);
+            $('#videoPlay video').attr('src',videoSrc).css('height',$('#videoPlay').height() * .8 + 'px');
             $('#videoPlay h2 span').text(videoTitle);
             $('#videoPlay').fadeIn()
         })

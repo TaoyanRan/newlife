@@ -335,7 +335,6 @@ body{
 .customCol_4{ width: 25%; }
 .customCol_5{ width: 20%; }
 .customCol_6{ width: 16.6666%; }
-
 /*** --------------------- 栅格布局 End --------------------- ***/
 
 /*** --------------------- 首页 - 建业视频 Begin --------------------- ***/
@@ -357,6 +356,8 @@ body{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    box-shadow: 0 0 15px #ccc;
+
 }
 .homeVideo_video img{
     width: 100%;
@@ -488,15 +489,21 @@ body{
     right: 0;
     bottom: 0;
     width: 2.6666rem;
-    background: #eaeaea;
 }
 .homeVideo_AD ul{
     height: 100%;
+    position: relative;
 }
 .homeVideo_AD li{
-    position: relative;
-    height: 50%;
-    overflow: hidden;
+    position: absolute;
+    height: 48%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 15px #ccc;
+    /*overflow: hidden;*/
+}
+.homeVideo_AD li:last-child{
+    bottom: 0;
 }
 .homeVideo_AD li .homeVideo_AD_video{
     position: absolute;
@@ -538,6 +545,7 @@ body{
     right: 0;
     bottom: 0;
     padding: 10px 15px;
+    background: #fff;
 }
 .homeVideo_AD h3{
     font-size: 14px;
@@ -597,7 +605,6 @@ body{
     /*width: 100%;*/
     /*height: 110px;*/
 }
-
 .homeService .homeServiceItem.active .homeServiceName,.homeService .homeServiceItem:hover .homeServiceName{
     background: #ff840c;
 }
@@ -638,8 +645,6 @@ body{
     font-weight: bold;
     text-align: center;
 }
-
-
 /*** --------------------- 首页 - 我们的服务 End --------------------- ***/
 
 /*** --------------------- 首页 - 我们的公司 Begin --------------------- ***/
@@ -673,7 +678,6 @@ body{
     padding: 10px 2px;
     position: relative;
 }
-
 .homeCompanyName:after{
     position: absolute;
     left: 50%;
@@ -698,7 +702,6 @@ body{
     padding: .65em 0;
     position: relative;
 }
-
 .homeCompanyName span:before{
     position: absolute;
     bottom: 100%;
@@ -726,6 +729,7 @@ body{
 .homeCompanyName:nth-child(2n):hover span:before,.homeCompanyName:nth-child(2n).active span:before{
     border-right-color: #ff840c;
 }
+
 .homeCompanyInfo{
     /*border: 1px solid red;*/
     overflow: hidden;
@@ -733,13 +737,13 @@ body{
     margin-left: 0;
 }
 .homeCompanyInfoList{
-    width: 600%;
+    width: 500%;
 }
 .homeCompanyInfoList .customCol{
     padding: 0;
 }
 .homeCompanyPic{
-    height: 130px;
+    /*height: 130px;*/
     overflow: hidden;
 }
 .homeCompanyInfoList img{
@@ -769,7 +773,6 @@ body{
     color: #09499b;
     width: 2.6666rem;
 }
-
 .homeNewsTabHeader{
     position: absolute;
     left: 0;
@@ -778,8 +781,6 @@ body{
     /*background: #eee;*/
     /*border: 1px solid red;*/
 }
-
-
 
 .homeNewsTabConatainer{
     overflow: hidden;
@@ -803,19 +804,14 @@ body{
     margin-top: 19px;
     box-shadow: 0 0 5px #efefef;
 }
-
 .homeNewsTabHeader li:first-child{
     margin-top: 0;
 }
-
-
-
 .homeNewsTabHeader div{
     height:      70px;
     margin-left: 70px;
     text-align: center;
 }
-
 .homeNewsTabHeader i{
     position: absolute;
     top: 0;
@@ -842,6 +838,7 @@ body{
 .homeNewsTabHeader .icon-honour{
     background-image: url(../images/homeNewsTab-icon-4.png);
 }
+
 .homeNewsTitle{
     font-size: 15px;
     color: #333;
@@ -949,7 +946,6 @@ body{
     position: relative;
     height: 4.3rem;
 }
-
 .homeCultureTabHeader li.homeCulture_culture{
     height: 1.75rem;
     bottom: .1rem;
@@ -966,11 +962,6 @@ body{
     background: #ff840d;
     border-color: #ff840d;
 }
-
-
-
-
-
 
 .homeCultureMore{
     position: absolute;
@@ -1025,7 +1016,6 @@ body{
     border-left-color: #ff840d;
 }
 
-
 /* 企业文化 */
 
 .homeCulture_culture:after{
@@ -1040,11 +1030,9 @@ body{
     border-bottom: 0 solid transparent;
     border-right: .7rem solid #09499b;
 }
-
 .homeCultureTabHeader li.homeCulture_culture.active:after,.homeCultureTabHeader li.homeCulture_culture.active:before{
     border-right-color: #ff840d;
 }
-
 .homeCultureTabHeader li span{
     width: 1em;
     margin: 0 auto;
@@ -1094,6 +1082,7 @@ body{
 .homeCultureTabContainer dd{
     overflow: hidden;
 }
+
 .homeCultureTitle{
     font-size: 24px;
     color: #333333;
@@ -1832,9 +1821,6 @@ body{
 .companyNav li:nth-child(2n-1) a.active:after { background-image: url(../images/icon-companyNav-after-active-l.png); }
 .companyNav li:nth-child(2n) a.active:after { background-image: url(../images/icon-companyNav-after-active-r.png); }
 
-
-
-
 /*** --------------------- 专业公司导航 End --------------------- ***/
 
 /*** --------------------- 建业物业 Begin --------------------- ***/
@@ -1853,7 +1839,7 @@ body{
 }
 .jywy_about_list dt{
     float: left;
-    width: 3.6333rem;
+    width: 36%;
     margin-right: .375rem;
 }
 .jywy_about_list dt img{
@@ -1944,6 +1930,8 @@ body{
     padding: 0 10px;
     cursor: default;
     position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
 .jywy_service_info li img{
     width: 100%;
@@ -1959,9 +1947,22 @@ body{
     left: 10px;
     right: 10px;
     bottom: 0;
+    z-index: 5;
 }
 .jywy_service_info li.active .jywy_service_name{
     background: #f79332;
+}
+.jywy_service .pagination .prev,.jywy_service .pagination .next{
+    width: 15px;
+    height: 35px;
+    margin-top: -72px;
+    opacity: .8;
+}
+.jywy_service .pagination .prev{
+    left: 20px;
+}
+.jywy_service .pagination .next{
+    right: 20px;
 }
 /*** --------------------- 建业物业 End --------------------- ***/
 
@@ -2177,7 +2178,7 @@ body{
     padding: 0 .1666rem .5833rem;
     background: #f3f7ff;
     box-sizing: border-box;
-    transition: left 0.2s ease-in-out;
+    transition: bottom 0.2s ease-in-out;
 }
 .jyly_service_item_info h4{
     font-size: 15px;
@@ -2196,6 +2197,66 @@ body{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+    white-space: normal;
+}
+
+
+
+/* 建业旅游 - 我们的服务 修改为轮播 */
+.tourListSwipe{
+    margin: 0 -5px;
+    position: relative;
+}
+.tourListSwipe .pagination .next{
+    right: -75px;
+    background: url(../images/team_icon_next.png);
+}
+.tourListSwipe .pagination .prev{
+    left: -75px;
+    background: url(../images/team_icon_prev.png);
+}
+.tourListSwipe .pagination .next,.tourListSwipe .pagination .prev{
+    opacity: .6;
+}
+.tourListSwipe .pagination .next:hover,.tourListSwipe .pagination .prev:hover{
+    opacity: 1;
+}
+
+.tourListSwipe .pagination .next[disabled],.tourListSwipe .pagination .prev[disabled]{
+    opacity: .2;
+}
+.tourListSwipe .pagination .next[disabled]:hover,.tourListSwipe .pagination .prev[disabled]:hover{
+    cursor: not-allowed;
+}
+
+.tourList{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.tourListSwipe ul{
+    white-space: nowrap;
+    font-size: 0;
+    position: relative;
+    height: 100%;
+    /*transition: left .3s ease-in-out;*/
+}
+.tourListSwipe li{
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    width: 25%;
+    box-sizing: border-box;
+    transition: width .3s ease-in-out;
+    padding: 0 5px;
+    overflow: hidden;
+}
+.tourListSwipe li.active{
+    width: 50%;
+}
+.tourListSwipe li.active .jyly_service_item_info{
+    bottom: -100%;
 }
 
 /*** --------------------- 建业旅游 End --------------------- ***/
@@ -2341,8 +2402,49 @@ body{
 .jyjd_hotel{
     margin: .75rem auto 0;
 }
-.jyjd_hotel_list li{
+.jyjd_hotel_list_view{
+    /*border: 1px solid red;*/
     position: relative;
+}
+
+.jyjd_hotel_list_view .pagination .next,.jyjd_hotel_list_view .pagination .prev{
+    width: 15px;
+    height: 35px;
+    margin-top: -18px;
+    opacity: .6;
+}
+.jyjd_hotel_list_view .pagination .next{
+    right: -30px;
+    background-image: url(../images/team_icon_next.png);
+}
+.jyjd_hotel_list_view .pagination .prev{
+    left: -30px;
+    background-image: url(../images/team_icon_prev.png);
+}
+.jyjd_hotel_list_swipe{
+    width: 100%;
+    overflow: hidden;
+}
+.jyjd_hotel_list{
+}
+.jyjd_hotel_list.active{
+    /*transition: left .3s ease-in-out;*/
+}
+.jyjd_hotel_list ul{
+    white-space: nowrap;
+    font-size: 0;
+    position: relative;
+    left: 0;
+    /*position: relative;*/
+}
+
+.jyjd_hotel_list li{
+    /*width: 33.333%;*/
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
 }
 .jyjd_hotel_list li:after{
     position: absolute;
@@ -2355,8 +2457,21 @@ body{
     z-index: 1;
     content: '';
 }
-.jyjd_hotel_list img{
-    width: 100%;
+.jyjd_hotel_list li:hover .jdPic{
+    -webkit-animation: hotelDefault .3s 1 forwards;
+    -moz-animation:    hotelDefault .3s 1 forwards;
+    -o-animation:      hotelDefault .3s 1 forwards;
+    animation:         hotelDefault .3s 1 forwards;
+}
+.jyjd_hotel_list li .jdPic{
+    -webkit-animation: hotelHover .3s 1 forwards;
+    -moz-animation:    hotelHover .3s 1 forwards;
+    -o-animation:      hotelHover .3s 1 forwards;
+    animation:         hotelHover .3s 1 forwards;
+}
+.jdPic{
+    background: url(#) center center no-repeat;
+    background-size: cover;
 }
 .jyjd_hotel_text{
     font-size: 15px;
@@ -2368,8 +2483,53 @@ body{
     left: 55px;
     z-index: 2;
 }
-.jyjd_hotel_list li.active .jyjd_hotel_text{
+.jyjd_hotel_list li:hover .jyjd_hotel_text{
     color: #f79332;
+}
+
+.showDialog .getTBInfo{
+    -webkit-animation: showDialog .3s 1 forwards;
+    -moz-animation:    showDialog .3s 1 forwards;
+    -o-animation:      showDialog .3s 1 forwards;
+    animation:         showDialog .3s 1 forwards;
+}
+.hideDialog .getTBInfo{
+    -webkit-animation: hideDialog .3s 1 forwards;
+    -moz-animation:    hideDialog .3s 1 forwards;
+    -o-animation:      hideDialog .3s 1 forwards;
+    animation:         hideDialog .3s 1 forwards;
+}
+@keyframes hotelDefault {
+    from{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    to{
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+}
+@keyframes hotelHover {
+    from{
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+    to{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
 }
 /*** --------------------- 建业酒店 End --------------------- ***/
 /*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
@@ -2424,81 +2584,31 @@ body{
     float: left;
     /*box-shadow: 0 0 10px #cccccc;*/
 }
-.jydy_about_l:after,.jydy_about_l:before{
+.dyLink a{
+    background-color: rgba(9,73,155,.4);
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
     position: absolute;
     left: 50%;
-    top: 130px;
-    width:  1300px;
-    height: 1300px;
-    z-index: 1;
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
-    transform-origin: 0 0;
-    content: '';
-}
-.jydy_about_l:after{
-    background: #09499b;
-    -webkit-transform: rotate(-135deg);
-    -moz-transform: rotate(-135deg);
-    -ms-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-}
-.jydy_about_l:before{
-    background: #fff;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.jydy_jyjt,.jydy_jydy{
-    position: absolute;
-    left: 0;
-    right: 0;
+    bottom: 25px;
+    margin-left: -85px;
+    z-index: 10;
     text-align: center;
-    font-size: 14px;
-    z-index: 2;
+    transition: background-color .5s ease-in-out;
 }
-.jydy_jyjt{
-    top: 0;
-    height: 130px;
-    color: #fff;
+.dyLink a:hover{
+    background-color: rgba(9,73,155,1);
 }
-.jydy_jydy{
-    top: 200px;
-    bottom: 0;
-    color: #09499b;
-}
+
+
 .jydy_about_l img{
     width: 100%;
 }
-.jydy_about_link{
-    margin-top: 30px;
-}
-.jydy_about_link a{
-    display: inline-block;
-    position: relative;
-    font-size: 16px;
-    background: #09499b;
-    color: #fff;
-    line-height: 50px;
-    height:      50px;
-    width:      170px;
-    text-align: center;
-}
-.jydy_about_link a:after{
-    position: absolute;
-    right:  0;
-    bottom: 0;
-    width:  0;
-    height: 0;
-    border-bottom: .25rem solid #fff;
-    border-left:   .25rem solid transparent;
-    content: '';
-}
+
 .jydy_about_r{
     overflow: hidden;
     margin-left: 350px;
@@ -2571,7 +2681,12 @@ body{
     line-height: 1.5em;
     text-indent: 2em;
     text-align: justify;
-    padding: 0 15px;
+    padding:0 15px;
+    /* 多行文字 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
 }
 .jydy_about_desText{
     position: absolute;
@@ -2579,6 +2694,7 @@ body{
     left: 0;
     right: 0;
     bottom: .4333rem;
+    overflow: auto;
 }
 .jydy_about_item_text_title{
     position: absolute;
@@ -2591,22 +2707,45 @@ body{
     background: #f79332;
     height: 40px;
     line-height: 40px;
+    cursor: pointer;
 }
 
 
+.dyServiceSwipe{
+    margin: 0 auto;
+    position: relative;
+}
+.dyServiceSwipe .pagination .prev,.dyServiceSwipe .pagination .next{
+    opacity: .6;
+}
+.dyServiceSwipe .pagination .prev{
+    left: -50px;
+    background-image: url(../images/team_icon_prev.png);
+}
+.dyServiceSwipe .pagination .next{
+    right: -50px;
+    background-image: url(../images/team_icon_next.png);
+}
+.dyServiceList{
+    overflow: hidden;
+}
 .jydy_service {
     margin-top: .4166rem;
 }
 .jydy_service_info{
     margin: 0 auto;
-}
-.jydy_service_info{
-    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    position: relative;
+    /*transition: left .3s ease-in-out;*/
 }
 .jydy_service_info li{
     /*width: 400px;*/
     /*float: left;*/
     padding: 0;
+    display: inline-block;
+    width: 33.333%;
+
 }
 .jydy_service_item_info{
     margin: 0 15px 0 30px;
@@ -2647,6 +2786,9 @@ body{
     font-size: 14px;
     color: #666666;
     line-height: 1em;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 .jydy_service_des .jydy_service_des_icon{
     width:  36px;
@@ -2657,16 +2799,16 @@ body{
 .jydy_service_des_icon_active{
     display: none;
 }
-.jydy_service_info .jydy_service_item_info.active .jydy_service_des_icon_default{
+.jydy_service_info .jydy_service_item_info:hover .jydy_service_des_icon_default{
     display: none;
 }
-.jydy_service_info .jydy_service_item_info.active .jydy_service_des_icon_active{
+.jydy_service_info .jydy_service_item_info:hover .jydy_service_des_icon_active{
     display: block;
 }
-.jydy_service_info .jydy_service_item_info.active .jydy_service_des{
+.jydy_service_info .jydy_service_item_info:hover .jydy_service_des{
     background-color: #ff840c;
 }
-.jydy_service_info .jydy_service_item_info.active .jydy_service_des h3,.jydy_service_info .jydy_service_item_info.active .jydy_service_des p{
+.jydy_service_info .jydy_service_item_info:hover .jydy_service_des h3,.jydy_service_info .jydy_service_item_info:hover .jydy_service_des p{
     color: #ffffff;
 }
 /*** --------------------- 建业东英 End --------------------- ***/
@@ -2804,7 +2946,6 @@ body{
 .services_serviceList ul{
 }
 
-
 .services_serviceList li{
     float: left;
     width: 16.6666%;
@@ -2900,10 +3041,6 @@ body{
     color: #ff840c;
 }
 
-
-
-
-
 .serVices_active_swipe_view{
     margin: 0 auto;
 }
@@ -2981,7 +3118,6 @@ body{
 .activitySwipe_slider li:hover p{
     background: #ff840c;
 }
-
 /*** --------------------- 服务领域 End --------------------- ***/
 
 /*** --------------------- 企业文化 Begin --------------------- ***/
@@ -3356,7 +3492,6 @@ body{
     box-sizing: border-box;
 }
 
-
 .aboutTeamMask em{
     font-size: 20px;
     color: #ff840c;
@@ -3365,7 +3500,6 @@ body{
     font-size: 16px;
     color: #ffffff;
 }
-
 /*-----*/
 .aboutTeamListView{
     /*position: absolute;*/
@@ -3396,6 +3530,7 @@ body{
     width:  1.40rem;
     height: 1.55rem;
     background: url(../images/aboutTeamUser_bg.png) center center no-repeat;
+    background: url(../images/777.png) center center no-repeat;
     background-size: 100%;
     margin: -.28rem 5px 0 0;
     position: relative;
@@ -4046,7 +4181,6 @@ body{
     position: relative;
 }
 
-
 /*** --------------------- 视频 End --------------------- ***/
 
 /*** --------------------- Begin --------------------- ***/
@@ -4151,7 +4285,6 @@ body{
     right: 50px;
 }
 
-
 /*** --------------------- 团队风采 覆盖swipe样式 Begin --------------------- ***/
 #teamSwipe .prev{
     background-image: url(../images/team_icon_prev.png);
@@ -4189,6 +4322,9 @@ body{
     background: rgba(0,0,0,.4);
     content: '';
 }
+#videoPlay .middleIn{
+    font-size: 0;
+}
 .videoPlayView{
     width:  100%;
     height: 100%;
@@ -4197,14 +4333,14 @@ body{
     text-align: center;
 }
 .videoPlay_info{
-    max-width:  80%;
-    max-height: 100%;
+    font-size: 0;
     position: relative;
     width: auto;
     display: inline-block;
+    border: 1px solid red;
 }
 .videoPlay_info h2{
-    position: absolute;
+    position: relative;
     bottom: 100%;
     left: 0;
     right: 0;
@@ -4219,7 +4355,10 @@ body{
 }
 .videoPlay_info h2,.videoPlay_info video{
     box-shadow: 0 0 10px #eee;
-
+    max-width: 100%;
+}
+.videoPlay_info video{
+    height: 300px;
 }
 .closeVideo{
     position: absolute;
@@ -4234,166 +4373,60 @@ body{
 }
 /*** --------------------- 视频播放层 End --------------------- ***/
 
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
+/*------------------------------------------------------------------------------------- 图片预览 -----------------------------------------------------------------------------------------------------------------*/
+/*** --------------------- Begin --------------------- ***/
+.preview{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 10;
+    padding: 60px 150px;
+}
+.previewContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.closePreview{
+    position: absolute;
+    right: -15px;
+    top:   -15px;
+    width:  30px;
+    height: 30px;
+    border-radius: 50%;
+    background:#fff url(../images/videoClose.png) center center no-repeat;
+    background-size: 80%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px #999;
+    z-index: 100;
+    cursor: pointer;
+}
+#previewSwipe{
+    text-align: center;
+    background: rgba(255,255,255,1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #eee;
+    overflow: hidden;
+}
+#previewSwipe img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+#previewSwipe .pagination .prev,#previewSwipe .pagination .next{
+    opacity: .8;
+}
+#previewSwipe .pagination .prev{
+    background-image: url(../images/team_icon_prev.png);
+}
+#previewSwipe .pagination .next{
+    background-image: url(../images/team_icon_next.png);
+}
 /*** --------------------- End --------------------- ***/
 
 /*** --------------------- Begin --------------------- ***/
@@ -4407,60 +4440,6 @@ body{
 
 /*** --------------------- Begin --------------------- ***/
 /*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
 
 /*** --------------------- Begin --------------------- ***/
 /*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-/*-------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------*/
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
-
-
-

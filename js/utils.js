@@ -212,6 +212,128 @@ $.fn.extend({
             });
 
         }
+    },
+
+    viewPager: function (item) {
+        var width = 100 / item;
+        var next = $('.dyServiceSwipe .next');
+        var prev = $('.dyServiceSwipe .prev');
+        var wrapper = $('.dyServiceList');
+        var ul = $('.dyServiceSwipe ul');
+        var li = $('.dyServiceSwipe li');
+
+        li.css('width',width + '%');
+        for(var ali = 0;ali<item-1;ali++){
+            ul.append(li.eq(ali).prop("outerHTML"));
+            ul.prepend(li.eq(li.length - ali - 1).prop("outerHTML"));
+        }
+
+
+
+        var length = $('.dyServiceSwipe ul li').length;
+        var distance = $('.dyServiceSwipe').width() * width / 100;
+        var i = item - 1;
+        ul.css('left',-distance * i + 'px');
+
+        function nextItem() {
+            i++;
+            ul.stop(true).animate({
+                'left': -distance * i + 'px'
+            },function () {
+                if(i >= length - item){
+                    i = item - 2;
+                    ul.css('left',-distance * i + 'px');
+                }
+            });
+        }
+
+        function prevItem() {
+            i--;
+            ul.stop(true).animate({
+                'left': -distance * i + 'px'
+            },function () {
+                if(i < 0){
+                    i = length - item - (item - 1);
+                    ul.css('left',-distance * i + 'px');
+                }
+            });
+        }
+
+        next.click(function () {
+            nextItem()
+        });
+
+        prev.click(function () {
+            prevItem()
+        });
+
+        var t = setInterval(nextItem,3000);
+        ul.hover(function () {
+            clearInterval(t)
+        },function () {
+            t = setInterval(nextItem,3000)
+        })
+    },
+
+    // 图片预览
+    preView: function (imgList) {
+
+        var imgList = [];
+
+        $(this).find('img').each(function () {
+            if($(this).attr('preView')){
+                imgList.push({
+                    src: $(this).attr('src')
+                })
+            }
+        });
+        console.log(imgList);
+
+        function slide() {
+            var _html = '';
+            for(var i=0;i<imgList.length;i++){
+                _html +=
+                    '<div class="slide">' +
+                    '   <div class="middleOut">' +
+                    '       <div class="middleIn">' +
+                    '           <img src="' + imgList[i].src + '" alt="">' +
+                    '       </div>' +
+                    '   </div>' +
+                    '</div>';
+            }
+            return _html
+        }
+
+
+        var _html = '' +
+            '<div class="preview" id="preview">' +
+            '    <div class="previewMask"></div>' +
+            '    <div class="previewContainer">' +
+            '        <div class="closePreview"></div>' +
+            '        <div class="swipe" id="previewSwipe">' +
+            '            <div class="swipeContainer">' +
+                            slide() +
+            '            </div>' +
+            '            <div class="navigation"><!-- 圆点 --></div>' +
+            '            <div class="pagination"><!-- 上一页下一页 --></div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>';
+
+        $('body').append(_html);
+        $('#previewSwipe .slide').eq(0).addClass('active');
+        var maxHeight = $('#previewSwipe').height();
+        $('#previewSwipe img').css('max-height',maxHeight + 'px');
+
+        $('#previewSwipe').swipe({
+            autoPlay: false
+        });
+
+
+        $('.closePreview').click(function () {
+            $('#preview').remove()
+        });
+
     }
 });
 
@@ -220,4 +342,5 @@ $('.banner').setSize(1920,635);
 if($('#banner')){
     $('#banner').swipe();
 }
+
 
