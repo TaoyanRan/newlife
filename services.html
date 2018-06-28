@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>建业新生活</title>
     <!--开启对web app的支持-->
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=.5,minimum-scale=.4,maximum-scale=1,user-scalable=yes"/>
 
     <script src="js/rem.js"></script>
     <!--<link rel="stylesheet" href="js/amazeui.css">-->
@@ -56,16 +56,12 @@
 
                 <div class="services_serviceList containerWidth left0">
                     <ul class="cl">
-                        <li>
-                            <div class="services_serviceName">物业管理</div>
-                            <img src="images/services-service-01.png" alt="">
-
-                        </li>
-                        <li class="active"><div class="services_serviceName">智慧社区</div><img src="images/services-service-02.png" alt=""></li>
-                        <li><div class="services_serviceName">社区商业</div><img src="images/services-service-03.png" alt=""></li>
-                        <li><div class="services_serviceName">家庭生活</div><img src="images/services-service-04.png" alt=""></li>
-                        <li><div class="services_serviceName">资产管理</div><img src="images/services-service-05.png" alt=""></li>
-                        <li><div class="services_serviceName">健康养老</div><img src="images/services-service-06.png" alt=""></li>
+                        <li class="unActive"><div class="services_serviceName">物业管理</div><div class="servicesServicesPic"><img src="images/services-service-01.png" alt=""></div></li>
+                        <li class="unActive active"><div class="services_serviceName">智慧社区</div><div class="servicesServicesPic"><img src="images/services-service-02.png" alt=""></div></li>
+                        <li class="unActive"><div class="services_serviceName">社区商业</div><div class="servicesServicesPic"><img src="images/services-service-03.png" alt=""></div></li>
+                        <li class="unActive"><div class="services_serviceName">家庭生活</div><div class="servicesServicesPic"><img src="images/services-service-04.png" alt=""></div></li>
+                        <li class="unActive"><div class="services_serviceName">资产管理</div><div class="servicesServicesPic"><img src="images/services-service-05.png" alt=""></div></li>
+                        <li class="unActive"><div class="services_serviceName">健康养老</div><div class="servicesServicesPic"><img src="images/services-service-06.png" alt=""></div></li>
                     </ul>
                 </div>
 
@@ -285,7 +281,7 @@
 
     $('.services_serviceList li').each(function (i) {
         $(this).hover(function () {
-            $('.services_serviceList li').removeClass('active').eq(i).addClass('active');
+            $('.services_serviceList li').removeClass('active').addClass('unActive').eq(i).removeClass('unActive').addClass('active');
             $('.services_serviceList').attr('class','services_serviceList containerWidth left' + i);
             $('.services_serviceDesList li').removeClass('active').eq(i).addClass('active');
         })

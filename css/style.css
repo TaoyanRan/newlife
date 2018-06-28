@@ -17,6 +17,11 @@ body{
         width: 99%;
     }
 }
+@media screen and ( max-width: 961px ) {
+    html,body{
+        /*width: 960px;*/
+    }
+}
 .more{
     background: #fff;
     display: inline-block;
@@ -92,6 +97,7 @@ body{
     overflow: hidden;
     text-align: right;
     font-size: 0;
+    white-space: nowrap;
 }
 .navLink li{
     display: inline-block;
@@ -551,6 +557,9 @@ body{
     font-size: 14px;
     color: #09499b;
     line-height: 1.5em;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 .homeVideo_AD p{
     font-size: 12px;
@@ -3034,6 +3043,21 @@ body{
 }
 .services_serviceList li.active:after{
     border-top-color: #ff840c;
+}
+.servicesServicesPic{
+    overflow: hidden;
+}
+.services_serviceList li.active img{
+    -webkit-animation: hotelDefault .3s 1 forwards;
+    -moz-animation:    hotelDefault .3s 1 forwards;
+    -o-animation:      hotelDefault .3s 1 forwards;
+    animation:         hotelDefault .3s 1 forwards;
+}
+.services_serviceList li.unActive img{
+    -webkit-animation: hotelHover .3s 1 forwards;
+    -moz-animation:    hotelHover .3s 1 forwards;
+    -o-animation:      hotelHover .3s 1 forwards;
+    animation:         hotelHover .3s 1 forwards;
 }
 .services_servicesPic{
     position: relative;
