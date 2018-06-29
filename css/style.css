@@ -957,21 +957,21 @@ body{
 .homeCultureTab{
     margin-top: .25rem;
     position: relative;
-    height: 4.3rem;
+    height: 355px;
 }
 .homeCultureTabHeader li.homeCulture_culture{
-    height: 1.75rem;
-    bottom: .1rem;
+    height: 135px;
+    bottom: 10px;
 }
 .homeCultureTabHeader li.homeCulture_company{
-    height: 1.75rem;
+    height: 135px;
 }
 .homeCultureTabHeader li.homeCulture_culture.active{
-    height: 2.15rem;
+    height: 180px;
     background: #ff840d;
 }
 .homeCultureTabHeader li.homeCulture_company.active{
-    height: 2.15rem;
+    height: 180px;
     background: #ff840d;
     border-color: #ff840d;
 }
@@ -1013,12 +1013,12 @@ body{
 .homeCulture_company:after{
     top: 100%;
     border-top: 0 solid transparent;
-    border-bottom: .25rem solid transparent;
+    border-bottom: 20px solid transparent;
     border-left: .7rem solid #09499b;
 }
 .homeCulture_company:before{
     bottom: 100%;
-    border-top: .1rem solid transparent;
+    border-top: 10px solid transparent;
     border-bottom: 0 solid transparent;
     border-left: .7rem solid #09499b;
 }
@@ -1034,12 +1034,12 @@ body{
 .homeCulture_culture:after{
     top: 100%;
     border-top: 0 solid transparent;
-    border-bottom: .1rem solid transparent;
+    border-bottom: 10px solid transparent;
     border-right: .7rem solid #09499b;
 }
 .homeCulture_culture:before{
     bottom: 100%;
-    border-top: .25rem solid transparent;
+    border-top: 20px solid transparent;
     border-bottom: 0 solid transparent;
     border-right: .7rem solid #09499b;
 }
@@ -1108,7 +1108,7 @@ body{
 }
 .homeCulture_textList li{
     position: relative;
-    margin: 8px 0;
+    margin: 0 0 5px;
     cursor: pointer;
 }
 .homeCulture_textList li:hover .homeCulture_textName,.homeCulture_textList li.active .homeCulture_textName{
@@ -1186,6 +1186,7 @@ body{
     overflow: hidden;
     padding: 10px;
     margin-bottom: -10px;
+    text-align: center;
 }
 .float_l{
     float: left;
@@ -1199,11 +1200,12 @@ body{
     margin: 0 auto;
 }
 .homeCulture_company_strong div{
-    width: 80px;
-    padding: 10px 0;
+    /*width: 80px;*/
+    padding: 10px;
     text-align: center;
     box-shadow: 0 0 6px #ccc;
     border-radius: 4px;
+    display: inline-block;
 }
 .homeCulture_company_strong strong{
     display: block;
@@ -1217,6 +1219,14 @@ body{
     text-align: center;
     line-height: 1em;
     margin-top: 8px;
+}
+.homeCulture_companyInfo_text{
+    /* 多行文字 */
+    /*display: -webkit-box;*/
+    /*-webkit-box-orient: vertical;*/
+    /*-webkit-line-clamp: 3;*/
+    /*text-overflow:ellipsis;*/
+    /*overflow: hidden;*/
 }
 .homeCulture_companyInfo p{
     text-indent: 2em;
