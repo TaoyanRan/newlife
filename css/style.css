@@ -30,11 +30,15 @@ body{
     line-height: 1em;
     padding: .75em 2.3em;
     cursor: pointer;
-    box-shadow: 0 0 8px #ccc;
+    box-shadow: 0 2px 8px #ccc;
     border-radius: 4px;
+    transition: box-shadow .2s ease-in-out;
 }
 .more img{
     height: 1em;
+}
+.more:hover{
+    box-shadow: 0 0 4px #ccc;
 }
 .homeCenterMore{
     margin-top: 20px;
@@ -3112,7 +3116,7 @@ body{
 .services_serviceDesList p{
     line-height: 3em;
     text-align: justify;
-    padding: 0 1.25rem;
+    padding: 0 30px;
     text-indent: 2em;
     font-size: 14px;
 }
