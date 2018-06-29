@@ -58,6 +58,18 @@ body{
     padding-top: 56px;
 }
 
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px);
+}
+
+
 /*** --------------------- tab Begin --------------------- ***/
 .tabHeader{
     display: table;
@@ -573,6 +585,7 @@ body{
     overflow: hidden;
     color: #ababab;
     line-height: 1.5em;
+    height: 3em;
 }
 
 
@@ -1241,16 +1254,21 @@ body{
     margin-top: 8px;
 }
 .homeCulture_companyInfo_text{
-    /* 多行文字 */
-    /*display: -webkit-box;*/
-    /*-webkit-box-orient: vertical;*/
-    /*-webkit-line-clamp: 3;*/
-    /*text-overflow:ellipsis;*/
-    /*overflow: hidden;*/
+
 }
 .homeCulture_companyInfo p{
     text-indent: 2em;
     margin: 15px 15px 0;
+    height: 15em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    line-height: 1.7em;
+}
+.homeCulture_companyInfo_text span{
+    text-indent: 2em;
 }
 /*** --------------------- 首页 - 我们的文化 End --------------------- ***/
 
@@ -2730,6 +2748,7 @@ body{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
     overflow: hidden;
+    max-height: 7.5em;
 }
 .jydy_about_desText{
     position: absolute;
