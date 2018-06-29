@@ -2251,7 +2251,7 @@ video::-webkit-media-controls-panel {
 .jyly_service_item_info p{
     font-size: 14px;
     color: #666666;
-    line-height: 1.3333em;
+    line-height: 18px;
     /*height: .5rem;*/
     text-align: justify;
     display: -webkit-box;
@@ -2259,6 +2259,7 @@ video::-webkit-media-controls-panel {
     -webkit-line-clamp: 3;
     overflow: hidden;
     white-space: normal;
+    height: 3em;
 }
 
 
@@ -2437,10 +2438,15 @@ video::-webkit-media-controls-panel {
     line-height:2em;
     text-align: justify;
     overflow: hidden;
-    padding: 0 25px 70px;
+    padding: 0 25px 60px;
     box-sizing: border-box;
-    height: 3.2916rem;
+    /*height: 3.2916rem;*/
+    height: 2.6rem;
     text-indent: 2em;
+    /*border: 1px solid red;*/
+}
+.jyjd_management_text p{
+    text-align: justify;
 }
 .jyjd_management_link{
     position: absolute;
