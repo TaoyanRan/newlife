@@ -276,7 +276,7 @@
         <div class="containerWidth homeCompanyInner">
             <h2 class="moduleName"><i>company</i><span>我们的公司</span></h2>
 
-            <div class="">
+            <div class="homeCompanySwipe">
 
                 <div class="customRow homeCompanyNameList">
                     <div class="customCol customCol_5 homeCompanyName active"><span>建业物业</span></div>
@@ -288,68 +288,37 @@
                 </div>
 
 
-                <div class="homeCompanyInfo">
+                <div id="homeCompany">
 
-                    <div class="customRow homeCompanyInfoList">
-
-                        <div class="customCol customCol_5 homeCompanyInItem">
-                            <div class="customRow">
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div>
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div>
-                            </div>
-                        </div>
-
-                        <div class="customCol customCol_5 homeCompanyInItem">
-                            <div class="customRow">
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div>
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
-                            </div>
-                        </div>
-
-                        <div class="customCol customCol_5 homeCompanyInItem">
-                            <div class="customRow">
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-01.png" alt=""></div>
-                            </div>
-                        </div>
-
-                        <div class="customCol customCol_5 homeCompanyInItem">
-                            <div class="customRow">
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-03.png" alt=""></div>
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
-                            </div>
-                        </div>
-
-                        <div class="customCol customCol_5 homeCompanyInItem">
-                            <div class="customRow">
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-05.png" alt=""></div>
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
-                                <div class="customCol customCol_3 homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
-                            </div>
-                        </div>
-
-                        <!--<div class="customCol customCol_6 homeCompanyInItem">-->
-                            <!--<div class="customRow">-->
-                                <!--<div class="customCol customCol_4 homeCompanyPic"><img src="images/home0.png" alt=""></div>-->
-                                <!--<div class="customCol customCol_4 homeCompanyPic"><img src="images/home1.png" alt=""></div>-->
-                                <!--<div class="customCol customCol_4 homeCompanyPic"><img src="images/home0.png" alt=""></div>-->
-                                <!--<div class="customCol customCol_4 homeCompanyPic"><img src="images/home1.png" alt=""></div>-->
-                                <!--<div class="customCol customCol_4 homeCompanyPic"><img src="images/home0.png" alt=""></div>-->
-                                <!--<div class="customCol customCol_4 homeCompanyPic"><img src="images/home1.png" alt=""></div>-->
-                                <!--<div class="customCol customCol_4 homeCompanyPic"><img src="images/home0.png" alt=""></div>-->
-                                <!--<div class="customCol customCol_4 homeCompanyPic"><img src="images/home1.png" alt=""></div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-
-
-
+                    <div class="homeCompanyInItem active">
+                        <div class="homeCompanyPic"><img src="images/testPic-05.png" alt=""></div>
+                        <div class="homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
+                        <div class="homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
                     </div>
 
+                    <div class="homeCompanyInItem">
+                        <div class="homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
+                        <div class="homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
+                        <div class="homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
+                    </div>
+
+                    <div class="homeCompanyInItem">
+                        <div class="homeCompanyPic"><img src="images/testPic-01.png" alt=""></div>
+                        <div class="homeCompanyPic"><img src="images/testPic-02.png" alt=""></div>
+                        <div class="homeCompanyPic"><img src="images/testPic-03.png" alt=""></div>
+                    </div>
+
+                    <div class="homeCompanyInItem">
+                        <div class="homeCompanyPic"><img src="images/testPic-04.png" alt=""></div>
+                        <div class="homeCompanyPic"><img src="images/testPic-05.png" alt=""></div>
+                        <div class="homeCompanyPic"><img src="images/testPic-06.png" alt=""></div>
+                    </div>
+
+                    <div class="homeCompanyInItem">
+                        <div class="homeCompanyPic"><img src="images/testPic-07.png" alt=""></div>
+                        <div class="homeCompanyPic"><img src="images/testPic-08.png" alt=""></div>
+                        <div class="homeCompanyPic"><img src="images/testPic-01.png" alt=""></div>
+                    </div>
 
                 </div>
 
@@ -580,13 +549,47 @@
 <script>
 
     // 公司tab卡片切换
-    $('.homeCompanyName').each(function (i) {
-        $(this).click(function () {
-            $('.homeCompanyInfoList').animate({'margin-left': -100 * i + '%'});
-            $('.homeCompanyInfoList .homeCompanyInItem').eq(i).css('opacity',1);
-            $('.homeCompanyName').removeClass('active').eq(i).addClass('active');
+
+
+    function companyChange() {
+        var names = $('.homeCompanyName'),
+            items = $('.homeCompanyInItem'),
+            swipe = $('.homeCompanySwipe'),
+            i = 0,
+            length = items.length;
+
+        function change(n) {
+            i = n;
+            names.removeClass('active').eq(i).addClass('active');
+            items.removeClass('active').eq(i).addClass('active')
+        }
+
+        var t = setInterval(auto,3000);
+
+        function auto() {      i++;
+            if(i >= length){
+                i = 0
+            }
+            change(i)
+        }
+
+
+        names.each(function (i) {
+            $(this).click(function () {
+                change(i)
+            })
+        });
+
+        swipe.hover(function () {
+            clearInterval(t)
+        },function () {
+            t = setInterval(auto,3000)
         })
-    });
+
+    }
+    companyChange();
+
+
     // 我们的动态tab切换
     $('.homeNewsTabHeader > li').each(function (i) {
         $(this).click(function () {
@@ -635,6 +638,8 @@
     });
 
 
+
+    $('#homeCompany').setSize(1200,400);
 
 
 </script>

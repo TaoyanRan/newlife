@@ -701,11 +701,13 @@ body{
     border-right: 10px solid transparent;
     border-top:   10px solid #ff840c;
     margin-left: -10px;
-    display: none;
+    /*display: none;*/
     content: '';
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
 }
 .homeCompanyName.active:after{
-    display: block;
+    opacity: 1;
 }
 .homeCompanyName span{
     background: #fff;
@@ -714,6 +716,8 @@ body{
     line-height: 1em;
     padding: .65em 0;
     position: relative;
+
+    transition: background-color .3s ease-in-out;
 }
 .homeCompanyName span:before{
     position: absolute;
@@ -727,13 +731,15 @@ body{
 .homeCompanyName:nth-child(2n-1) span:before{
     border-left:1.38rem solid #fff;
     left: 0;
+    transition: all .3s ease-in-out;
 }
 .homeCompanyName:nth-child(2n) span:before{
     border-right:1.38rem solid #fff;
     right: 0;
+    transition: all .3s ease-in-out;
 }
 .homeCompanyName:hover span,.homeCompanyName.active span{
-    background: #ff840c;
+    background-color: #ff840c;
     color: #fff;
 }
 .homeCompanyName:nth-child(2n-1):hover span:before,.homeCompanyName:nth-child(2n-1).active span:before{
@@ -743,28 +749,42 @@ body{
     border-right-color: #ff840c;
 }
 
-.homeCompanyInfo{
-    /*border: 1px solid red;*/
+
+
+
+
+
+/* 首页我们的公司 */
+#homeCompany{
+    position: relative;
+}
+#homeCompany .homeCompanyInItem{
+    position: absolute;
+    top:    0;
+    left:   0;
+    right:  0;
+    bottom: 0;
     overflow: hidden;
-    transition: all 1.5s ease-in-out;
-    margin-left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
 }
-.homeCompanyInfoList{
-    width: 500%;
-}
-.homeCompanyInfoList .customCol{
-    padding: 0;
+#homeCompany .homeCompanyInItem.active{
+    position: absolute;
+    top:    0;
+    left:   0;
+    right:  0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 2;
+    opacity: 1;
 }
 .homeCompanyPic{
-    /*height: 130px;*/
-    overflow: hidden;
+    float: left;
+    width: 33.3333%;
 }
-.homeCompanyInfoList img{
+.homeCompanyPic img{
     width: 100%;
-}
-.homeCompanyInfoList .homeCompanyInItem{
-    opacity: 1;
-    /*width: 16.6666%;*/
 }
 /*** --------------------- 首页 - 我们的公司 End --------------------- ***/
 
