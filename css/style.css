@@ -1115,7 +1115,7 @@ video::-webkit-media-controls-panel {
 }
 .homeCultureTabContainer dt{
     float: left;
-    width: 3.1rem;
+    width: 300px;
     height: 100%;
     margin-right: .7rem;
     background: url(../images/homeCultrue-culcuture.png) center center no-repeat;
@@ -1772,7 +1772,7 @@ video::-webkit-media-controls-panel {
     top: 0;
     width: 45%;
     font-size: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     text-overflow:ellipsis;
     white-space: nowrap;
 }
