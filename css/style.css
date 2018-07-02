@@ -3519,7 +3519,7 @@ video::-webkit-media-controls-panel {
 .aboutView2_card{
     position: absolute;
     right: 45%;
-    bottom: 0;
+    bottom: .1666rem;
     font-size: 20px;
     color: #fffefe;
     line-height: 1em;
