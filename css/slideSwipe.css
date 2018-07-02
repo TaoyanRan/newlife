@@ -2,7 +2,7 @@
 .slideSwipe_pointer{height:4px;position:absolute;bottom:0;}
 .slideSwipe_pointer .slideSwipePointer{width:42px;height:1px;background:#5a5a5a;float:left;margin:0 5px;cursor: pointer;}
 /*.slideSwipe_pointer li.active{height:4px;background:red;}*/
-.activeCut{background:#bdbdbd;position:absolute;font-family:'宋体';color:#fff;text-align:center;cursor:pointer;opacity:0.2;}
+.activeCut{background:#bdbdbd;position:absolute;color:#fff;text-align:center;cursor:pointer;opacity:0.2;}
 .J_banner{max-width:100%;position:relative;}
 .slideSwipe_banner{
     width: 100%;
