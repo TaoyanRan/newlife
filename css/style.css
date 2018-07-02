@@ -4301,12 +4301,17 @@ video::-webkit-media-controls-panel {
 .videoMoreList p{
     color: #ababab;
     font-size: 12px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
     text-align: justify;
     line-height: 1.5em;
+
+    /*display: -webkit-box;*/
+    /*-webkit-box-orient: vertical;*/
+    /*-webkit-line-clamp: 2;*/
+    /*overflow: hidden;*/
+
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 .AD_info{
     background: #fff;
