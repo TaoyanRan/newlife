@@ -318,6 +318,7 @@ video::-webkit-media-controls-panel {
 }
 .footerBarInfo{
     display: inline-block;
+    font-size: 12px;
 }
 .exemptFooter .footerBarInfo{
     margin-top: 15px;
