@@ -319,6 +319,9 @@ video::-webkit-media-controls-panel {
 .footerBarInfo{
     display: inline-block;
 }
+.exemptFooter .footerBarInfo{
+    margin-top: 15px;
+}
 .footerBarLink{
     text-align: center;
 }
@@ -341,7 +344,7 @@ video::-webkit-media-controls-panel {
 .footerBar a,.footerBar dd span{
     color: inherit;
     display: inline-block;
-    padding: 0 12px;
+    padding: 0 10px;
 }
 .footerBar dt a{
     padding: 0;
