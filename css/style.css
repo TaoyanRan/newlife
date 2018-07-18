@@ -5,7 +5,6 @@ body{
     min-font-size: 12px;
     max-font-size: 26px;
 }
-
 .containerWidth{
     /*width: 1200px;*/
     width: 62.5%;
@@ -994,20 +993,25 @@ video::-webkit-media-controls-panel {
     margin-top: .25rem;
     position: relative;
     height: 355px;
+    height: 440px;
 }
 .homeCultureTabHeader li.homeCulture_culture{
     height: 135px;
+    height: 180px;
     bottom: 10px;
 }
 .homeCultureTabHeader li.homeCulture_company{
     height: 135px;
+    height: 180px;
 }
 .homeCultureTabHeader li.homeCulture_culture.active{
     height: 180px;
+    height: 220px;
     background: #ff840d;
 }
 .homeCultureTabHeader li.homeCulture_company.active{
     height: 180px;
+    height: 220px;
     background: #ff840d;
     border-color: #ff840d;
 }
@@ -1152,7 +1156,7 @@ video::-webkit-media-controls-panel {
     color: #fff;
 }
 .homeCulture_textList li:hover .homeCulture_des,.homeCulture_textList li.active .homeCulture_des{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
 }
 .homeCulture_textName{
@@ -1199,15 +1203,19 @@ video::-webkit-media-controls-panel {
     display: inline-block;
     text-align: center;
     width: 100%;
-    font-size: 14px;
+    font-size: 13px;
 }
 .homeCulture_des{
     position: absolute;
     top: 50%;
-    margin-top: -.5em;
+    margin-top: -.75em;
     left: 100px;
     font-size: 14px;
     transition: font-size 0.5s ease-in-out;
+    line-height: 1.5em;
+}
+.homeCulture_des_two{
+    margin-top: -2.25em;
 }
 /* 首页 - 我们的文化 - 公司简介 */
 .homeCulture_companyInfo{
@@ -3292,14 +3300,14 @@ video::-webkit-media-controls-panel {
 }
 .cultureNav{
     /*width:  2rem;*/
-    padding: .8333rem;
+    padding: 65px .5rem;
     float: left;
     margin-right: .4166rem;
     /*margin-left: 130px;*/
 }
 .cultureNav_home{
-    width:  2.8rem;
-    height: 2.8rem;
+    width:  320px;
+    height: 320px;
     background: #f0f0f0;
     box-shadow: 0 0 5px #ccc;
     border-radius: 50%;
@@ -3322,16 +3330,27 @@ video::-webkit-media-controls-panel {
 }
 .cultureNavList li{
     position: absolute;
-    width:  1.4rem;
-    height: 1.5rem;
+    width:  114px;
+    height: 122px;
     /*background: #f0f0f0;*/
     /*box-shadow: 0 0 1px red;*/
     text-align: center;
 }
-.culture_t{ left: 50%;bottom: 50%;margin-bottom: .5rem;margin-left:-.7rem; }
-.culture_r{ top:  50%;left:   50%;margin-left:   .5rem;margin-top :-.7rem;transform: rotate(90deg) }
-.culture_b{ left: 50%;top:    50%;margin-top:    .5rem;margin-left:-.7rem;transform: rotate(180deg) }
-.culture_l{ top:  50%;right:  50%;margin-right:  .5rem;margin-top :-.7rem;transform: rotate(-90deg) }
+
+.culture_t{ left: 50%;bottom: 50%;margin-bottom: 80px;margin-left:-.7rem; }
+.culture_r{ top:  50%;left:   50%;margin-left:   80px;margin-top :-.7rem;transform: rotate(90deg) }
+.culture_b{ left: 50%;top:    50%;margin-top:    80px;margin-left:-.7rem;transform: rotate(180deg) }
+.culture_l{ top:  50%;right:  50%;margin-right:  80px;margin-top :-.7rem;transform: rotate(-90deg) }
+.cultureNavList .culture_c{
+    width: 122px;
+    top:  50%;
+    left: 50%;
+    margin-left: -61px;
+    margin-top:  -61px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    box-shadow: 0 0 10px #d6d6d6;
+}
 
 .culture_r .cultureType{ transform: rotate(-90deg) }
 .culture_b .cultureType{ transform: rotate(-180deg) }
@@ -3361,10 +3380,12 @@ video::-webkit-media-controls-panel {
 
 .cultureDesList{
     /*border: 1px solid red;*/
+    overflow: hidden;
 }
 .cultureDesList li{
     overflow: hidden;
     position: relative;
+    margin-bottom: 5px;
 }
 .cultureName{
     float: left;
@@ -3375,7 +3396,7 @@ video::-webkit-media-controls-panel {
     background: #f0f0f0;
     width:  50px;
     height: 85px;
-    margin: 5px .4rem;
+    margin: 0 .4rem;
     transition: background-color .3s ease-in-out;
 }
 .cultureName:after,.cultureName:before{
@@ -3411,18 +3432,23 @@ video::-webkit-media-controls-panel {
     background: url(../images/homeCulture-icon.png) center top no-repeat;
     background-size: .3333rem;
     padding-top: .4166rem;
+    font-size: 13px;
 }
 .cultureDesList p{
     font-size: 14px;
     color: #ff840c;
     position: absolute;
     top: 50%;
-    margin-top: -.5em;
+    margin-top: -.75em;
     left: 1.5rem;
     transition: font-size .3s ease-in-out;
+    line-height: 1.5em;
+}
+.cultureDesList p.two{
+    margin-top: -2.25em;
 }
 .cultureDesList li.active p{
-    font-size: 16px;
+    font-size: 15px;
 }
 .cultureDesList li.active .cultureName{
     background: #ff840c;

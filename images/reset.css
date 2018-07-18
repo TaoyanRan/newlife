@@ -1,0 +1,63 @@
+/* reset*/
+html,body{
+    /*min-height: 100%;*/
+}
+
+*,body *{
+    -webkit-touch-callout: none;    /* 长按菜单 */
+    -webkit-text-size-adjust:none;  /* 停用字体优化 */
+    -webkit-appearance: none;/* form控件重置样式 */
+    -webkit-tap-highlight-color: transparent;   /* 点击高光 */
+    -webkit-user-drag: none;    /* 停用拖动 */
+    /*-webkit-user-select : none; !* 停用用户选择 *!*/
+    margin: 0;
+    padding: 0;
+}
+
+/* 清除输入框内阴影 */
+input, select,textarea {
+    border: 0;
+    -webkit-appearance: none;
+    appearance:none;
+    outline: 0;
+    resize: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/*//禁止选中文本内容*/
+*:not(input, select, textArea) {
+    -webkit-user-select: none;
+}
+
+/* 禁用长按页面时的弹出菜单(iOS下有效) ,img和a标签都要加 */
+img,a{
+    -webkit-touch-callout:none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+    max-width: 100%;
+}
+a,a:active,a:hover {
+    text-decoration: none;
+}
+
+/* 去掉点击链接和文本框对象时默认的灰色半透明覆盖层(iOS)或者虚框(Android) */
+a,a:hover,button,input,textarea{
+    -webkit-tap-highlight-color:transparent;
+}
+
+/* 清除浮动 */
+.cl:after, .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+.cl, .clearfix {
+    zoom: 1
+}

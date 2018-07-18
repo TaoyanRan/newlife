@@ -64,7 +64,8 @@ $.fn.extend({
         // console.log(params.autoPlay);
         params = params ? params : {};
         if(params.autoPlay == true || params.autoPlay == undefined){
-            params.autoPlay = 3000
+            // params.autoPlay = 3000
+            params.autoPlay = 5000
         }
         if(params.navigation || params.navigation == undefined){
             params.navigation = true
