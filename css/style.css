@@ -3337,10 +3337,10 @@ video::-webkit-media-controls-panel {
     text-align: center;
 }
 
-.culture_t{ left: 50%;bottom: 50%;margin-bottom: 80px;margin-left:-.7rem; }
-.culture_r{ top:  50%;left:   50%;margin-left:   80px;margin-top :-.7rem;transform: rotate(90deg) }
-.culture_b{ left: 50%;top:    50%;margin-top:    80px;margin-left:-.7rem;transform: rotate(180deg) }
-.culture_l{ top:  50%;right:  50%;margin-right:  80px;margin-top :-.7rem;transform: rotate(-90deg) }
+.culture_t{ left: 50%;bottom: 50%;margin-bottom: 80px;margin-left:-57px; }
+.culture_r{ top:  50%;left:   50%;margin-left:   80px;margin-top :-57px;transform: rotate(90deg) }
+.culture_b{ left: 50%;top:    50%;margin-top:    80px;margin-left:-57px;transform: rotate(180deg) }
+.culture_l{ top:  50%;right:  50%;margin-right:  80px;margin-top :-57px;transform: rotate(-90deg) }
 .cultureNavList .culture_c{
     width: 122px;
     top:  50%;
