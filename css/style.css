@@ -932,6 +932,8 @@ video::-webkit-media-controls-panel {
 }
 .homeNewsTabConatainer img{
     width: 100%;
+}
+.homeNewsTabConatainer dt img{
     display: none;
 }
 .homeNewsTabConatainer dd{
