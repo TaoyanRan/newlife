@@ -1707,9 +1707,13 @@ video::-webkit-media-controls-panel {
 .gskx_newsPic{
     height: 170px;
     overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .gskx_newsPic img{
     width: 100%;
+    display: none;
 }
 .gskx_newsInfo{
     padding: 0 15px;
