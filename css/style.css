@@ -1281,11 +1281,14 @@ video::-webkit-media-controls-panel {
 }
 .homeCulture_companyInfo p{
     margin: 15px 15px 0;
-    line-height: 1.7em;
+    font-size: 0;
+    line-height: 0;
 }
 .homeCulture_companyInfo_text span{
     text-indent: 2em;
     display: block;
+    font-size: 14px;
+    line-height: 1.7em;
     /*margin-bottom: 1.5em;*/
 }
 /*** --------------------- 首页 - 我们的文化 End --------------------- ***/
