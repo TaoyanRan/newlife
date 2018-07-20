@@ -1169,7 +1169,7 @@ video::-webkit-media-controls-panel {
 }
 .homeCulture_textList li:hover .homeCulture_des,.homeCulture_textList li.active .homeCulture_des{
     font-size: 15px;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 .homeCulture_textName{
     position: relative;
@@ -1210,8 +1210,9 @@ video::-webkit-media-controls-panel {
 }
 .homeCulture_name span{
     background: url(../images/homeCulture-icon.png) center 0 no-repeat;
-    background-size: .3rem;
-    padding-top: .4rem;
+    background-size: 50px;
+    padding-top: 45px;
+    margin-top: -10px;
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -3383,7 +3384,10 @@ video::-webkit-media-controls-panel {
 }
 .cultureType img{
     width: 45px;
+    background: #ff840c;
+    border-radius: 50%;
 }
+
 .cultureNavList li p{
     font-size: 14px;
     color: #ff840c;
@@ -3440,14 +3444,21 @@ video::-webkit-media-controls-panel {
 .cultureName_text{
     position: relative;
     z-index: 2;
-    margin: 0 -1em;
+    margin: -10px -1em 0;
     display: block;
     text-align: center;
     background: url(../images/homeCulture-icon.png) center top no-repeat;
-    background-size: .3333rem;
-    padding-top: .4166rem;
+    background-size: 50px;
+    padding-top: 45px;
     font-size: 13px;
 }
+
+.cultureType_t,.homeCulture_name .cultureType_t{ background-image: url(../images/cultureType_t.png) }
+.cultureType_r,.homeCulture_name .cultureType_r{ background-image: url(../images/cultureType_r.png) }
+.cultureType_b,.homeCulture_name .cultureType_b{ background-image: url(../images/cultureType_b.png) }
+.cultureType_l,.homeCulture_name .cultureType_l{ background-image: url(../images/cultureType_l.png) }
+.cultureType_c,.homeCulture_name .cultureType_c{ background-image: url(../images/cultureType_c.png) }
+
 .cultureDesList p{
     font-size: 14px;
     color: #ff840c;
