@@ -1280,18 +1280,13 @@ video::-webkit-media-controls-panel {
 
 }
 .homeCulture_companyInfo p{
-    text-indent: 2em;
     margin: 15px 15px 0;
-    height: 15em;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 9;
-    text-overflow:ellipsis;
-    overflow: hidden;
     line-height: 1.7em;
 }
 .homeCulture_companyInfo_text span{
     text-indent: 2em;
+    display: block;
+    /*margin-bottom: 1.5em;*/
 }
 /*** --------------------- 首页 - 我们的文化 End --------------------- ***/
 
