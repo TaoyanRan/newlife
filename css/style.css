@@ -3146,6 +3146,7 @@ video::-webkit-media-controls-panel {
 }
 .servicesServicesPic{
     overflow: hidden;
+    padding: 0 5px;
 }
 .services_serviceList li.active img{
     -webkit-animation: hotelDefault .3s 1 forwards;
