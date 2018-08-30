@@ -64,8 +64,8 @@
                 <div class="newHomeCompanyName"><a href="yxgs.html"><span>营销公司</span></a></div>
             </div>
             <div class="newHomeCompanyNamePagination">
-                <div class="prev"><a href="#"><span>&lt;</span></a></div>
-                <div class="next"><a href="#"><span>&gt;</span></a></div>
+                <div class="prev"><span>&lt;</span></div>
+                <div class="next"><span>&gt;</span></div>
             </div>
         </div>
     </div>
@@ -274,9 +274,13 @@
     }
     jyjd_hotel_list(3);
 
-    $('.jdPic').setSize(370,240)
+    $('.jdPic').setSize(370,240);
 
-
+    $('.jyjd_management_honour div').each(function (i) {
+        $(this).hover(function () {
+            $('.jyjd_management_honour div').removeClass('active').eq(i).addClass('active')
+        })
+    });
 
 </script>
 </html>

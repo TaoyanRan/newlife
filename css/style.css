@@ -1778,8 +1778,8 @@ video::-webkit-media-controls-panel {
     line-height: 1em;
     display: block;
     border: 1px solid #ff840c;
-    border-top: 0;
     position: relative;
+    border-radius: 4px;
 }
 .companyNav a span{
     display: block;
@@ -1787,20 +1787,6 @@ video::-webkit-media-controls-panel {
     height:      2.5em;
     line-height: 2.5em;
 }
-.companyNav a:after{
-    position: absolute;
-    bottom: 100%;
-    left: -1px;
-    right: -1px;
-    height: 0.5em;
-    background: url(../images/icon-companyNav-after-default-r.png) 0 0 no-repeat;
-    background-size: 100% 100%;
-    content: '';
-}
-.companyNav li:nth-child(2n-1) a:after{ background-image: url(../images/icon-companyNav-after-default-l.png); }
-.companyNav li:nth-child(2n-1) a:hover:after{ background-image: url(../images/icon-companyNav-after-active-l.png); }
-.companyNav li:nth-child(2n) a:after{ background-image: url(../images/icon-companyNav-after-default-r.png); }
-.companyNav li:nth-child(2n) a:hover:after{ background-image: url(../images/icon-companyNav-after-active-r.png); }
 .companyNav a:before{
     position: absolute;
     left: 50%;
@@ -1822,10 +1808,6 @@ video::-webkit-media-controls-panel {
 .companyNav a.active:before{
     display: block;
 }
-.companyNav li:nth-child(2n-1) a.active:after { background-image: url(../images/icon-companyNav-after-active-l.png); }
-.companyNav li:nth-child(2n) a.active:after { background-image: url(../images/icon-companyNav-after-active-r.png); }
-
-
 /*** --------------------- 专业公司导航 End --------------------- ***/
 
 /*** --------------------- 建业物业 Begin --------------------- ***/
