@@ -1,6 +1,9 @@
 body{
     font-family: "Microsoft YaHei","微软雅黑","PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
+body::-webkit-scrollbar{
+    width: 0;
+}
 *{
     min-font-size: 12px;
     max-font-size: 26px;
@@ -698,109 +701,8 @@ video::-webkit-media-controls-panel {
     position: relative;
     z-index: 2;
 }
-.homeCompanyNameList{
-    margin: 15px -2px 18px;
-}
-.homeCompanyName{
-    text-align: center;
-    padding: 10px 2px;
-    position: relative;
-}
-.homeCompanyName:after{
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left:  10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top:   10px solid #ff840c;
-    margin-left: -10px;
-    /*display: none;*/
-    content: '';
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-}
-.homeCompanyName.active:after{
-    opacity: 1;
-}
-.homeCompanyName span{
-    background: #fff;
-    display: block;
-    cursor: pointer;
-    line-height: 1em;
-    padding: .65em 0;
-    position: relative;
-
-    transition: background-color .3s ease-in-out;
-}
-.homeCompanyName span:before{
-    position: absolute;
-    bottom: 100%;
-    width: 0;
-    height: 0;
-    border-top:    .5em solid transparent;
-    border-bottom: 0 solid transparent;
-    content: '';
-}
-.homeCompanyName:nth-child(2n-1) span:before{
-    border-left:1.38rem solid #fff;
-    left: 0;
-    transition: all .3s ease-in-out;
-}
-.homeCompanyName:nth-child(2n) span:before{
-    border-right:1.38rem solid #fff;
-    right: 0;
-    transition: all .3s ease-in-out;
-}
-.homeCompanyName:hover span,.homeCompanyName.active span{
-    background-color: #ff840c;
-    color: #fff;
-}
-.homeCompanyName:nth-child(2n-1):hover span:before,.homeCompanyName:nth-child(2n-1).active span:before{
-    border-left-color: #ff840c;
-}
-.homeCompanyName:nth-child(2n):hover span:before,.homeCompanyName:nth-child(2n).active span:before{
-    border-right-color: #ff840c;
-}
-
-
-
-
-
-
 /* 首页我们的公司 */
-#homeCompany{
-    position: relative;
-}
-#homeCompany .homeCompanyInItem{
-    position: absolute;
-    top:    0;
-    left:   0;
-    right:  0;
-    bottom: 0;
-    overflow: hidden;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-}
-#homeCompany .homeCompanyInItem.active{
-    position: absolute;
-    top:    0;
-    left:   0;
-    right:  0;
-    bottom: 0;
-    overflow: hidden;
-    z-index: 2;
-    opacity: 1;
-}
-.homeCompanyPic{
-    float: left;
-    width: 33.3333%;
-}
-.homeCompanyPic img{
-    width: 100%;
-}
+
 /*** --------------------- 首页 - 我们的公司 End --------------------- ***/
 
 /*** --------------------- 首页 - 我们的动态 Begin --------------------- ***/
@@ -1922,6 +1824,7 @@ video::-webkit-media-controls-panel {
 }
 .companyNav li:nth-child(2n-1) a.active:after { background-image: url(../images/icon-companyNav-after-active-l.png); }
 .companyNav li:nth-child(2n) a.active:after { background-image: url(../images/icon-companyNav-after-active-r.png); }
+
 
 /*** --------------------- 专业公司导航 End --------------------- ***/
 
@@ -4643,8 +4546,617 @@ video::-webkit-media-controls-panel {
 }
 /*** --------------------- End --------------------- ***/
 
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
+/*** --------------------- 君临会 Begin --------------------- ***/
+.aboutJlh_container{
+    background: url(../images/jlh_about_bg.png) left 1.1rem no-repeat;
+    background-size: 100%;
+}
+.aboutJlh_info{
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.aboutJlh_l img{
+    width: 100%;
+}
+
+.aboutJlh_c{
+    width: 45%;
+    margin: 0 22.5% 0 32.5%;
+    font-size: 14px;
+    color: #666666;
+    text-align: justify;
+    height: 3.8rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+.aboutJlh_c:after{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 1.9rem solid transparent;
+    border-bottom: 1.9rem solid transparent;
+    border-right: .63rem solid #fff;
+    z-index: 2;
+    content: '';
+}
+.aboutJlh_c_container{
+    height: 100%;
+    overflow: hidden;
+    padding: 0 .2rem;
+}
+.aboutJlh_c p{
+    text-indent: 2em;
+    line-height: 24px;
+}
+.aboutJlh_l{
+    width: 32.5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.aboutJlh_r{
+    width: 22.5%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.aboutJlh_r img{
+    width: 100%;
+}
+
+.jlhService{
+    margin: .4166rem auto 0;
+}
+
+.jlhSwipe{
+    height: 3.7rem;
+}
+.jlhSwipe .customSwipeContainer{
+    padding: 15px 1px 15px 0;
+}
+
+
+
+.jlhService_item_in{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*font-size: 60px;*/
+    /*text-align: center;*/
+    /*line-height: 3.7rem;*/
+    position: relative;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+}
+.jlhService_item_in img{
+    width: 100%;
+}
+.jlhService_item_pic{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transition: background-size .5s ease-in-out;
+}
+.jlhService_item_info{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    background: #fff;
+}
+.jlhService_item_info:after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: .64rem;
+    margin-bottom: -2px;
+    z-index: 2;
+    background: url(../images/jlhService_item_default.png) center bottom no-repeat;
+    background-size: 100% auto;
+    content: '';
+}
+
+.jlhService_item_in:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,.12);
+}
+.jlhService_item_in:hover .jlhService_item_info:after{
+    background-image: url(../images/jlhService_item_hover.png);
+}
+.jlhService_item_in:hover .jlhService_item_info a{
+    text-decoration: underline;
+    color: #ff840d;
+}
+.jlhService_item_in:hover .jlhService_item_pic{
+    background-size: 120% auto;
+}
+
+
+
+.jlhService_item_info p{
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    padding: 2px 0;
+}
+.jlhService_item_info a{
+    font-size: 18px;
+    color: #0b499c;
+    display: inline-block;
+    padding: .25rem 0;
+}
+
+/*** --------------------- 君临会 End --------------------- ***/
+
+/*** --------------------- 现代农业 Begin --------------------- ***/
+.xyny_about{
+    margin: 0 auto;
+}
+.xyny_about_view{
+    height: 3.3rem;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+}
+
+.xyny_about_brief{
+    position: relative;
+    height: 100%;
+    z-index: 2;
+    margin-left: 55%;
+}
+.xyny_about_briefIn{
+    box-sizing: border-box;
+    padding: .2rem .25rem;
+    background: #0b499c;
+}
+.xyny_about_briefIn h3{
+    font-size: .36rem;
+    max-font-size: 26px;
+    text-align: center;
+    font-weight: normal;
+}
+.xyny_about_brief_title{
+    text-align: center;
+    font-size: 0;
+    margin: 0 5px;
+}
+.xyny_about_brief_title span{
+    display: inline-block;
+    position: relative;
+    font-size: .13rem;
+    padding: 0 10px;
+}
+.xyny_about_brief_title span:after,.xyny_about_brief_title span:before{
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background: #f79332;
+    width: .8rem;
+    content: '';
+}
+.xyny_about_brief_title span:after{
+    right: 100%;
+}
+.xyny_about_brief_title span:before{
+    left: 100%;
+}
+
+
+.xyny_about_brief p{
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 22px;
+    /*font-size: 14px;*/
+    font-size: 12px;
+}
+
+.xyny_about_swipe{
+    position: absolute;
+    height: 100%;
+    width: 60%;
+}
+
+.xyny_about_swipe_Pagination{
+    position: absolute;
+    width: 1rem;
+    height: .5rem;
+    border: 1px solid #fff;
+    background: #ff840d;
+    top: 50%;
+    left: 1rem;
+    margin-top: -.25rem;
+    z-index: 10;
+    white-space: nowrap;
+    font-size: 0;
+}
+.xyny_about_swipe_Pagination div{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+.xyny_about_swipe_Pagination .prev{
+    background: url(../images/xdny_prev.png) center center no-repeat;
+    background-size: auto 50%;
+}
+.xyny_about_swipe_Pagination .next{
+    background: url(../images/xdny_next.png) center center no-repeat;
+    background-size: auto 50%;
+}
+
+.xyny_about_swipe ul{
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+}
+.xyny_about_swipe li{
+    position: absolute;
+    height: 1.25rem;
+    width: 2rem;
+    top: 1.25rem;
+    left: .3rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s ease-in-out;
+}
+
+.xyny_about_swipe li.active{
+    left: 1.5rem;
+    height: 100%;
+    width: 4.5rem;
+    top: 0;
+    z-index: 2;
+}
+
+
+
+.xdny_project{
+    margin: .3rem auto 0;
+}
+.xdnySwipe{
+    height: 4rem;
+}
+.xdnySlide_in{
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: .45rem;
+}
+.xdnySlide_info{
+    height: 100%;
+    background: #0b499c;
+    position: relative;
+    transition: background-color .3s ease-in-out;
+}
+.xdnySlide_pic{
+    position: absolute;
+    left: 0;
+    right: .15rem;
+    top: -.3rem;
+    height: 3.35rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: top .3s ease-in-out;
+}
+.xdnySlide_name{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: .5rem;
+    line-height: .5rem;
+    color: #fff;
+    font-size: .15rem;
+    padding: 0 .15rem;
+    box-sizing: border-box;
+}
+.xdnySlide_link{
+    position: absolute;
+    right: .15rem;
+    color: #fff;
+}
+.xdnySlide_info:hover{
+    background: #ff840d;
+}
+.xdnySlide_info:hover .xdnySlide_pic{
+    top: -.45rem;
+}
+.xdnySlide_link:hover{
+    text-decoration: underline;
+}
+    /*** --------------------- 现代农业 End --------------------- ***/
+
+/*** --------------------- 自定义滚动轮播Begin --------------------- ***/
+.customSwipe{
+    position: relative;
+}
+
+.customPagination{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+}
+.customPagination .prev,.customPagination .next{
+    position: absolute;
+    top: -.25rem;
+    width: .25rem;
+    height: .5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: .6;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity .3s ease-in-out;
+}
+.customPagination .prev:hover,.customPagination .next:hover{
+    opacity: 1;
+}
+.customPagination .prev{
+    left: -.6rem;
+    background-image: url(../images/team_icon_prev.png);
+}
+.customPagination .next{
+    right: -.6rem;
+    background-image: url(../images/team_icon_next.png);
+}
+
+.customSwipeContainer{
+    overflow: hidden;
+    height: 100%;
+}
+.customWarp{
+    font-size: 0;
+    white-space: nowrap;
+    height: 100%;
+    position: relative;
+    left: 0;
+    /*transition: left .3s ease-in-out;*/
+}
+.customSlide{
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.customSlide_in{
+    height: 100%;
+    /*text-align: center;*/
+}
+/*** --------------------- 自定义滚动轮播End --------------------- ***/
+
+/*** --------------------- 首页 - 专业公司（新） Begin --------------------- ***/
+.newHomeCompanyListView{
+    position: relative;
+    height: 4.25rem;
+    margin: 0 auto;
+}
+.newHomeCompanyListView ul{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 0;
+    white-space: nowrap;
+    background: #fff;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.newHomeCompanyListView ul.active{
+    z-index: 2;
+    opacity: 1;
+}
+.newHomeCompanyListView li{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    transition: width .3s ease-in-out;
+    position: relative;
+}
+.newHomeCompanyListView li.active{
+    width: 60%;
+}
+.newHomeCompanyListView li img{
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+.newHomeCompanyItem_info{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: rgba(12,89,178,.9);
+    color: #fff;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    box-sizing: border-box;
+    padding: .2rem .2rem;
+    opacity: 0;
+}
+.newHomeCompanyItem_info h3,.newHomeCompanyItem_info p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 5px 140px 5px 0;
+}
+.newHomeCompanyItem_info h3{
+    font-size: .17rem;
+    min-font-size: 15px;
+}
+.newHomeCompanyItem_info p{
+    font-size: .12rem;
+    min-font-size: 12px;
+}
+.newHomeCompanyItem_info a{
+    position: absolute;
+    right: .25rem;
+    font-size: .17rem;
+    min-font-size: 15px;
+    color: #fff;
+    top: 50%;
+    margin-top: -.5em;
+}
+.newHomeCompanyListView li.active .newHomeCompanyItem_info{
+    width: 100%;
+    opacity: 1;
+}
+/*** --------------------- 首页 - 专业公司（新） End --------------------- ***/
+
+/*** --------------------- 首页 - 专业公司导航（新）Begin --------------------- ***/
+.newHomeCompanyNameSwipe{
+    position: relative;
+    margin: .3rem auto;
+    width: 90%;
+    font-size: 15px;
+}
+.newHomeCompanyNamePagination{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 0;
+    text-align: center;
+}
+.newHomeCompanyNamePagination .prev,.newHomeCompanyNamePagination .next{
+    position: absolute;
+    width:  .4rem;
+    height: .4rem;
+    line-height: .4rem;
+    box-sizing: border-box;
+    margin-top: -.2rem;
+    z-index: 2;
+    cursor: pointer;
+}
+.newHomeCompanyNamePagination .prev{
+    left: -.4rem;
+    margin-left: -5px;
+}
+.newHomeCompanyNamePagination .next{
+    right: -.4rem;
+    margin-right: -5px;
+}
+.newHomeCompanyNamePagination span{
+    display: block;
+    background: #fff;
+    color: #09499b;
+    height: 100%;
+    border-radius: 4px;
+}
+.newHomeCompanyNameList{
+    font-size: 0;
+    white-space: nowrap;
+    padding: 15px 0;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.newHomeCompanyName{
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    height: .4rem;
+    line-height: .4rem;
+    padding: 0 5px;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 0;
+    transition: margin-left .3s ease-in-out;
+    cursor: pointer;
+}
+.newHomeCompanyName span{
+    display: block;
+    background: #fff;
+    color: #09499b;
+    position: relative;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    padding: 0 5px;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    border-radius: 4px;
+}
+.newHomeCompanyNameList .newHomeCompanyName:after{
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-top: -1px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ff840c;
+    margin-left: -10px;
+    /* display: none; */
+    content: '';
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+
+.newHomeCompanyName.active span{
+    background: #ff840c;
+    color: #fff;
+}
+.newHomeCompanyName.active:after{
+    opacity: 1;
+}
+
+
+/*** --------------------- 首页 - 专业公司导航（新）End --------------------- ***/
+
+/*** --------------------- 专业公司导航（新）（灰色主题）Begin --------------------- ***/
+.grayTheme .newHomeCompanyName span{
+    border: 1px solid #ff840c;
+    transition: none;
+}
+.grayTheme .newHomeCompanyNamePagination span{
+    border: 1px solid #ff840c;
+}
+.grayTheme .newHomeCompanyNamePagination span[disabled]{
+    background: #e5e5e5;
+    color: #fff;
+    border-color: #e5e5e5;
+}
+.grayTheme .newHomeCompanyName.active span{
+    background: #ff840c;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+}
+.grayTheme .newHomeCompanyName:hover span{
+    background: #ff840c;
+    color: #fff;
+}
+.grayTheme .newHomeCompanyNameList .newHomeCompanyName:after{
+    margin-top: 9px;
+}
+/*** --------------------- 专业公司导航（新）（灰色主题）End --------------------- ***/
 
 /*** --------------------- Begin --------------------- ***/
 /*** --------------------- End --------------------- ***/
@@ -4657,3 +5169,4 @@ video::-webkit-media-controls-panel {
 
 /*** --------------------- Begin --------------------- ***/
 /*** --------------------- End --------------------- ***/
+

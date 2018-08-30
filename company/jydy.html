@@ -46,14 +46,26 @@
 <div>
 
     <div class="companyHeader containerWidth">
-        <ul class="companyNav customRow">
-            <li class="customCol customCol_5"><a href="jywy.html"><span>建业物业</span></a></li>
-            <li class="customCol customCol_5"><a href="sykj.html"><span>嵩云科技</span></a></li>
-            <li class="customCol customCol_5"><a href="jyly.html"><span>建业旅游</span></a></li>
-            <li class="customCol customCol_5"><a href="jyjd.html"><span>建业酒店管理</span></a></li>
-            <li class="customCol customCol_5"><a href="javascript:void(0)" class="active"><span>建业东英</span></a></li>
-            <!--<li class="customCol customCol_6"><a href="mhj.html"><span>美好家孵化器</span></a></li>-->
-        </ul>
+
+
+        <div class="newHomeCompanyNameSwipe grayTheme">
+            <div class="newHomeCompanyNameList">
+                <div class="newHomeCompanyName"><a href="jywy.html"><span>建业物业</span></a></div>
+                <div class="newHomeCompanyName"><a href="sykj.html"><span>嵩云科技</span></a></div>
+                <div class="newHomeCompanyName"><a href="jyly.html"><span>建业旅游</span></a></div>
+                <div class="newHomeCompanyName"><a href="jyjd.html"><span>建业酒店管理</span></a></div>
+                <div class="newHomeCompanyName active"><a href="jydy.html"><span>建业东英</span></a></div>
+                <div class="newHomeCompanyName"><a href="xdny.html"><span>现代农业</span></a></div>
+                <div class="newHomeCompanyName"><a href="jlh.html"><span>君临会</span></a></div>
+                <div class="newHomeCompanyName"><a href="syzx.html"><span>商业顾问咨询</span></a></div>
+                <div class="newHomeCompanyName"><a href="wlzx.html"><span>文旅发展顾问咨询</span></a></div>
+                <div class="newHomeCompanyName"><a href="yxgs.html"><span>营销公司</span></a></div>
+            </div>
+            <div class="newHomeCompanyNamePagination">
+                <div class="prev"><a href="#"><span>&lt;</span></a></div>
+                <div class="next"><a href="#"><span>&gt;</span></a></div>
+            </div>
+        </div>
     </div>
 
 
@@ -270,6 +282,7 @@
 
 <script>
 
+    customCompanyNav();
     $('.jydy_about_item_text_title').click(function () {
         console.log($('.jydy_about_desText p').html(),$(this).text());
 
@@ -299,7 +312,7 @@
 
     $('#dySwipe').swipe({
         pagination: false,
-        navigation: false
+        navigation: false,
     });
 
 

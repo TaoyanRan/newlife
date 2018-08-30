@@ -335,6 +335,104 @@ $.fn.extend({
             $('#preview').remove()
         });
 
+    },
+
+    customSwipe: function (params) {
+        var _this = $(this);
+        params = params ? params : {};
+        var item = params.slide ? params.slide : 1;
+
+        // slider 间距 传入参数的两倍
+        var spaceBetween = params.spaceBetween ? params.spaceBetween : 0;
+        if(params.autoPlay == true || params.autoPlay == undefined){
+            // params.autoPlay = 3000
+            console.log('autoPlay')
+            params.autoPlay = 5000
+        }
+        var init = {
+            autoPlay: params.autoPlay ? params.autoPlay : false,
+        };
+        console.log('init.autoPlay',init.autoPlay)
+
+        var width = 100 / item;
+        var next = $(this).find('.next');
+        var prev = $(this).find('.prev');
+        var wrapper = $(this).find('.customSwipeContainer');
+        var ul = $(this).find('.customWarp');
+        var li = $(this).find('.customSlide');
+
+        li.css({
+            width: width + '%',
+            padding: '0 ' + spaceBetween
+        });
+
+        ul.css({
+            margin: '0 -' + spaceBetween
+        });
+
+        for(var ali = 0;ali<item-1;ali++){
+            ul.append(li.eq(ali).prop("outerHTML"));
+            ul.prepend(li.eq(li.length - ali - 1).prop("outerHTML"));
+        }
+
+        var length = $(this).find('.customSlide').length;
+        // var distance = swipe.width() * width / 100 +  parseFloat(spaceBetween);
+        var distance = $(this).find('.customSlide').eq(0).width() + 2 * parseFloat(spaceBetween);
+        console.log('distance >>>',distance)
+        var i = item - 1;
+        ul.css('left',-distance * i + 'px');
+
+        function nextItem() {
+            i++;
+            ul.stop(true).animate({
+                'left': -distance * i + 'px'
+            },function () {
+                if(i >= length - item){
+                    i = item - 2;
+                    ul.css('left',-distance * i + 'px');
+                }
+            });
+        }
+
+        function prevItem() {
+            i--;
+            ul.stop(true).animate({
+                'left': -distance * i + 'px'
+            },function () {
+                if(i < 0){
+                    i = length - item - (item - 1);
+                    ul.css('left',-distance * i + 'px');
+                }
+            });
+        }
+
+        next.click(function () {
+            nextItem()
+        });
+
+        prev.click(function () {
+            prevItem()
+        });
+
+
+
+        var t;
+        if(init.autoPlay){
+            t = setInterval(nextItem,init.autoPlay)
+        }
+
+
+        // var t = setInterval(nextItem,3000);
+        _this.hover(function () {
+            if(init.autoPlay){
+                clearInterval(t)
+            }
+        },function () {
+            if(init.autoPlay){
+                t = setInterval(nextItem,3000)
+            }
+        })
+
     }
 });
 
@@ -342,6 +440,74 @@ $.fn.extend({
 $('.banner').setSize(1920,635);
 if($('#banner')){
     $('#banner').swipe();
+}
+
+
+function customCompanyNav() {
+    var companyNameList = $('.newHomeCompanyNameList');
+    var companyNames = $('.newHomeCompanyNameList .newHomeCompanyName');
+    // var companys = $('.newHomeCompanyListView ul');
+    // companyNames.eq(0).addClass('active');
+    var companyNext = $('.newHomeCompanyNamePagination .next');
+    var companyPrev = $('.newHomeCompanyNamePagination .prev');
+    var itemWidth = companyNames.eq(0)[0].offsetWidth;
+
+    var nowIndex = getIndex();
+    companyNames.eq(nowIndex).find('a').attr('href','javascript:void(0)');
+    changeToIndex(nowIndex);
+
+    companyNext.click(function () {
+        nowIndex++;
+        changeToIndex(nowIndex)
+    });
+    companyPrev.click(function () {
+        nowIndex--;
+        changeToIndex(nowIndex)
+    });
+    companyNames.each(function (index) {
+        // $(this).click(function () {
+        //     changeToIndex(index)
+        // })
+        console.log($(this).find('a').attr('href'))
+    });
+
+    function changeToIndex(index) {
+        // companyNames.eq(index).addClass('active').siblings('.newHomeCompanyName').removeClass('active');
+        // companys.eq(index).addClass('active').siblings('ul').removeClass('active');
+        var scrollIndex;
+        var end = companyNames.length - 5;
+
+        if(index >= end){
+            nowIndex = end;
+            scrollIndex = end;
+            companyNext.find('span').attr('disabled','disabled')
+        }else if(index <= 0){
+            nowIndex = 0;
+            scrollIndex = 0;
+            companyPrev.find('span').attr('disabled','disabled')
+        }else {
+            scrollIndex = index;
+            companyNext.find('span').removeAttr('disabled');
+            companyPrev.find('span').removeAttr('disabled');
+        }
+
+        // companyNames.eq(0).stop(true).animate({
+        //     marginLeft: -itemWidth * scrollIndex + 'px'
+        // },100)
+        console.log(itemWidth * scrollIndex)
+        companyNameList.scrollLeft(itemWidth * scrollIndex)
+    }
+
+    function getIndex() {
+        for(var i=0;i<companyNames.length;i++){
+            if(companyNames.eq(i).hasClass('active')){
+                return i
+            }
+        }
+    }
+
+
+
 }
 
 

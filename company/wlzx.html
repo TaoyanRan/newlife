@@ -9,7 +9,6 @@
     <script src="../js/rem.js"></script>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body>
 
@@ -29,17 +28,24 @@
 </div>
 <!---------------------- header end ---------------------->
 
-<div class="banner">
-    <img src="../images/banner-news.png" alt="">
+<div class="swipe banner" id="banner">
+
+    <div class="swipeContainer">
+        <div class="slide active"><img src="../images/banner-home.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-news.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-jywy.png" alt=""></div>
+        <div class="slide"><img src="../images/banner-about.png" alt=""></div>
+    </div>
+    <div class="navigation"><!-- 圆点 --></div>
+    <div class="pagination"><!-- 上一页下一页 --></div>
+
 </div>
 <!---------------------- banner or bannerSwipe ---------------------->
-
 
 
 <div>
 
     <div class="companyHeader containerWidth">
-
 
         <div class="newHomeCompanyNameSwipe grayTheme">
             <div class="newHomeCompanyNameList">
@@ -51,7 +57,7 @@
                 <div class="newHomeCompanyName"><a href="xdny.html"><span>现代农业</span></a></div>
                 <div class="newHomeCompanyName"><a href="jlh.html"><span>君临会</span></a></div>
                 <div class="newHomeCompanyName"><a href="syzx.html"><span>商业顾问咨询</span></a></div>
-                <div class="newHomeCompanyName"><a href="wlzx.html"><span>文旅发展顾问咨询</span></a></div>
+                <div class="newHomeCompanyName active"><a href="wlzx.html"><span>文旅发展顾问咨询</span></a></div>
                 <div class="newHomeCompanyName"><a href="yxgs.html"><span>营销公司</span></a></div>
             </div>
             <div class="newHomeCompanyNamePagination">
@@ -59,43 +65,19 @@
                 <div class="next"><a href="#"><span>&gt;</span></a></div>
             </div>
         </div>
-    </div>
-
-
-    <div class="mhj">
-
-        <div class="mhj_about">
-            <h2 class="moduleName companyModuleName"><i>incubator</i><span>孵化器</span></h2>
-            <div class="mhj_about_info containerWidth">
-                <img src="../images/mhj-about-pic.png" alt="">
-                <div class="mhj_about_des">
-                    <div class="mhj_about_des_arrow">
-                        <div class="mhj_about_des_arrow_top"></div>
-                        <div class="mhj_about_des_arrow_bottom"></div>
-
-                    </div>
-                    <div class="middleOut">
-                        <div class="middleIn">
-                            <p>郑州建业美好家创业孵化器有限公司（以下简称“建业美好家创业孵化器”）创立于2017年3月16日，它是建业新生活公司贯彻“平台生态圈战略”的重要布局，以“让生活更美好”为使命，致力于成为“美好生活产业最具吸引力的创业孵化平台”。 建业美好家创业孵化器依托建业生态产业资源及高品质的用户资源，为创客们提供包含人才培养、商业模式咨询、投资、数据、市场渠道、创客空间、互联网技术等一站式创业孵化服务。</p>
-                            <div class="mhj_about_link"><a href="#">进入官网</a></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="mhj_service">
-            <h2 class="moduleName companyModuleName"><i>service</i><span>我们的服务</span></h2>
-            <div class="mhj_service_info">
-                <img src="../images/mhj-service-pic.png" alt="">
-            </div>
-        </div>
-
-
 
     </div>
+
+
+    <!--<div class="">-->
+        <!--<div class="containerWidth">-->
+            <!--<h2 class="moduleName companyModuleName"><i>Agriculture</i><span>商业资讯</span></h2>-->
+        <!--</div>-->
+        <!--<div class="containerWidth">-->
+            <!--<h2 class="moduleName companyModuleName"><i>project</i><span>我们的项目</span></h2>-->
+
+        <!--</div>-->
+    <!--</div>-->
 
 
 </div>
@@ -172,8 +154,8 @@
 <script src="../js/utils.js"></script>
 
 <script>
+
     customCompanyNav();
-    $('.mhj_about_info').setSize(1200,430)
 
 </script>
 </html>

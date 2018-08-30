@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>建业新生活</title>
+    <!--开启对web app的支持-->
+    <meta name="viewport" content="width=device-width,initial-scale=.5,minimum-scale=.4,maximum-scale=1,user-scalable=yes"/>
+
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        #xdnySwipe{
+            height: 4rem;
+        }
+        .customSlide_in{
+            text-align: center;
+            font-size: 60px;
+            line-height: 4rem;
+            box-shadow: 0 0 1px red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="containerWidth" style="margin: 100px auto;">
+    <div class="customSwipe" id="xdnySwipe"><!-- 设置高度 -->
+        <div class="customSwipeContainer">
+            <div class="customWarp">
+
+                <div class="customSlide">
+                    <div class="customSlide_in">
+                        <!--append html-->1
+                    </div>
+                </div>
+
+                <div class="customSlide">
+                    <div class="customSlide_in">
+                        <!--append html-->2
+                    </div>
+                </div>
+
+                <div class="customSlide">
+                    <div class="customSlide_in">
+                        <!--append html-->3
+                    </div>
+                </div>
+
+                <div class="customSlide">
+                    <div class="customSlide_in">
+                        <!--append html-->4
+                    </div>
+                </div>
+
+                <div class="customSlide">
+                    <div class="customSlide_in">
+                        <!--append html-->5
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="customPagination">
+            <div class="prev"></div>
+            <div class="next"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!---------------------- footer begin ---------------------->
+<div class="footer">
+    <ul class="other containerWidth customRow">
+        <li class="customCol customCol_3">
+            <dl>
+                <dt><img src="../images/wxCode.png" alt=""></dt>
+                <dd>
+                    <div>
+                        <div><span>扫描二维码</span><br><span>关注最新讯息</span></div>
+                    </div>
+                </dd>
+            </dl>
+        </li>
+        <li class="customCol customCol_3">
+            <dl>
+                <dt class="icon_tel"></dt>
+                <dd><p><span>服务热线</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
+            </dl>
+        </li>
+        <li class="customCol customCol_3">
+            <dl>
+                <dt class="icon_cooperation"></dt>
+                <dd><p><span>品牌合作</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
+            </dl>
+        </li>
+    </ul>
+
+    <dl class="footerLink">
+        <dt><span><i>友情链接</i></span></dt>
+        <dd class="containerWidth">
+            <span><a href="#">建业集团</a></span>
+            <span><a href="#">建业地产</a></span>
+            <span><a href="#">建业商业</a></span>
+            <span><a href="#">建业酒店</a></span>
+            <span><a href="#">艾佳生活</a></span>
+            <span><a href="#">建业控股</a></span>
+            <span><a href="#">建业足球</a></span>
+            <span><a href="#">建业教育</a></span>
+            <span><a href="#">建业物业</a></span>
+            <span><a href="#">建业旅游</a></span>
+            <span><a href="#">魔飞公寓</a></span>
+            <span><a href="#">嵩云科技</a></span>
+        </dd>
+    </dl>
+
+    <div class="footerBar">
+        <dl class="containerWidth">
+            <dt><a href="../index.html"><img class="footerLogo" src="../images/footer-logo.png" alt=""></a></dt>
+            <dd>
+                <div class="footerBarInfo">
+                    <div class="footerBarLink"><a href="../about.html">关于我们</a><a href="../contact.html">联系我们</a><a href="../exempt.html">免责声明</a></div>
+                    <div><span>copyright©2017河南建业新生活服务有限公司</span><span>豫ICP备 18005200号</span><span>技术支持by嵩云科技</span></div>
+
+                    <!--<span>copyright©2017河南建业新生活服务有限公司</span>-->
+                    <!--<span>豫ICP备 18005200号</span>-->
+                    <!--<span>技术支持by嵩云科技</span>-->
+                    <!--<a href="../about.html">关于我们</a>-->
+                    <!--<a href="../contact.html">联系我们</a>-->
+                    <!--<a href="../exempt.html">免责声明</a>-->
+
+                </div>
+            </dd>
+        </dl>
+    </div>
+</div>
+</body>
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/utils.js"></script>
+
+<script>
+
+
+    $('#xdnySwipe').customSwipe({
+        autoPlay: false,
+        slide: 3,
+        spaceBetween: '5px',
+    })
+
+
+
+</script>
+</html>
