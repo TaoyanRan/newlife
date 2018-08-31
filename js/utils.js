@@ -468,7 +468,7 @@ function customCompanyNav() {
         // $(this).click(function () {
         //     changeToIndex(index)
         // })
-        console.log($(this).find('a').attr('href'))
+        // console.log($(this).find('a').attr('href'))
     });
 
     function changeToIndex(index) {

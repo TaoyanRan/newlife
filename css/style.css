@@ -2165,7 +2165,7 @@ video::-webkit-media-controls-panel {
     padding: 0 .1666rem .5833rem;
     background: #f3f7ff;
     box-sizing: border-box;
-    transition: bottom 0.2s ease-in-out;
+    /*transition: bottom 0.2s ease-in-out;*/
 }
 .jyly_service_item_info h4{
     font-size: 15px;
@@ -2185,7 +2185,7 @@ video::-webkit-media-controls-panel {
     -webkit-line-clamp: 3;
     overflow: hidden;
     white-space: normal;
-    height: 3em;
+    /*height: 3em;*/
 }
 
 
@@ -2236,7 +2236,7 @@ video::-webkit-media-controls-panel {
     font-size: 60px;
     width: 25%;
     box-sizing: border-box;
-    transition: width .3s ease-in-out;
+    /*transition: width .3s ease-in-out;*/
     padding: 0 5px;
     overflow: hidden;
 }
@@ -5140,8 +5140,21 @@ video::-webkit-media-controls-panel {
 }
 /*** --------------------- 专业公司导航（新）（灰色主题）End --------------------- ***/
 
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
+/*** --------------------- 空白页 Begin --------------------- ***/
+.blankPage{
+    text-align: center;
+    height: 5.9rem;
+    padding: 0 .5rem;
+    font-size: .5rem;
+    color: #cc0e12;
+    margin-bottom: -100px;
+}
+.blankPage p{
+    position: relative;
+    display: inline-block;
+}
+
+/*** --------------------- 空白页 End --------------------- ***/
 
 /*** --------------------- Begin --------------------- ***/
 /*** --------------------- End --------------------- ***/

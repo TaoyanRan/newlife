@@ -94,66 +94,39 @@
             <div class="tourList">
                 <ul>
                     <li>
-                        <div class="jyly_service_item" style="background-image: url(../images/590x320.png)">
+                        <div class="jyly_service_item" style="background-image: url(../images/szk_3.jpg)">
                             <div class="jyly_service_item_info">
                                 <h4>巴厘岛冲浪</h4>
                                 <p>巴厘岛冲浪巴厘岛冲浪巴厘岛冲浪巴厘岛冲浪巴厘岛冲浪巴厘岛冲浪巴厘岛冲浪巴厘岛冲浪</p>
                             </div>
-                            <h3>旅游度假</h3>
+                            <h3>旅游度假1</h3>
                         </div>
                     </li>
                     <li>
-                        <div class="jyly_service_item" style="background-image: url(../images/590x320.png)">
+                        <div class="jyly_service_item" style="background-image: url(../images/szk_2.jpg)">
                             <div class="jyly_service_item_info">
                                 <h4>巴厘岛冲浪</h4>
                                 <p>记得带上记浪鞋，同时别忘了带上现金，冲浪后在悬崖上找一家餐厅享受浪后按摩。</p>
                             </div>
-                            <h3>旅游度假</h3>
+                            <h3>旅游度假2</h3>
                         </div>
                     </li>
                     <li>
-                        <div class="jyly_service_item" style="background-image: url(../images/590x320.png)">
+                        <div class="jyly_service_item" style="background-image: url(../images/szk_1.jpg)">
                             <div class="jyly_service_item_info">
                                 <h4>巴厘岛冲浪</h4>
                                 <p>记得带上您最t浪鞋，同时别忘了带上现金，冲浪后在悬崖上找一家餐厅享受浪后按摩。</p>
                             </div>
-                            <h3>旅游度假</h3>
+                            <h3>旅游度假3</h3>
                         </div>
                     </li>
                     <li>
-                        <div class="jyly_service_item" style="background-image: url(../images/590x320.png)">
+                        <div class="jyly_service_item" style="background-image: url(../images/szk_4.jpg)">
                             <div class="jyly_service_item_info">
                                 <h4>巴厘岛冲浪</h4>
                                 <p>记得带上您最t浪鞋，同时别忘了带上现金，冲浪后在悬崖上找一家餐厅享受浪后按摩。</p>
                             </div>
-                            <h3>旅游度假</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="jyly_service_item" style="background-image: url(../images/590x320.png)">
-                            <div class="jyly_service_item_info">
-                                <h4>巴厘岛冲浪</h4>
-                                <p>记得带上您最t浪鞋，同时别忘了带上现金，冲浪后在悬崖上找一家餐厅享受浪后按摩。</p>
-                            </div>
-                            <h3>旅游度假</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="jyly_service_item" style="background-image: url(../images/590x320.png)">
-                            <div class="jyly_service_item_info">
-                                <h4>巴厘岛冲浪</h4>
-                                <p>记得带上您最t浪鞋，同时别忘了带上现金，冲浪后在悬崖上找一家餐厅享受浪后按摩。</p>
-                            </div>
-                            <h3>旅游度假</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="jyly_service_item" style="background-image: url(../images/590x320.png)">
-                            <div class="jyly_service_item_info">
-                                <h4>巴厘岛冲浪</h4>
-                                <p>记得带上您最t浪鞋，同时别忘了带上现金，冲浪后在悬崖上找一家餐厅享受浪后按摩。</p>
-                            </div>
-                            <h3>旅游度假</h3>
+                            <h3>旅游度假4</h3>
                         </div>
                     </li>
                 </ul>
@@ -163,16 +136,6 @@
                 <span class="next"></span>
             </div>
         </div>
-
-        <style>
-
-        </style>
-
-
-
-    </div>
-
-    <!-------------->
 
 
 </div>
@@ -258,62 +221,86 @@
 
     $('#tourListSwipe').setSize(900,320);
 
-    function tourSwipe() {
+    function tourSwipe(item) {
         var tourListSwipe = $('#tourListSwipe');
         var ul = $('#tourListSwipe ul');
         var li = $('#tourListSwipe li');
         var prev = $('#tourListSwipe .prev');
         var next = $('#tourListSwipe .next');
 
-        // for(var j=0; j<3;j++){
-        //     ul.append(li.eq(j).prop('outerHTML'));
-        //     ul.prepend(li.eq(li.length - j - 1).prop('outerHTML'));
-        // }
-        //
-        // var newLi = $('#tourListSwipe li');
 
-        // ul.css('left',-25 * 3 + '%');
-        li.eq(1).addClass('active');
-        var i = 0;
+        for(var ali = 0;ali<item - 1;ali++){
+            ul.append(li.eq(ali).prop("outerHTML"));
+            ul.prepend(li.eq(li.length - ali - 1).prop("outerHTML"));
+        }
+        li = $('#tourListSwipe li');
+
+
+        var reset = {
+            star: function () {
+                i = item;
+                li.removeClass('active').eq(item).addClass('active');
+                ul.css({
+                    left: -25 * (item-1) + '%'
+                });
+            },
+            end: function () {
+                i = li.length - item;
+                li.removeClass('active').eq(i).addClass('active');
+                ul.css({
+                    left: -25 * (i-1) + '%'
+                });
+            }
+        };
+
+        reset.star();
+
+        var i = item;
+
+        function nextItem() {
+            i++;
+            console.log(i,li.length);
+            li.removeClass('active').eq(i).addClass('active');
+            ul.stop(true).animate({
+                left: -25 * (i-1) + '%'
+            },function () {
+                if(i >= li.length - 1){
+                    reset.star();
+                }
+            });
+        }
+
+        function prevItem() {
+            i--;
+            console.log(i,li.length);
+            li.removeClass('active').eq(i).addClass('active');
+            ul.stop(true).animate({
+                left: -25 * (i - 1) + '%'
+            },function () {
+                if(i <= 1){
+                    reset.end();
+                }
+            });
+        }
+
 
         next.click(function () {
-            i++;
-            prev.removeAttr('disabled');
-            if(i >= li.length - 2){
-                next.attr('disabled','disabled');
-                i--;
-                return false
-            }
-            console.log(i,li.length);
-            li.removeClass('active').eq(i + 1).addClass('active');
-            ul.stop(true).animate({
-                left: -25 * i + '%'
-            });
+            nextItem()
         });
 
         prev.click(function () {
-            i--;
-            next.removeAttr('disabled');
-            if(i < 0){
-                prev.attr('disabled','disabled');
-                i++;
-                return false
-            }
-            li.removeClass('active').eq(i + 1).addClass('active');
-            ul.stop(true).animate({
-                left: -25 * i + '%'
-            });
+            prevItem()
         });
 
-        li.each(function (k) {
-            $(this).click(function () {
-                console.log('text' + $(this).text())
-            })
-
-        })
+        // var t = setInterval(nextItem,3000);
+        // tourListSwipe.hover(function () {
+        //     clearInterval(t)
+        // },function () {
+        //     t = setInterval(nextItem,3000)
+        // })
 
     }
-    tourSwipe()
+    tourSwipe(3)
 
 
 </script>
