@@ -4619,6 +4619,7 @@ video::-webkit-media-controls-panel {
     position: relative;
     border: 1px solid #e7e7e7;
     box-sizing: border-box;
+    padding-bottom: 87px;
 }
 .jlhService_item_in img{
     width: 100%;
@@ -4680,7 +4681,7 @@ video::-webkit-media-controls-panel {
     font-size: 18px;
     color: #0b499c;
     display: inline-block;
-    padding: .25rem 0;
+    padding: 20px 0;
 }
 
 /*** --------------------- 君临会 End --------------------- ***/
