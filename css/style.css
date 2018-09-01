@@ -1130,7 +1130,8 @@ video::-webkit-media-controls-panel {
     line-height: 1.5em;
 }
 .homeCulture_des_two{
-    margin-top: -2.25em;
+    /*margin-top: -2.25em;*/
+    margin-top: -3.25em;
 }
 /* 首页 - 我们的文化 - 公司简介 */
 .homeCulture_companyInfo{
@@ -3356,7 +3357,8 @@ video::-webkit-media-controls-panel {
     line-height: 1.5em;
 }
 .cultureDesList p.two{
-    margin-top: -2.25em;
+    /*margin-top: -2.25em;*/
+    margin-top: -3.25em;
 }
 .cultureDesList li.active p{
     font-size: 15px;
