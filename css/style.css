@@ -5058,6 +5058,7 @@ video::-webkit-media-controls-panel {
     color: #fff;
     overflow: hidden;
     position: relative;
+    text-align: center;
 }
 .newHomeCompanyName{
     font-size: 15px;
@@ -5158,6 +5159,354 @@ video::-webkit-media-controls-panel {
 }
 
 /*** --------------------- 空白页 End --------------------- ***/
+
+
+
+/*** --------------------- 外拓模块导航 begin --------------------- ***/
+.cooperationNav .newHomeCompanyNamePagination{
+    display: none;
+}
+/*** --------------------- 外拓模块导航 End --------------------- ***/
+
+/*** --------------------- 对外招商 Begin --------------------- ***/
+
+.attract{
+    margin: 0 auto .4166rem;
+}
+.offline{
+    width: 100%;
+    height: 5.5rem;
+    font-size: 0;
+    overflow: hidden;
+}
+.offlineViewImg,.offlineViewInfo{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+}
+.offlineViewImg{
+    padding-right: .0833rem;
+}
+.offlineViewInfo{
+    padding-left: .0833rem;
+}
+.offlineViewInfoContainer{
+    height: 100%;
+    padding: 0 .25rem;
+    background: #f6f6f6;
+}
+.offlineViewInfo{
+    font-size: 14px;
+    font-weight: normal;
+    color: #666666;
+    line-height: 2em;
+    box-sizing: border-box;
+}
+.offlineViewInfo span{
+}
+.offlineViewInfo em{
+    font-style: normal;
+}
+.offlineViewInfo ul{
+}
+.offlineViewInfo li{
+    overflow: hidden;
+}
+.offlineViewInfo img{
+    float: right;
+}
+
+.online{
+    color: #666666;
+    text-align: justify;
+}
+.onlinePic{
+    overflow: hidden;
+}
+.onlinePic li{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.onlinePic li:nth-child(2n-1){
+    padding-right: 10px;
+}
+.onlinePic li:nth-child(2n){
+    padding-left: 10px;
+}
+.onlinePic li img{
+    width: 100%;
+}
+.online dl{
+
+}
+.online dl dt{
+    display: inline-block;
+    color: #fff;
+    padding: 0 .25rem;
+    margin: .3rem 0;
+    font-size: 14px;
+    height: .33rem;
+    line-height: .33rem;
+    background: #ff840c;
+}
+.online dl dd{
+    font-size: 0;
+}
+.online dl dd p{
+    font-size: 14px;
+    line-height: 2em;
+}
+/*** --------------------- 对外招商 End --------------------- ***/
+
+/*** --------------------- 联盟合作 Begin --------------------- ***/
+.allianceView{
+    margin: 0 auto;
+}
+.alliance{
+    margin-bottom: .4166rem;
+}
+.hotelAlliance{
+    background: #f9f9f9;
+    box-shadow: 0 0 .3rem #ccc;
+    height: 5.05rem;
+    overflow: hidden;
+}
+.tourAlliance{
+    height: 4.5rem;
+    overflow: hidden;
+}
+.brandAlliance{
+    background: #f3f3f3;
+    padding: .1667rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.hotelAlliancePic{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: url(../images/hotelAlliancePic.png) center right no-repeat;
+    background-size: auto 100%;
+}
+.hotelAlliancePic img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.hotelAllianceIntroduction{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-left: .1667rem;
+    box-sizing: border-box;
+}
+.hotelAllianceIntroductionInfo{
+    background: #fff;
+    position: relative;
+    font-size: 14px;
+    color: #666666;
+    text-align: justify;
+    padding: 0 .2rem .4rem;
+    line-height: 2em;
+    box-sizing: border-box;
+    height: 100%;
+}
+.hotelAllianceIntroductionInfo:after{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top:    2.525rem solid transparent;
+    border-bottom: 2.525rem solid transparent;
+    border-right: .8rem solid #fff;
+    z-index: 2;
+    content: '';
+}
+.hotelAllianceIntroductionInfo dt{
+    font-weight: bold;
+}
+.hotelAllianceLink{
+    text-align: right;
+    color: #ff840c;
+}
+.hotelAllianceLink a{
+    color: inherit;
+}
+
+.tourAllianceIntroduction{
+    float: left;
+    font-size: 14px;
+    color: #666666;
+    text-align: justify;
+    line-height: 2em;
+    width: 50%;
+    height: 100%;
+    padding-right: .0833rem;
+    box-sizing: border-box;
+}
+.tourAllianceIntroduction_info{
+    height: 100%;
+    padding: 0 .125rem;
+    background: #f6f6f6;
+}
+.tourAllianceIntroduction dl,.tourAllianceIntroduction p{
+    margin: .2rem 0;
+}
+.tourAllianceIntroduction em,.tourAllianceIntroduction dt{
+    font-weight: bold;
+    font-style: normal;
+}
+.tourAlliancePic{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-left: .0833rem;
+    box-sizing: border-box;
+}
+.tourAlliancePic img{
+    width: 100%;
+    height: 100%;
+}
+
+.brandAlliancePic{
+    width: 3.65rem;
+    height: 3.9rem;
+    float: left;
+}
+.brandAlliancePic img{
+    width: 100%;
+    height: 100%;
+}
+.brandAllianceLogo{
+    width: 5.925rem;
+    height: 3.9rem;
+    float: right;
+}
+.brandAllianceLogo img{
+    width: 100%;
+    height: 100%;
+}
+
+.brandIntroduction{
+    font-size: 14px;
+    color: #666666;
+    text-align: justify;
+    line-height: 2em;
+}
+.brandIntroduction em,.brandIntroduction dt{
+    font-weight: bold;
+    font-style: normal;
+}
+.brandIntroduction dd{
+    position: relative;
+    text-indent: 15px;
+}
+.brandIntroduction dd:after{
+    position: absolute;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: #666;
+    border-radius: 50%;
+    top: 1em;
+    margin-top: -3px;
+    content: '';
+}
+.brandIntroduction li{
+    margin-bottom: .48rem;
+}
+/*** --------------------- 联盟合作 End --------------------- ***/
+
+
+/*** --------------------- 联盟合作详情 begin --------------------- ***/
+.allianceInfoView{
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666666;
+    line-height: 2em;
+    text-align: justify;
+}
+.allianceInfo_detail{
+
+}
+.allianceInfo_detail img{
+    margin: .2rem 0;
+}
+.allianceInfo_detail em{
+    font-style: normal;
+    font-weight: bold;
+}
+.allianceInfo_title{
+    color: #fff;
+    background: #ff840c;
+    display: inline-block;
+    padding: 0 .25rem;
+    height: .33rem;
+    line-height: .33rem;
+    margin: .2rem 0;
+}
+.allianceInfo_join em{
+    display: block;
+    margin-top: .4rem;
+}
+/*** --------------------- 联盟合作详情 End --------------------- ***/
+
+/*** --------------------- 物业外拓 Begin --------------------- ***/
+.extend{
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666666;
+    text-align: justify;
+}
+.extend_WY_pic{
+    height: 3.475rem;
+    overflow: hidden;
+    margin-bottom: .333rem;
+}
+.extend_WY_pic li img{
+    width: 100%;
+    height: 100%;
+}
+.extend_WY_pic li{
+    height: 100%;
+}
+.extend_WY_pic li:nth-child(2n-1){
+    float: left;
+    width: 3.575rem;
+}
+.extend_WY_pic li:nth-child(2n){
+    float: right;
+    width: 6.275rem;
+}
+
+.extend_WY_IntroductionInfo{
+    line-height: 2em;
+}
+.extend_WY_IntroductionInfo em{
+    font-style: normal;
+    font-weight: bold;
+}
+.extend_WY_IntroductionInfo_item{
+    margin-bottom: .4rem;
+}
+/*** --------------------- 物业外拓 End --------------------- ***/
+
+/*** --------------------- Begin --------------------- ***/
+/*** --------------------- End --------------------- ***/
+
+/*** --------------------- Begin --------------------- ***/
+/*** --------------------- End --------------------- ***/
+
+/*** --------------------- Begin --------------------- ***/
+/*** --------------------- End --------------------- ***/
+
+/*** --------------------- Begin --------------------- ***/
+/*** --------------------- End --------------------- ***/
 
 /*** --------------------- Begin --------------------- ***/
 /*** --------------------- End --------------------- ***/
