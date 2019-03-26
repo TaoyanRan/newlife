@@ -3778,7 +3778,7 @@ video::-webkit-media-controls-panel {
     font-weight: bold;
 }
 .concatUs_type p{
-    padding-left: .25rem;
+    /*padding-left: .25rem;*/
     background-position: left center;
     background-repeat: no-repeat;
     background-size: auto 14px;
