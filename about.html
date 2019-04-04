@@ -4,28 +4,42 @@
     <meta charset="UTF-8">
     <title>建业新生活</title>
     <!--开启对web app的支持-->
-    <meta name="viewport" content="width=device-width,initial-scale=.5,minimum-scale=.4,maximum-scale=1,user-scalable=yes"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 
     <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
 <div class="header">
-    <div class="headerView containerWidth cl">
-        <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
-        <ul class="navLink">
-            <li><a href="index.html">首页</a></li>
-            <li><a href="news/gskx.html">新闻动态</a></li>
-            <li><a href="company/jywy.html">多元业务</a></li>
-            <li><a href="services.html">服务领域</a></li>
-            <li><a href="cooperation/index.html">对外合作</a></li>
-            <li><a href="culture.html">企业文化</a></li>
-            <li><a class="active" href="javascript:void(0)">关于我们</a></li>
-            <li><a href="contact.html">联系我们</a></li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news/gskx.html">新闻动态</a></li>
+                    <li><a href="company/jywy.html">多元业务</a></li>
+                    <li><a href="cooperation/index.html">对外合作</a></li>
+                    <li><a href="culture.html">企业文化</a></li>
+                    <li class="active"><a href="javascript:void(0)">关于我们</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 </div>
 <!---------------------- header end ---------------------->
 
@@ -42,8 +56,6 @@
 
 </div>
 <!---------------------- banner or bannerSwipe ---------------------->
-
-
 
 <div>
 
@@ -87,79 +99,89 @@
 
 </div>
 
-
-
 <!---------------------- footer begin ---------------------->
 <div class="footer">
-    <ul class="other containerWidth customRow">
-        <li class="customCol customCol_3">
-            <dl>
-                <dt><img src="images/wxCode.png" alt=""></dt>
-                <dd><div><div><span>扫描二维码</span><br><span>关注最新讯息</span></div></div></dd>
-            </dl>
-        </li>
-        <li class="customCol customCol_3">
-            <dl>
-                <dt class="icon_tel"></dt>
-                <dd><p><span>服务热线</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
-            </dl>
-        </li>
-        <li class="customCol customCol_3">
-            <dl>
-                <dt class="icon_cooperation"></dt>
-                <dd><p><span>品牌合作</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
-            </dl>
-        </li>
-    </ul>
+    <div class="footerOther">
+        <div class="footerInnerView">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <dl class="footerOtherDl">
+                            <dt><img src="images/wxCode.png" alt=""></dt>
+                            <dd><div><div><span>扫描二维码</span><br><span>关注最新讯息</span></div></div></dd>
+                        </dl>
+                    </div>
+                    <div class="col-xs-4">
+                        <dl class="footerOtherDl">
+                            <dt class="icon_tel"></dt>
+                            <dd><p><span>服务热线</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
+                        </dl>
+                    </div>
+                    <div class="col-xs-4">
+                        <dl class="footerOtherDl">
+                            <dt class="icon_cooperation"></dt>
+                            <dd><p><span>品牌合作</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <dl class="footerLink">
-        <dt><span><i>友情链接</i></span></dt>
-        <dd class="containerWidth">
-            <span><a href="#">建业集团</a></span>
-            <span><a href="#">建业地产</a></span>
-            <span><a href="#">建业商业</a></span>
-            <span><a href="#">建业酒店</a></span>
-            <span><a href="#">艾佳生活</a></span>
-            <span><a href="#">建业控股</a></span>
-            <span><a href="#">建业足球</a></span>
-            <span><a href="#">建业教育</a></span>
-            <span><a href="#">建业物业</a></span>
-            <span><a href="#">建业旅游</a></span>
-            <span><a href="#">魔飞公寓</a></span>
-            <span><a href="#">嵩云科技</a></span>
-        </dd>
-    </dl>
+    </div>
+
+    <div class="footerLink">
+        <div class="footerInnerView">
+            <div class="footerLinkTitle"><span>友情链接</span></div>
+            <div class="container-fluid footerLinkList">
+                <div class="col-md-2 col-xs-3"><a href="#">建业集团</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业地产</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业商业</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业酒店</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">艾佳生活</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业控股</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业足球</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业教育</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业物业</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业旅游</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">魔飞公寓</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">嵩云科技</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">融资租赁</a></div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="footerBar">
-        <dl class="containerWidth">
-            <dt><a href="index.html"><img class="footerLogo" src="images/footer-logo.png" alt=""></a></dt>
-            <dd>
-                <div class="footerBarInfo">
-                    <div class="footerBarLink">
-                        <a href="about.html">关于我们</a>
-                        <a href="contact.html">联系我们</a>
-                        <a href="exempt.html">免责声明</a>
+        <div class="footerInnerView">
+            <div class="container-fluid">
+                <div class="col-md-3">
+                    <a href="index.html"><img class="footerLogo" src="images/footer-logo.png" alt=""></a>
+                </div>
+                <div class="col-md-9">
+
+                    <div class="footerBarInfo">
+                        <div class="footerBarLink">
+                            <a href="about.html">关于我们</a>
+                            <a href="contact.html">联系我们</a>
+                            <a href="exempt.html">免责声明</a>
+                        </div>
+                        <div>
+                            <span>copyright©2017河南建业新生活服务有限公司</span>
+                            <span>豫ICP备 18005200号</span>
+                            <span>技术支持by嵩云科技</span>
+                        </div>
                     </div>
-                    <div>
-                        <span>copyright©2017河南建业新生活服务有限公司</span>
-                        <span>豫ICP备 18005200号</span>
-                        <span>技术支持by嵩云科技</span>
-                    </div>
-                    <!--<span>copyright©2017河南建业新生活服务有限公司</span>-->
-                    <!--<span>豫ICP备 18005200号</span>-->
-                    <!--<span>技术支持by嵩云科技</span>-->
-                    <!--<a href="about.html">关于我们</a>-->
-                    <!--<a href="contact.html">联系我们</a>-->
-                    <!--<a href="exempt.html">免责声明</a>-->
 
                 </div>
-            </dd>
-        </dl>
+            </div>
+        </div>
     </div>
 </div>
+<!---------------------- footer end ---------------------->
 
 </body>
 <script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/utils.js"></script>
 <script>
 

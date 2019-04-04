@@ -1,0 +1,1046 @@
+@media (max-width: 960px){
+    /*** --------------------- 通用 Begin --------------------- ***/
+    .moduleName i{
+        font-size: 24px;
+    }
+    .moduleName span{
+        font-size: 16px;
+    }
+    #banner .navigation{
+        bottom: 5px;
+    }
+    .pagination .prev, .pagination .next{
+        width: 15px;
+        height: 35px;
+        margin-top: -18px;
+    }
+    .pagination .prev{
+        left: 15px;
+    }
+    .pagination .next{
+        right: 15px;
+    }
+    .newHomeCompanyNamePagination .prev{
+        display: none;
+    }
+    .newHomeCompanyNamePagination .next{
+        display: none;
+    }
+    .newHomeCompanyNameList{
+        overflow: auto;
+    }
+    .newHomeCompanyName{
+        width: auto;
+        font-size: 16px;
+        line-height: 30px;
+        height:      30px;
+        padding: 0 5px;
+    }
+    .newHomeCompanyName::-webkit-scrollbar-track {
+        display: none;
+    }
+    .grayTheme .newHomeCompanyName span{
+        padding: 0 10px;
+    }
+    .grayTheme .newHomeCompanyName.active span{
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .grayTheme .newHomeCompanyNameList .newHomeCompanyName:after{
+        margin-top: -1px;
+    }
+    .navbar-default .navbar-nav > li > a{
+        text-indent: 15px;
+    }
+
+    /*** --------------------- 通用 Begin --------------------- ***/
+
+
+    /*** --------------------- 营销公司 Begin --------------------- ***/
+    .yingxiaoPic{
+        float: none;
+        width: auto;
+        margin:0 15px 15px;
+    }
+    .yingxiaoTitle_ch{
+        font-size: 16px;
+    }
+    .yingxiaoTitle_en{
+        font-size: 12px;
+    }
+    .yingxiaoText{
+        font-size: 14px;
+        line-height: 1.5em;
+        padding-left: 0;
+    }
+    .yingXiaoServiceList li{
+        padding: 0 5px;
+    }
+    .yingXiaoServiceList{
+        margin: 0 10px;
+    }
+    .yingXiaoServiceItem p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    /*** --------------------- 营销公司 end --------------------- ***/
+
+
+
+    /*** --------------------- 建业物业 Begin --------------------- ***/
+    .jywy_about_list dt{
+        float: none;
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        height: auto !important;
+        margin-bottom: 15px;
+    }
+    .jywy_about_list p{
+        line-height: 20px;
+        padding: 0 15px;
+    }
+    .jywy_about_honour{
+        margin: 15px 0 0;
+        font-size: 24px;
+    }
+    .jywy_about_honour li{
+        padding: 15px 0;
+    }
+    .jywy_about_link{
+        position: static;
+        margin-top: 15px;
+    }
+    .jywy_about_link a{
+        font-size: 14px;
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .jywy_service{
+        margin: 30px 15px 0;
+    }
+    .jywy_service_name{
+        font-size: 14px;
+        padding: 5px 0;
+    }
+    /*** --------------------- 建业物业 end --------------------- ***/
+
+
+
+    /*** --------------------- 嵩云科技 Begin --------------------- ***/
+    .sykj_about_pic{
+        float: none;
+        width: auto;
+        margin: 0 15px;
+        box-sizing: border-box;
+    }
+    .sykj_about_info{
+        float: none;
+        width: auto;
+        margin: 0 15px;
+        padding: 15px;
+    }
+    .sykj_about_info:after{
+        display: none;
+    }
+    .sykj_about_info p{
+        line-height: 1.5em;
+    }
+
+    .sykj_product_swipeView{
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    .sykj_swipeItem_title{
+        font-size: 14px;
+        line-height: 2em;
+    }
+    /*** --------------------- 嵩云科技 end --------------------- ***/
+
+
+
+    /*** --------------------- 建业旅游 Begin --------------------- ***/
+    .jyly_about_l, .jyly_about_r{
+        z-index: 1;
+        width: 50%;
+    }
+    .jyly_about_c{
+        margin: 0;
+        position: relative;
+        z-index: 2;
+        background: rgba(255,255,255, .6);
+        padding: 15px 0;
+    }
+    .jyly_about_link{
+        position: static;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .jyly_about_link a{
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .jyly_service{
+        margin: 15px 0;
+        overflow: hidden;
+    }
+    .tourListSwipe .pagination .next{
+        right: 0;
+    }
+    .tourListSwipe .pagination .prev{
+        left: 0;
+    }
+    .tourListSwipe .pagination .next, .tourListSwipe .pagination .prev{
+        display: none;
+    }
+    .jyly_service_item_info{
+        background: none;
+    }
+    .jyly_service_item_info p{
+        display: none;
+    }
+    .jyly_service_item_info h4{
+        display: none;
+    }
+    .jyly_service_item h3{
+        font-size: 14px;
+        bottom: 0;
+        background: rgba(255,255,255,.6);
+        line-height: 2em;
+    }
+    /*** --------------------- 建业旅游 end --------------------- ***/
+
+
+
+    /*** --------------------- 建业东英 Begin --------------------- ***/
+    .jydy_about_title{
+        margin: 15px 0;
+    }
+    .jydy_about_title i{
+        width: 100px;
+        font-size: 14px;
+    }
+    .jydy_about_title span{
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .jydy_about_text{
+        line-height: 1.5em;
+    }
+    .jydy_about_button a, .jydy_about_button button{
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .jydy_service_info .jydy_service_item_info:hover .jydy_service_des h3{
+        border: 2px solid #ff840c ;
+    }
+    .jydy_service_des{
+        padding: 0;
+    }
+    .jydy_service_des h3{
+        font-size: 14px;
+        padding: 5px 0;
+        width: 100%;
+    }
+    .jydy_service_des h3:after{
+        display: none;
+    }
+    .jydy_service_item_info{
+        margin: 0 5px;
+    }
+    /*** --------------------- 建业东英 end --------------------- ***/
+
+
+
+    /*** --------------------- 现代农业 Begin --------------------- ***/
+    .xyny_about_swipe{
+        position: static;
+        width: auto;
+    }
+    .xyny_about_brief{
+        width: auto;
+        height: auto;
+        margin-left: 0;
+    }
+    .xdnySwipe{
+        margin: 0 10px 15px;
+    }
+    .customPagination .prev, .customPagination .next{
+        display: none;
+    }
+    .xdnySlide_name{
+        height: auto;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-right: 60px;
+    }
+    .xdnySlide_name span{
+    }
+    .xdnySlide_link{
+        /*position: static;*/
+    }
+    /*** --------------------- 现代农业 end --------------------- ***/
+
+
+
+    /*** --------------------- 建业酒店 Begin --------------------- ***/
+    .jyjd_management_info_pic{
+        float: none;
+        width: auto;
+        margin: 0 15px;
+        height: auto;
+    }
+    .jyjd_management_info_pic:after,.jyjd_management_info_pic:before{
+        display: none;
+    }
+    .jyjd_management_info_container{
+        position: static;
+    }
+    .jyjd_management_textView{
+        position: static;
+    }
+    .jyjd_management_honour{
+        width: auto;
+        margin: 15px;
+    }
+    .jyjd_management_honour div{
+        width: 33.3333%;
+    }
+    .jyjd_management_text{
+        height: auto;
+        padding: 0 15px 15px;
+    }
+    .jyjd_management_link{
+        position: static;
+    }
+    .jyjd_management_link a{
+        font-size: 14px;
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .jyjd_hotel_list li{
+        padding: 0 5px;
+    }
+    .jyjd_hotel{
+        margin-top: 15px;
+    }
+    /*** --------------------- 建业酒店 end --------------------- ***/
+
+
+
+    /*** --------------------- 君临会 Begin --------------------- ***/
+    .aboutJlh_info{
+        overflow: hidden;
+    }
+    .aboutJlh_l{
+        float: left;
+        position: static;
+        width: 59.2%;
+    }
+    .aboutJlh_r{
+        float: right;
+        position: static;
+        width: 40.8%;
+    }
+    .aboutJlh_c{
+        clear: both;
+        width: auto;
+        margin: 0;
+        padding: 15px;
+        height: auto;
+    }
+    .aboutJlh_container{
+        background-position: 0 0;
+        background-size: 100% 100%;
+    }
+    .aboutJlh_c_container{
+        padding: 0;
+    }
+    .jlhSwipe{
+        margin: 15px 15px;
+    }
+    .jlhService_item_info a{
+        font-size: 14px;
+        padding: 5px 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+    .jlhService_item_info p{
+        font-size: 12px;
+        padding: 5px 5px 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .jlhService_item_info:after{
+        display: none;
+    }
+    .jlhService_item_in{
+        padding-bottom: 0;
+    }
+    .jlhService_item_pic{
+        background-size: cover;
+    }
+    .jlhService_item_in:hover .jlhService_item_pic{
+        transform: scale(1.2);
+    }
+    /*** --------------------- 君临会 end --------------------- ***/
+
+
+
+    /*** --------------------- 商业管理 Begin --------------------- ***/
+    .shangyeBriefView{
+        margin: 0 15px;
+    }
+    .shangyeTitle{
+    }
+    .shangyeList{
+        padding: 15px;
+        font-size: 12px;
+    }
+    .shangyeBriefPic{
+        padding-left: 0;
+        margin: 0 15px 15px;
+    }
+
+
+    /*** --------------------- 商业管理 end --------------------- ***/
+
+
+
+    /*** --------------------- 招商合作 Begin --------------------- ***/
+    .offline{
+        height: auto;
+    }
+    .offlineViewImg, .offlineViewInfo{
+        float: none;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0 15px;
+    }
+    .offlineViewInfo ul{
+        padding: 10px 0;
+    }
+    .online{
+        margin: 0 15px;
+    }
+    .online dl dt{
+        font-size: 16px;
+        height:      30px;
+        line-height: 30px;
+    }
+    .onlinePic li:nth-child(2n-1){
+        padding-right: 3px;
+    }
+    .onlinePic li:nth-child(2n){
+        padding-left: 3px;
+    }
+    /*** --------------------- 招商合作 end --------------------- ***/
+
+
+
+    /*** --------------------- 联盟合作 Begin --------------------- ***/
+    .alliance{
+        margin:0 15px 15px;
+    }
+    .alliance_jlhC_item{
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+    .alliance_jlhC_title{
+        margin-bottom: 20px;
+    }
+    .alliance_jlhC_text{
+        height: auto;
+    }
+
+    .hotelAlliance{
+        position: relative;
+        height: auto;
+    }
+    .hotelAlliancePic{
+        float: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: auto;
+    }
+    .hotelAllianceIntroduction{
+        float: none;
+        width: auto;
+        position: relative;
+        z-index: 2;
+        padding-left: 0;
+    }
+    .hotelAllianceIntroductionInfo{
+        background: rgba(255,255,255,.6);
+        padding: 15px;
+    }
+    .tourAlliance{
+        height: auto;
+    }
+    .tourAllianceIntroduction{
+        float: none;
+        width: auto;
+        padding: 0;
+        height: auto;
+    }
+    .tourAlliancePic{
+        float: none;
+        width: auto;
+        padding: 0;
+        height: auto;
+    }
+    .tourAlliancePic img{
+        height: auto;
+    }
+    .tourAllianceIntroduction_info{
+        padding: 5px 15px;
+    }
+    .alliance_mofei{
+        margin-top: 15px;
+    }
+    .alliance_mofeiPicView{
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+    .alliance_mofeiPicView:after{
+        display: none;
+    }
+    .alliance_mofeiPicView img{
+        left: 0;
+        top: 0;
+    }
+    .alliance_mofei_info{
+        padding: 15px;
+    }
+    /*** --------------------- 联盟合作 end --------------------- ***/
+
+
+
+    /*** --------------------- 物业外拓 Begin --------------------- ***/
+    .extent_waituo_l .extent_waituo_pic img,.extent_waituo_r .extent_waituo_pic img{
+        left: auto;
+        right: auto;
+        top: auto;
+    }
+    .extent_waituo_l .extent_waituo_info{
+        margin: 0 15px;
+    }
+    .extent_waituo_r .extent_waituo_info{
+        margin: 0 15px;
+    }
+    .extent_waituo_button button, .extent_waituo_button a{
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 30px;
+    }
+    /*** --------------------- 物业外拓 end --------------------- ***/
+
+
+    /*** --------------------- 企业文化 Begin --------------------- ***/
+    .cultureNav{
+        float: none;
+        padding: 15px;
+        margin: 0;
+    }
+    .cultureNavList{
+        transform: scale(.8);
+    }
+    .cultureDesList{
+    }
+    .cultureName{
+        margin: 0 60px 0 40px;
+    }
+    .cultureDesList p{
+        font-size: 12px;
+        left: 120px;
+    }
+    .cultureDesList li.active p{
+        font-size: 14px;
+    }
+    /*** --------------------- 企业文化 end --------------------- ***/
+
+
+    /*** --------------------- 公司简介 Begin --------------------- ***/
+    .aboutView1{
+        padding: 0 15px;
+    }
+    .aboutView1_card{
+        padding-left: 15px;
+    }
+    .aboutView1_card h2{
+        font-size: 18px;
+    }
+    .aboutView1_card p{
+        font-size: 14px;
+    }
+    .aboutView_des p{
+        line-height: 2em;
+        padding: 15px 0;
+    }
+    .aboutView1_pic{
+        /*position: static;*/
+        display: none;
+    }
+    .aboutView1_card{
+        position: static;
+    }
+    .aboutView2_pic{
+        display: none;
+    }
+    .aboutView2 .aboutView_des{
+        margin: 0 15px;
+        padding: 15px 0;
+    }
+    .aboutView2_card{
+        position: static;
+        margin: 0 15px;
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    .aboutView2{
+        padding-bottom: 15px;
+    }
+    /*** --------------------- 公司简介 end --------------------- ***/
+
+
+    /*** --------------------- 团队风采 Begin --------------------- ***/
+    .aboutMessageMore{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .aboutTeam_container{
+        padding: 30px 0;
+    }
+    /*** --------------------- 团队风采 end --------------------- ***/
+
+
+    /*** --------------------- 联系我们 Begin --------------------- ***/
+    .concatUs_address{
+        margin: 15px;
+    }
+    .concatUs_addressCard{
+        position: relative;
+        top: auto;
+        right: auto;
+        padding-left: 30px;
+    }
+    .shortName{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .concatUs_Info li{
+        float: none;
+        width: auto;
+        margin-bottom: 15px;
+    }
+    .concatUs_type p{
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .concatUs_wx{
+        display: none;
+    }
+    /*** --------------------- 联系我们 end --------------------- ***/
+
+
+    /*** --------------------- 招贤纳士 Begin --------------------- ***/
+    .joinUs_join{
+        height: 375px;
+        margin: 15px 0;
+    }
+    .joinList dt, .joinList dd{
+        margin: 0 10px 0 10px;
+    }
+    .joinList dt p{
+        font-size: 14px;
+    }
+    .joinList{
+        width: 35%;
+    }
+    .joinList dt{
+        padding: 5px 0;
+    }
+    .joinList dt:after{
+        top: 9px;
+        background-size: 10px;
+    }
+    .joinList dd li:after{
+        width: 6px;
+        height: 6px;
+        background: #fff;
+        border-radius: 50%;
+        margin-top: -3px;
+    }
+    .joinList dt small{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .joinList dd li{
+        font-size: 12px;
+    }
+    .joinList dl.active li{
+        height:      20px;
+        line-height: 20px;
+    }
+    .joinInfo_textView{
+        padding: 10px;
+    }
+    .joinList dl.active li:first-child{
+        margin-top: 5px;
+    }
+    .joinList dl.active li:last-child{
+        margin-bottom: 5px;
+    }
+    /*** --------------------- 招贤纳士 end --------------------- ***/
+
+
+    /*** --------------------- 视频页面 Begin --------------------- ***/
+    .videoModuleName{
+        margin: 15px 0;
+    }
+    .videoNav{
+        font-size: 14px;
+        margin: 0 15px;
+    }
+    .homeVideoView{
+        margin: 15px;
+    }
+    .homeVideo_video{
+        float: none;
+        height: 150px;
+        width: 100%;
+    }
+    .homeVideo_AD{
+        position: static;
+        width: auto;
+    }
+    .homeVideo_AD ul{
+        height: auto;
+    }
+    .homeVideo_AD li{
+        height: auto;
+        position: static;
+        margin-top: 15px;
+    }
+    .homeVideo_AD_video{
+        height: 150px;
+    }
+    .homeVideo_AD li .homeVideo_AD_video{
+        position: relative;
+    }
+    .homeVideo_AD .homeVideo_AD_info{
+        position: static;
+    }
+    .videoMoreList{
+        margin: 0 10px;
+        padding: 5px 0;
+    }
+    .videoMoreList li{
+        width: 50%;
+    }
+
+    /*** --------------------- 视频页面 end --------------------- ***/
+
+
+    /*** --------------------- 公司快讯 Begin --------------------- ***/
+    .newsNav{
+        padding: 5px 0 15px;
+    }
+    .newsModuleName span:after{
+        bottom: -10px;
+        height: 2px;
+    }
+    .newsModuleName{
+        margin-top: 15px;
+    }
+    .news_search{
+        float: none;
+        margin: 15px 15px 0;
+    }
+    .search input{
+        width: 100%;
+    }
+    .newsLink{
+        margin-top: 15px;
+    }
+    .newsLink a{
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    .gskx_newsList{
+        margin: 15px auto;
+        padding: 0 15px;
+    }
+    .gskx_newsList li{
+        float: none;
+        width: auto;
+        padding: 0;
+    }
+    .gskx_newsInfo{
+        padding: 15px 0;
+    }
+    .news_columnList .newsTime{
+        float: none;
+        width: auto;
+        margin-right: 0;
+    }
+    .news_columnList li{
+        margin: 0 15px;
+    }
+    .news_columnList .newsInfo{
+        padding-right: 0;
+    }
+
+    .axisColumn-2{
+        margin-top: 15px;
+        height: auto;
+        max-height: none;
+    }
+    .axisColumn-2 li:after{
+        display: none;
+    }
+    .axisColumn-2 .axisColumn_l, .axisColumn_r{
+        float: none;
+        width: 100%;
+    }
+    .axisColumn-2 .axisColumn_l li,.axisColumn-2 .axisColumn_r li{
+        padding: 5px 15px;
+    }
+    .axisColumn-2 .axisColumn_l li .newsInfo,.axisColumn-2 .axisColumn_r li .newsInfo{
+        margin: 0;
+    }
+    .axisColumn-2 .newsInfo p{
+        line-height: 20px;
+        height: auto;
+        max-height: 80px;
+        margin: 15px 0;
+    }
+    .news_axis:after{
+        display: none;
+    }
+    .axisColumn-2 li:hover .newsInfo p, .axisColumn-2 li.active .newsInfo p{
+        height: auto;
+        max-height: 80px;
+    }
+    .axisColumn-2 .axisColumn_l li .newsInfo h2,.axisColumn-2 .axisColumn_r li .newsInfo h2{
+        text-align: justify;
+        margin: 0;
+    }
+    .axisColumn-2 .newsInfo h2{
+        line-height: 22px;
+        height: auto;
+    }
+    .axisColumn-2 .newsInfo .newsPic{
+        height: auto !important;
+    }
+    .axisColumn-2 .newsTime{
+        position: static;
+    }
+    .axisColumn-2 .newsTime span{
+        display: inline;
+        padding-right: 15px;
+        line-height: 2em;
+    }
+    .article{
+        margin: 15px 0;
+        padding: 0 15px;
+    }
+    .articleNav em{
+        font-size: 14px;
+    }
+    .articleNav a{
+        font-size: 12px;
+    }
+    .articleTitle{
+        font-size: 14px;
+        margin: 15px 0;
+    }
+    .articleInfo{
+        font-size: 14px;
+        line-height: 2em;
+        text-align: justify;
+    }
+    .articleInfo img{
+        max-width: 100% !important;
+        margin: 10px 0;
+    }
+    /*** --------------------- 公司快讯 end --------------------- ***/
+
+
+    /*** --------------------- 所获荣誉 Begin --------------------- ***/
+    .axisColumn-1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .axisColumn-1 .newsModule{
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+    .axisColumn-1 li{
+        padding: 15px 0;
+    }
+    .axisColumn-1 li .newsModule:after{
+        left: -15px;
+    }
+    .axisColumn-1 li .newsModule.active:before, .axisColumn-1 li .newsModule:hover:before{
+        left: -15px;
+    }
+    .axisColumn-1 .newsPic{
+        float: none;
+    }
+    .axisColumn-1 .newsPic{
+        height: 80px;
+        width: auto;
+    }
+    .axisColumn-1 .newsPic img{
+        width: auto;
+        height: 100%;
+    }
+    .axisColumn-1 .newsInfo{
+        padding: 0 15px 15px;
+    }
+    .axisColumn-1-add{
+        left: 11px;
+    }
+    /*** --------------------- 所获荣誉 end --------------------- ***/
+
+
+    /*** --------------------- 首页 Begin --------------------- ***/
+    .homeNews{
+        padding-left: 0;
+    }
+    .homeNewsTabHeader{
+        position: static;
+        overflow: hidden;
+        width: auto;
+        margin: 0 15px;
+    }
+    .homeNewsTabHeader li{
+        height: 40px;
+        line-height: 40px;
+        float: left;
+        width: 25%;
+        margin-top: 0;
+    }
+    .homeNewsTabHeader i{
+        height: 40px;
+        width: 40px;
+    }
+    .homeNewsTabHeader div{
+        height: 40px;
+        margin-left: 0;
+        font-size: 14px;
+        position: relative;
+        z-index: 2;
+        background: #07499b;
+        color: #fff;
+    }
+    .homeNewsTabConatainer{
+        margin: 15px;
+    }
+    .homeNewsTabConatainer dt{
+        display: none;
+    }
+    .homeNewsSwipe li{
+        width: 25%;
+        margin-left: 0;
+        padding: 0 3px;
+        box-sizing: border-box;
+    }
+    .slide img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .homeNewsTabConatainer dl{
+        height: auto;
+        max-height: 170px;
+    }
+    .homeNewsSwipe .pagination .next,.homeNewsSwipe .pagination .prev{
+        margin-top: -30px;
+    }
+    .homeCultureTabContainer dt{
+        float: none;
+        width: auto;
+        margin-right: 0;
+        height: 440px;
+        margin-left: .7rem;
+    }
+    .homeCultureTab{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .homeCultureTabHeader{
+        left: 15px;
+        height: 440px;
+    }
+    .homeCultureTabContainer{
+        height: auto;
+        margin: 0 15px;
+    }
+    .homeCultureTabContainer dd{
+        padding: 20px 0;
+    }
+    .homeCultureMore{
+        position: static;
+        text-align: center;
+    }
+    /*** --------------------- 首页 end --------------------- ***/
+
+
+    /*** --------------------- 免责声明 Begin --------------------- ***/
+    .exempt{
+        margin: 15px 0;
+        padding: 0 15px;
+    }
+    .exemptNav{
+        float: none;
+        width: auto;
+        margin: 0 0 30px 0;
+        min-height: 1px;
+    }
+    .exemptNav ul{
+        overflow: hidden;
+    }
+    .exemptNav li{
+        float: left;
+        width: 33.3333%;
+    }
+    .exemptNav a{
+        height:      50px;
+        line-height: 50px;
+    }
+    /*** --------------------- 免责声明 end --------------------- ***/
+
+
+    /*** --------------------- 营销公司 Begin --------------------- ***/
+    /*** --------------------- 营销公司 end --------------------- ***/
+
+
+    /*** --------------------- 营销公司 Begin --------------------- ***/
+    /*** --------------------- 营销公司 end --------------------- ***/
+
+
+    /*** --------------------- 营销公司 Begin --------------------- ***/
+    /*** --------------------- 营销公司 end --------------------- ***/
+}

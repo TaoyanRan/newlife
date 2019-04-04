@@ -14,13 +14,6 @@
                 docEl.style.fontSize = clientWidth / 16 + 'px'; // 主题内容 62.5% = 10rem
                 console.log('PC',docEl.style.fontSize);
             }
-
-
-
-            // var meta = document.getElementsByTagName('meta');
-            // var scale = .4;
-            // meta["viewport"].setAttribute('content',"width=device-width,initial-scale=" + scale + ",minimum-scale=0.1,maximum-scale=3,user-scalable=yes");
-
 		};
 
 	if(!doc.addEventListener) return;

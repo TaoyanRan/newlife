@@ -4,28 +4,42 @@
     <meta charset="UTF-8">
     <title>建业新生活</title>
     <!--开启对web app的支持-->
-    <meta name="viewport" content="width=device-width,initial-scale=.5,minimum-scale=.4,maximum-scale=1,user-scalable=yes"/>
+         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 
     <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
 
 <div class="header">
-    <div class="headerView containerWidth cl">
-        <a href="../index.html"><img class="logo" src="../images/logo.png" alt=""></a>
-        <ul class="navLink">
-            <li><a href="../index.html">首页</a></li>
-            <li><a href="../news/gskx.html">新闻动态</a></li>
-            <li><a class="active" href="javascript:void(0)">多元业务</a></li>
-            <li><a href="../services.html">服务领域</a></li>
-            <li><a href="../cooperation/index.html">对外合作</a></li>
-            <li><a href="../culture.html">企业文化</a></li>
-            <li><a href="../about.html">关于我们</a></li>
-            <li><a href="../contact.html">联系我们</a></li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../news/gskx.html">新闻动态</a></li>
+                    <li class="active"><a href="javascript:void(0)">多元业务</a></li>
+                    <li><a href="../cooperation/index.html">对外合作</a></li>
+                    <li><a href="../culture.html">企业文化</a></li>
+                    <li><a href="../about.html">关于我们</a></li>
+                    <li><a href="../contact.html">联系我们</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 </div>
 <!---------------------- header end ---------------------->
 
@@ -58,9 +72,9 @@
                 <div class="newHomeCompanyName active"><a href="jydy.html"><span>建业东英</span></a></div>
                 <div class="newHomeCompanyName"><a href="xdny.html"><span>现代农业</span></a></div>
                 <div class="newHomeCompanyName"><a href="jlh.html"><span>君临会</span></a></div>
-                <div class="newHomeCompanyName"><a href="syzx.html"><span>商业管理</span></a></div>
-                <div class="newHomeCompanyName"><a href="wlzx.html"><span>文旅运营</span></a></div>
                 <div class="newHomeCompanyName"><a href="yxgs.html"><span>营销公司</span></a></div>
+                <div class="newHomeCompanyName"><a href="syzx.html"><span>商业管理</span></a></div>
+                <!--<div class="newHomeCompanyName"><a href="wlzx.html"><span>文旅运营</span></a></div>-->
             </div>
             <div class="newHomeCompanyNamePagination">
                 <div class="prev"><span>&lt;</span></div>
@@ -70,75 +84,32 @@
     </div>
 
 
-    <div class="ss active"></div>
 
 
     <div class="jydy">
 
         <div class="jydy_about">
-            <h2 class="moduleName companyModuleName"><i>dongying</i><span>建业东英</span></h2>
+            <h2 class="moduleName companyModuleName"><i>dongying</i><span>关于建业东英</span></h2>
 
-            <div class="jydy_about_view">
-                <div class="jydy_about_bg"></div>
-                <div class="jydy_about_container">
-                    <div class="jydy_about_info containerWidth">
-                        <div class="jydy_about_bg"></div>
-                        <div class="jydy_about_l">
-                            <div class="swipe" id="dySwipe">
-
-                                <div class="swipeContainer">
-                                    <div class="slide active"><img src="../images/testPic-08.png" alt=""></div>
-                                    <div class="slide"><img src="../images/testPic-07.png" alt=""></div>
-                                    <div class="slide"><img src="../images/testPic-06.png" alt=""></div>
-                                    <div class="slide"><img src="../images/testPic-05.png" alt=""></div>
-                                </div>
-                                <div class="navigation"><!-- 圆点 --></div>
-                                <div class="pagination"><!-- 上一页下一页 --></div>
-
+            <div class="containerWidth">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="jydy_about_Pic">
+                                <img src="../testImg/600x465.png" alt="">
                             </div>
-
-                            <div class="dyLink"><a href="#">进入官网</a></div>
-
                         </div>
-
-                        <div class="jydy_about_r">
-                            <ul>
-                                <li>
-                                    <div class="jydy_about_item" style="background-image:url(../images/test-jydy-02.png)">
-                                        <div class="jydy_about_honour">100<sup>个美丽乡村</sup></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="jydy_about_item" style="background-image:url(../images/test-jydy-02.png)">
-                                        <div class="jydy_about_honour">100<sup>个美丽乡村</sup></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="jydy_about_item" style="background-image:url(../images/test-jydy-02.png)">
-                                        <div class="jydy_about_honour">100<sup>个美丽乡村</sup></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="jydy_about_item jydy_about_item_text">
-                                        <div class="jydy_about_desText">
-                                            <div class="middleOut">
-                                                <div class="middleIn">
-                                                    <p>河南建业东英新生活服务有限公司（简称“建业东英”）成立于2016年5月，由建业新生活与香港东英金融集团联袂成立，注册资本人民币2亿元。建业东英建立了国际化、专业化和年轻化的团队，将逐步培育社会新产业、创建商业新布局。目前已有的四个项目包括：中原长租公寓领导品牌的“魔飞公寓”、提供共享办公的“I Deer Box加速器”、着力构建新型城乡一体化体系的“美丽乡村”、以户外极限酷玩运动为主的“CLUB YEP 嘢玩家俱乐部”。
-                                                        建业东英培育新产业，增强资本活力；整合社会资源，推动金融与实业的结合；从事另类投资与资产管理，围绕新型生活方式进行资产配置和产业布局。同时，把握中国结构改革、产业升级和新城镇化的战略机遇，运用建业集团在河南省内的网络优势和产业背景，基于房地产及其衍生功能致力于打造多行业、多领域的房地产投融资平台。</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="jydy_about_item_text_title">公司简介</div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="col-md-6">
+                            <div class="jydy_about_info">
+                                <div class="jydy_about_title"><i>about us</i><span>公司简介</span></div>
+                                <p class="jydy_about_text">河南建业东英新生活服务有限公司（简称“建业东英”）成立于2016年5月，由建业新生活与香港东英金融集团联袂成立，注册资本人民币2亿元。建业东英建立了国际化、专业化和年轻化的团队，将逐步培育社会新产业、创建商业新布局。目前已有的四个项目包括：中原长租公寓领导品牌的“魔飞公寓”、提供共享办公的“I Deer Box加速器”、着力构建新型城乡一体化体系的“美丽乡村”、以户外极限酷玩运动为主的“CLUB YEP 嘢玩家俱乐部”。 建业东英培育新产业，增强资本活力；整合社会资源，推动金融与实业的结合；从事另类投资与资产管理，围绕新型生活方式进行资产配置和产业布局。同时，把握中国结构改革、产业升级和新城镇化的战略机遇，运用建业集团在河南省内的网络优势和产业背景，基于房地产及其衍生功能致力于打造多行业、多领域的房地产投融资平台。</p>
+                                <div class="jydy_about_button"><a href="#">进入官网</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
 
         <div class="jydy_service">
             <h2 class="moduleName companyModuleName"><i>service</i><span>我们的服务</span></h2>
@@ -151,10 +122,10 @@
                                 <div class="jydy_service_item_info">
                                     <img src="../images/test_jyjd_01.png" alt="">
                                     <div class="jydy_service_des">
-                                        <img class="jydy_service_des_icon jydy_service_des_icon_default" src="../images/icon-mofei-default.png" alt="">
-                                        <img class="jydy_service_des_icon jydy_service_des_icon_active" src="../images/icon-mofei-active.png" alt="">
+                                        <!--<img class="jydy_service_des_icon jydy_service_des_icon_default" src="../images/icon-mofei-default.png" alt="">-->
+                                        <!--<img class="jydy_service_des_icon jydy_service_des_icon_active" src="../images/icon-mofei-active.png" alt="">-->
                                         <h3>魔飞公寓1</h3>
-                                        <p>平凡的人做不平凡的事</p>
+                                        <!--<p>平凡的人做不平凡的事</p>-->
                                     </div>
                                 </div>
                             </li>
@@ -162,10 +133,10 @@
                                 <div class="jydy_service_item_info active">
                                     <img src="../images/test_jyjd_01.png" alt="">
                                     <div class="jydy_service_des">
-                                        <img class="jydy_service_des_icon jydy_service_des_icon_default" src="../images/icon-mofei-default.png" alt="">
-                                        <img class="jydy_service_des_icon jydy_service_des_icon_active" src="../images/icon-mofei-active.png" alt="">
+                                        <!--<img class="jydy_service_des_icon jydy_service_des_icon_default" src="../images/icon-mofei-default.png" alt="">-->
+                                        <!--<img class="jydy_service_des_icon jydy_service_des_icon_active" src="../images/icon-mofei-active.png" alt="">-->
                                         <h3>魔飞公寓2</h3>
-                                        <p>平凡的人做不平凡的事</p>
+                                        <!--<p>平凡的人做不平凡的事</p>-->
                                     </div>
                                 </div>
                             </li>
@@ -173,10 +144,10 @@
                                 <div class="jydy_service_item_info">
                                     <img src="../images/test_jyjd_01.png" alt="">
                                     <div class="jydy_service_des">
-                                        <img class="jydy_service_des_icon jydy_service_des_icon_default" src="../images/icon-mofei-default.png" alt="">
-                                        <img class="jydy_service_des_icon jydy_service_des_icon_active" src="../images/icon-mofei-active.png" alt="">
+                                        <!--<img class="jydy_service_des_icon jydy_service_des_icon_default" src="../images/icon-mofei-default.png" alt="">-->
+                                        <!--<img class="jydy_service_des_icon jydy_service_des_icon_active" src="../images/icon-mofei-active.png" alt="">-->
                                         <h3>魔飞公寓3</h3>
-                                        <p>平凡的人做不平凡的事</p>
+                                        <!--<p>平凡的人做不平凡的事</p>-->
                                     </div>
                                 </div>
                             </li>
@@ -184,8 +155,8 @@
                                 <div class="jydy_service_item_info">
                                     <img src="../images/test_jyjd_01.png" alt="">
                                     <div class="jydy_service_des">
-                                        <img class="jydy_service_des_icon jydy_service_des_icon_default" src="../images/icon-mofei-default.png" alt="">
-                                        <img class="jydy_service_des_icon jydy_service_des_icon_active" src="../images/icon-mofei-active.png" alt="">
+                                        <!--<img class="jydy_service_des_icon jydy_service_des_icon_default" src="../images/icon-mofei-default.png" alt="">-->
+                                        <!--<img class="jydy_service_des_icon jydy_service_des_icon_active" src="../images/icon-mofei-active.png" alt="">-->
                                         <h3>魔飞公寓4</h3>
                                         <p>平凡的人做不平凡的事</p>
                                     </div>
@@ -204,117 +175,103 @@
 
         </div>
 
-
     </div>
 
 
 </div>
+
 
 
 
 <!---------------------- footer begin ---------------------->
 <div class="footer">
-    <ul class="other containerWidth customRow">
-        <li class="customCol customCol_3">
-            <dl>
-                <dt><img src="../images/wxCode.png" alt=""></dt>
-                <dd>
-                    <div>
-                        <div><span>扫描二维码</span><br><span>关注最新讯息</span></div>
+    <div class="footerOther">
+        <div class="footerInnerView">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <dl class="footerOtherDl">
+                            <dt><img src="../images/wxCode.png" alt=""></dt>
+                            <dd><div><div><span>扫描二维码</span><br><span>关注最新讯息</span></div></div></dd>
+                        </dl>
                     </div>
-                </dd>
-            </dl>
-        </li>
-        <li class="customCol customCol_3">
-            <dl>
-                <dt class="icon_tel"></dt>
-                <dd><p><span>服务热线</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
-            </dl>
-        </li>
-        <li class="customCol customCol_3">
-            <dl>
-                <dt class="icon_cooperation"></dt>
-                <dd><p><span>品牌合作</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
-            </dl>
-        </li>
-    </ul>
+                    <div class="col-xs-4">
+                        <dl class="footerOtherDl">
+                            <dt class="icon_tel"></dt>
+                            <dd><p><span>服务热线</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
+                        </dl>
+                    </div>
+                    <div class="col-xs-4">
+                        <dl class="footerOtherDl">
+                            <dt class="icon_cooperation"></dt>
+                            <dd><p><span>品牌合作</span><br><a href="tel:0371-96177777">0371-96177777</a></p></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <dl class="footerLink">
-        <dt><span><i>友情链接</i></span></dt>
-        <dd class="containerWidth">
-            <span><a href="#">建业集团</a></span>
-            <span><a href="#">建业地产</a></span>
-            <span><a href="#">建业商业</a></span>
-            <span><a href="#">建业酒店</a></span>
-            <span><a href="#">艾佳生活</a></span>
-            <span><a href="#">建业控股</a></span>
-            <span><a href="#">建业足球</a></span>
-            <span><a href="#">建业教育</a></span>
-            <span><a href="#">建业物业</a></span>
-            <span><a href="#">建业旅游</a></span>
-            <span><a href="#">魔飞公寓</a></span>
-            <span><a href="#">嵩云科技</a></span>
-        </dd>
-    </dl>
+    </div>
+
+    <div class="footerLink">
+        <div class="footerInnerView">
+            <div class="footerLinkTitle"><span>友情链接</span></div>
+            <div class="container-fluid footerLinkList">
+                <div class="col-md-2 col-xs-3"><a href="#">建业集团</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业地产</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业商业</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业酒店</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">艾佳生活</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业控股</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业足球</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业教育</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业物业</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">建业旅游</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">魔飞公寓</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">嵩云科技</a></div>
+                <div class="col-md-2 col-xs-3"><a href="#">融资租赁</a></div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="footerBar">
-        <dl class="containerWidth">
-            <dt><a href="../index.html"><img class="footerLogo" src="../images/footer-logo.png" alt=""></a></dt>
-            <dd>
-                <div class="footerBarInfo">
-                    <div class="footerBarLink"><a href="../about.html">关于我们</a><a href="../contact.html">联系我们</a><a href="../exempt.html">免责声明</a></div>
-                    <div><span>copyright©2017河南建业新生活服务有限公司</span><span>豫ICP备 18005200号</span><span>技术支持by嵩云科技</span></div>
+        <div class="footerInnerView">
+            <div class="container-fluid">
+                <div class="col-md-3">
+                    <a href="../index.html"><img class="footerLogo" src="../images/footer-logo.png" alt=""></a>
+                </div>
+                <div class="col-md-9">
 
-                    <!--<span>copyright©2017河南建业新生活服务有限公司</span>-->
-                    <!--<span>豫ICP备 18005200号</span>-->
-                    <!--<span>技术支持by嵩云科技</span>-->
-                    <!--<a href="../about.html">关于我们</a>-->
-                    <!--<a href="../contact.html">联系我们</a>-->
-                    <!--<a href="../exempt.html">免责声明</a>-->
+                    <div class="footerBarInfo">
+                        <div class="footerBarLink">
+                            <a href="../about.html">关于我们</a>
+                            <a href="../contact.html">联系我们</a>
+                            <a href="../exempt.html">免责声明</a>
+                        </div>
+                        <div>
+                            <span>copyright©2017河南建业新生活服务有限公司</span>
+                            <span>豫ICP备 18005200号</span>
+                            <span>技术支持by嵩云科技</span>
+                        </div>
+                    </div>
 
                 </div>
-            </dd>
-        </dl>
+            </div>
+        </div>
     </div>
 </div>
+<!---------------------- footer end ---------------------->
 </body>
 <script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="../js/utils.js"></script>
 
 <script>
 
     customCompanyNav();
-    $('.jydy_about_item_text_title').click(function () {
-        console.log($('.jydy_about_desText p').html(),$(this).text());
-
-        var _html = '' +
-            '<div class="showText" id="showText">' +
-            '    <div class="showTextMask"></div>' +
-            '    <div class="showTextInfo">' +
-            '        <div class="middleOut">' +
-            '            <div class="middleIn">' +
-            '                <h2><span>' + $(this).text() + '</span><i class="closeShowText"></i></h2>' +
-            '                <p>' + $('.jydy_about_desText p').html() + '</p>' +
-            '            </div>' +
-            '        </div>' +
-            '    </div>' +
-            '</div>';
-
-        $('body').append(_html);
-        $('.showText').fadeIn();
-        $('.showTextMask').click(function () {
-            $('#showText').fadeOut(function () {
-                $(this).remove()
-            })
-        });
-
-    });
 
 
-    $('#dySwipe').swipe({
-        pagination: false,
-        navigation: false,
-    });
 
 
 
@@ -326,14 +283,13 @@
         var wrapper = $('.dyServiceList');
         var ul = $('.dyServiceSwipe ul');
         var li = $('.dyServiceSwipe li');
+        var lock = false;
 
         li.css('width',width + '%');
         for(var ali = 0;ali<item-1;ali++){
             ul.append(li.eq(ali).prop("outerHTML"));
             ul.prepend(li.eq(li.length - ali - 1).prop("outerHTML"));
         }
-
-
 
         var length = $('.dyServiceSwipe ul li').length;
         var distance = $('.dyServiceSwipe').width() * width / 100;
@@ -349,6 +305,7 @@
                     i = item - 2;
                     ul.css('left',-distance * i + 'px');
                 }
+                lock = false
             });
         }
 
@@ -361,14 +318,19 @@
                     i = length - item - (item - 1);
                     ul.css('left',-distance * i + 'px');
                 }
+                lock = false
             });
         }
 
         next.click(function () {
+            if(lock){ return false }
+            lock = true;
             nextItem()
         });
 
         prev.click(function () {
+            if(lock){ return false }
+            lock = true;
             prevItem()
         });
 
