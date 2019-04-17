@@ -4580,7 +4580,6 @@ video::-webkit-media-controls-panel {
     margin: 0 auto;
 }
 .xyny_about_view{
-    height: 3.3rem;
     position: relative;
     overflow: hidden;
     color: #fff;
@@ -4589,14 +4588,14 @@ video::-webkit-media-controls-panel {
 
 .xyny_about_brief{
     position: relative;
-    height: 100%;
-    z-index: 2;
-    margin-left: 55%;
+    float: left;
+    width: 40%;
+    background: #0b499c;
+    min-height: 3.3rem;
 }
 .xyny_about_briefIn{
     box-sizing: border-box;
     padding: .2rem .25rem;
-    background: #0b499c;
 }
 .xyny_about_briefIn h3{
     font-size: .36rem;
@@ -4629,8 +4628,6 @@ video::-webkit-media-controls-panel {
 .xyny_about_brief_title span:before{
     left: 100%;
 }
-
-
 .xyny_about_brief p{
     text-align: justify;
     text-indent: 2em;
@@ -4640,9 +4637,10 @@ video::-webkit-media-controls-panel {
 }
 
 .xyny_about_swipe{
-    position: absolute;
-    height: 100%;
+    position: relative;
+    height: 3.3rem;
     width: 60%;
+    float: left;
 }
 
 .xyny_about_swipe_Pagination{

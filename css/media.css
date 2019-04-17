@@ -261,8 +261,7 @@
 
     /*** --------------------- 现代农业 Begin --------------------- ***/
     .xyny_about_swipe{
-        position: static;
-        width: auto;
+        width: 100%;
     }
     .xyny_about_brief{
         width: auto;
