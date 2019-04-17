@@ -2017,7 +2017,7 @@ video::-webkit-media-controls-panel {
 
 /*** --------------------- 嵩云科技 Begin --------------------- ***/
 .sykj{
-    margin: 0 auto;
+    margin: 0 auto 40px;
 }
 .sykj_about{
     overflow: hidden;
@@ -2111,6 +2111,9 @@ video::-webkit-media-controls-panel {
     line-height: 3em;
     color: #fff;
     z-index: 2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .pcSlide .img3 .sykj_swipeItem_title{
     background: #ff840c;
@@ -2370,7 +2373,7 @@ video::-webkit-media-controls-panel {
     padding: .6em 0;
     position: relative;
     cursor: default;
-    width: 2rem;
+    /*width: 2rem;*/
     box-sizing: border-box;
     background: #eee;
 }
@@ -3285,7 +3288,7 @@ video::-webkit-media-controls-panel {
     /*margin-bottom: 55px;*/
 }
 .aboutView{
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 .aboutView1,.aboutView2{
     overflow: hidden;
@@ -5316,12 +5319,17 @@ video::-webkit-media-controls-panel {
 }
 .alliance_jlhC_item:after{
     position: absolute;
-    left: 0;
-    right: 0;
     bottom: 0;
     height: 2px;
     background: #ff840c;
+    transition: width .3s ease-in-out,left .3s ease-in-out;
+    width: 100%;
+    left: 0;
     content: '';
+}
+.alliance_jlhC_item:hover:after{
+    left: 50%;
+    width: 0;
 }
 .alliance_jlhC_title{
     display: inline-block;
@@ -5366,7 +5374,7 @@ video::-webkit-media-controls-panel {
 
 .alliance_mofei{
     background: #f0f7ff;
-    margin-top: 1rem;
+    margin-top: .8rem;
 }
 .alliance_mofei_info{
     padding-bottom: .5rem;
@@ -5407,7 +5415,7 @@ video::-webkit-media-controls-panel {
     height: 100%;
     background: #09499b;
     z-index: 1;
-    transition: right .3s ease-in-out,bottom .3s ease-in-out;
+    /*transition: right .3s ease-in-out,bottom .3s ease-in-out;*/
     content: '';
 }
 .alliance_mofeiPicView img{
@@ -5416,16 +5424,16 @@ video::-webkit-media-controls-panel {
     z-index: 2;
     left: -.3rem;
     top: -.5rem;
-    transition: top .3s ease-in-out,left .3s ease-in-out;
+    /*transition: top .3s ease-in-out,left .3s ease-in-out;*/
 }
-.alliance_mofeiPicView:hover img{
-    top: 0;
-    left: 0;
-}
-.alliance_mofeiPicView:hover:after{
-    right: .3rem;
-    bottom: .5rem;
-}
+/*.alliance_mofeiPicView:hover img{*/
+    /*top: 0;*/
+    /*left: 0;*/
+/*}*/
+/*.alliance_mofeiPicView:hover:after{*/
+    /*right: .3rem;*/
+    /*bottom: .5rem;*/
+/*}*/
 
 /*** --------------------- 联盟合作 End --------------------- ***/
 
@@ -5554,6 +5562,7 @@ video::-webkit-media-controls-panel {
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 10px;
+    color: #333;
 }
 .extentInfoPage_info p{
     text-align: justify;
@@ -5608,38 +5617,7 @@ video::-webkit-media-controls-panel {
 .yingxiaoPic2:after{
     opacity: 1;
 }
-.yingxiaoPic:hover .yingxiaoPic1{
-    -webkit-animation: yiongxiao1 1s 1 forwards;
-    -moz-animation:    yiongxiao1 1s 1 forwards;
-    -o-animation:      yiongxiao1 1s 1 forwards;
-    animation:         yiongxiao1 1s 1 forwards;
-}
-.yingxiaoPic:hover .yingxiaoPic2{
-}
-.yingxiaoPic:hover .yingxiaoPic1:after{
-    opacity: 1;
-}
-.yingxiaoPic:hover .yingxiaoPic2:after{
-    opacity: 0;
-}
-@keyframes yiongxiao1 {
-    from{
-        opacity: 1;
-        z-index: 2;
-    }
-    49%{
-        opacity: .2;
-        z-index: 2;
-    }
-    51%{
-        opacity: .2;
-        z-index: 1;
-    }
-    to{
-        opacity: 1;
-        z-index: 1;
-    }
-}
+
 
 
 
@@ -5680,6 +5658,7 @@ video::-webkit-media-controls-panel {
 
 .yingXiaoService{
     position: relative;
+    margin-top: 35px;
 }
 .yingXiaoService:after{
     position: absolute;
@@ -5749,10 +5728,14 @@ video::-webkit-media-controls-panel {
 .yingXiaoServiceItem:hover p:after{
     border-color:transparent rgba(247,147,50,.6) transparent transparent;/*透明 灰 透明 透明 */
 }
+.yingXiaoServiceItem a{
+    color: inherit;
+}
 /*** --------------------- 营销公司 End --------------------- ***/
 
 /*** --------------------- 商业管理 Begin --------------------- ***/
 .shangyeBriefView{
+    margin-bottom: 35px;
 }
 .shangyeBrief{
     padding: .2rem 0;
@@ -5814,6 +5797,7 @@ video::-webkit-media-controls-panel {
 .shangyeBriefPic{
     padding-left: .3rem;
     box-sizing: border-box;
+    margin-bottom: 35px;
 }
 .shangyeBriefPic img{
     width: 100%;
@@ -5823,6 +5807,7 @@ video::-webkit-media-controls-panel {
     position: relative;
     padding: 0 .6rem;
     box-sizing: border-box;
+    margin-top: -35px;
 }
 .shangyeNext,.shangyePrev{
     position: absolute;
@@ -5902,8 +5887,8 @@ video::-webkit-media-controls-panel {
 }
 .shangyeSlide p:after{
     position: absolute;
-    left: 0;
-    right: 0;
+    left: -1px;
+    right: -1px;
     bottom: 0;
     height: 50%;
     background: #fff;
@@ -5911,13 +5896,16 @@ video::-webkit-media-controls-panel {
 }
 .shangyeSlide p:before{
     position: absolute;
-    left: 0;
-    right: 0;
+    left: -1px;
+    right: -1px;
     top: 0;
     height: 51%;
     background: url(../images/shangyeTitleBg.png) center center no-repeat;
     background-size: 100% 100%;
     content: '';
+}
+.shangyeSlide a{
+    color: inherit;
 }
 /*** --------------------- 商业管理 End --------------------- ***/
 
