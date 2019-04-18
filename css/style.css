@@ -147,7 +147,10 @@ video::-webkit-media-controls-panel {
     background-color: #ff840c;
 }
 /*** --------------------- header End --------------------- ***/
-
+#banner{
+    height: 0;
+    padding-top: 33%;
+}
 .banner{
 
 }
@@ -155,6 +158,14 @@ video::-webkit-media-controls-panel {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+#banner .pagination{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 0;
+    margin: 0;
 }
 
 /*** --------------------- moduleName Begin --------------------- ***/
@@ -365,20 +376,23 @@ video::-webkit-media-controls-panel {
 
 /*** --------------------- 首页 - 建业视频 Begin --------------------- ***/
 .homeModule{
-    margin: .4166rem auto 0;
+    margin: 50px auto 0;
 }
 .homeVideo{
 }
 .homeVideoView{
     position: relative;
-    margin-top: .1666rem;
+    margin-top: 20px;
+    height: 0;
+    padding-top: 47.5%;
 }
 .homeVideo_video{
-    /*width: 75%;*/
-    margin-right: 2.8332rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 71%;
     font-size: 0;
-    height: 4.78125rem;
-    position: relative;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -399,9 +413,7 @@ video::-webkit-media-controls-panel {
     right: 0;
     top: 0;
     bottom: 0;
-    /*left: 75%;*/
-    width: 2.6666rem;
-    /*margin-left: 10px;*/
+    width: 27%;
     background: #1e4877;
     font-size: 14px;
 }
@@ -775,7 +787,7 @@ video::-webkit-media-controls-panel {
     font-size: 16px;
     font-weight: normal;
     color: #09499b;
-    width: 2.6666rem;
+    width: 26%;
 }
 .homeNewsTabHeader{
     position: absolute;
@@ -789,12 +801,12 @@ video::-webkit-media-controls-panel {
 .homeNewsTabConatainer{
     overflow: hidden;
     box-shadow:  0 0 8px #ccc;
-    padding: 15px .35rem 0;
+    padding: 15px 40px 0;
     margin-right: 8px;
     font-size: 14px;
     color: #666666;
     line-height: 1.5em;
-    margin-left: 2.8332rem;
+    margin-left: 28%;
 }
 .homeNewsTabHeader li{
     height:      70px;
@@ -875,7 +887,7 @@ video::-webkit-media-controls-panel {
     float: left;
     width: 53%;
     overflow: hidden;
-    margin-right: .2916rem;
+    margin-right: 3%;
     height: 100%;
 }
 .homeNewsTabConatainer dt a{
@@ -960,25 +972,21 @@ video::-webkit-media-controls-panel {
 .homeCultureTab{
     margin-top: .25rem;
     position: relative;
-    height: 355px;
+    margin-bottom: 35px;
     height: 440px;
 }
 .homeCultureTabHeader li.homeCulture_culture{
-    height: 135px;
     height: 180px;
     bottom: 10px;
 }
 .homeCultureTabHeader li.homeCulture_company{
-    height: 135px;
     height: 180px;
 }
 .homeCultureTabHeader li.homeCulture_culture.active{
-    height: 180px;
     height: 220px;
     background: #ff840d;
 }
 .homeCultureTabHeader li.homeCulture_company.active{
-    height: 180px;
     height: 220px;
     background: #ff840d;
     border-color: #ff840d;
@@ -1447,6 +1455,7 @@ video::-webkit-media-controls-panel {
 .axisColumn-1{
     margin-top: 70px;
     position: relative;
+    margin-bottom: 35px;
 }
 .axisColumn-1 ul{
     font-size: 10px;
@@ -1532,7 +1541,7 @@ video::-webkit-media-controls-panel {
     background: #ff9933;
 }
 .axisColumn-1 li .newsModule.active,.axisColumn-1 li .newsModule:hover{
-    border-color: #09499b;
+    /*border-color: #09499b;*/
     color: #333333;
 }
 
@@ -1868,7 +1877,7 @@ video::-webkit-media-controls-panel {
 
 /*** --------------------- 建业物业 Begin --------------------- ***/
 .companyModuleName{
-    margin-bottom: .25rem;
+    margin-bottom: 30px;
 }
 
 .jywy{
@@ -1894,7 +1903,7 @@ video::-webkit-media-controls-panel {
 }
 .jywy_about_list p{
     font-size: 14px;
-    line-height: .25rem;
+    line-height: 30px;
     text-indent: 2em;
     color: #666666;
     text-align: justify;
@@ -4818,7 +4827,8 @@ video::-webkit-media-controls-panel {
 /*** --------------------- 首页 - 专业公司（新） Begin --------------------- ***/
 .newHomeCompanyListView{
     position: relative;
-    height: 4.25rem;
+    height: 0;
+    padding-top: 42.5%;
     margin: 0 auto;
 }
 .newHomeCompanyListView ul{
@@ -5058,22 +5068,25 @@ video::-webkit-media-controls-panel {
 }
 .offline{
     width: 100%;
-    height: 5.5rem;
+    height: 0;
+    padding-top: 55%;
     font-size: 0;
     overflow: hidden;
+    position: relative;
 }
 .offlineViewImg,.offlineViewInfo{
+    position: absolute;
     width: 50%;
-    height: 100%;
+    top: 0;
+    bottom: 0;
     overflow: hidden;
-    float: left;
     box-sizing: border-box;
 }
 .offlineViewImg{
-    padding-right: .0833rem;
+    padding-right: 10px;
 }
 .offlineViewInfo{
-    padding-left: .0833rem;
+    padding-left: 10px;
 }
 .offlineViewInfoContainer{
     height: 100%;
@@ -5081,6 +5094,7 @@ video::-webkit-media-controls-panel {
     background: #f6f6f6;
 }
 .offlineViewInfo{
+    right: 0;
     font-size: 14px;
     font-weight: normal;
     color: #666666;
@@ -5522,28 +5536,28 @@ video::-webkit-media-controls-panel {
 .extent_waituo_pic img{
     position: relative;
     width: 100%;
-    top: -.5rem;
+    top: -35px;
 }
 .extent_waituo_l .extent_waituo_pic img{
-    right: -.3rem;
+    right: -35px;
 }
 .extent_waituo_r .extent_waituo_pic img{
-    left: -.3rem;
+    left: -35px;
 }
 .extent_waituo_button{
     text-align: center;
 }
 .extent_waituo_button button,.extent_waituo_button a{
     display: inline-block;
-    margin: 0.4rem 0 0;
+    margin: 50px 0 0;
     border: 0;
     outline: none;
-    font-size: .15rem;
+    font-size: 16px;
     color: #fff;
     background: #09499b;
-    line-height:   .4rem;
-    border-radius: .4rem;
-    padding: 0 .5rem;
+    line-height:   50px;
+    border-radius: 50px;
+    padding: 0 60px;
 }
 
 .extentInfoPage_info{

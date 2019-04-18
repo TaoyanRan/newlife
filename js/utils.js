@@ -437,7 +437,7 @@ $.fn.extend({
 });
 
 // banner
-$('.banner').setSize(1920,635);
+// $('.banner').setSize(1920,635);
 if($('#banner')){
     $('#banner').swipe();
 }
