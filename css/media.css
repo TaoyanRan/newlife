@@ -54,6 +54,10 @@
         text-indent: 15px;
     }
 
+    .slide_container .y_left, .slide_container .y_right{
+        width: 22px;
+        height: 45px;
+    }
     /*** --------------------- 通用 Begin --------------------- ***/
 
 
@@ -97,6 +101,9 @@
         height: auto !important;
         margin-bottom: 15px;
     }
+    .jywy_about_list dd{
+        margin-bottom: 0;
+    }
     .jywy_about_list p{
         line-height: 20px;
         padding: 0 15px;
@@ -121,16 +128,24 @@
 
     .jywy_service{
         margin: 30px 15px 0;
+        padding-bottom: 15px;
     }
     .jywy_service_name{
         font-size: 14px;
         padding: 5px 0;
     }
+    .companyModuleName{
+        margin-bottom: 15px;
+    }
+
     /*** --------------------- 建业物业 end --------------------- ***/
 
 
 
     /*** --------------------- 嵩云科技 Begin --------------------- ***/
+    .sykj_product{
+        margin-top: 30px;
+    }
     .sykj_about_pic{
         float: none;
         width: auto;
@@ -163,6 +178,9 @@
 
 
     /*** --------------------- 建业旅游 Begin --------------------- ***/
+    .jyly_about{
+        margin-top: 30px;
+    }
     .jyly_about_l, .jyly_about_r{
         z-index: 1;
         width: 50%;
@@ -186,7 +204,7 @@
         font-size: 14px;
     }
     .jyly_service{
-        margin: 15px 0;
+        margin: 30px 0 15px;
         overflow: hidden;
     }
     .tourListSwipe .pagination .next{
@@ -224,6 +242,7 @@
     .jydy_about_title i{
         width: 100px;
         font-size: 14px;
+        line-height: 30px;
     }
     .jydy_about_title span{
         height: 30px;
@@ -260,10 +279,17 @@
 
 
     /*** --------------------- 现代农业 Begin --------------------- ***/
+    .xyny_about_view{
+        height: auto;
+        padding-top: 0;
+    }
     .xyny_about_swipe{
         width: 100%;
+        height: 150px;
+        position: relative;
     }
     .xyny_about_brief{
+        position: static;
         width: auto;
         height: auto;
         margin-left: 0;
@@ -286,6 +312,7 @@
     }
     .xdnySlide_link{
         /*position: static;*/
+        font-size: 12px;
     }
     /*** --------------------- 现代农业 end --------------------- ***/
 
@@ -339,11 +366,16 @@
 
     /*** --------------------- 君临会 Begin --------------------- ***/
     .aboutJlh_info{
+        height: auto;
+        padding-top: 0;
+        overflow: hidden;
+    }
+    .aboutJlh_info{
         overflow: hidden;
     }
     .aboutJlh_l{
         float: left;
-        position: static;
+        position: relative;
         width: 59.2%;
     }
     .aboutJlh_r{
@@ -352,6 +384,7 @@
         width: 40.8%;
     }
     .aboutJlh_c{
+        position: static;
         clear: both;
         width: auto;
         margin: 0;
@@ -400,6 +433,25 @@
 
 
     /*** --------------------- 商业管理 Begin --------------------- ***/
+    .shangyeWarp{
+
+    }
+    .shangyeSwiper{
+        padding: 0 40px;
+    }
+    .shangyeNext, .shangyePrev{
+        width: 30px;
+        height: 45px;
+        margin-top: -22px;
+    }
+    .shangyeSlide p{
+        padding: 5px 10px;
+        font-size: 12px;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
     .shangyeBriefView{
         margin: 0 15px;
     }
@@ -422,13 +474,14 @@
     /*** --------------------- 招商合作 Begin --------------------- ***/
     .offline{
         height: auto;
+        padding-top: 0;
     }
     .offlineViewImg, .offlineViewInfo{
-        float: none;
         width: auto;
         height: auto;
         padding: 0;
         margin: 0 15px;
+        position: static;
     }
     .offlineViewInfo ul{
         padding: 10px 0;
@@ -469,10 +522,11 @@
     .hotelAlliance{
         position: relative;
         height: auto;
+        padding-top: 0;
     }
     .hotelAlliancePic{
         float: none;
-        position: absolute;
+        position: relative;
         left: 0;
         right: 0;
         top: 0;
@@ -492,18 +546,19 @@
     }
     .tourAlliance{
         height: auto;
+        padding-top: 0;
     }
     .tourAllianceIntroduction{
-        float: none;
         width: auto;
         padding: 0;
         height: auto;
+        position: static;
     }
     .tourAlliancePic{
-        float: none;
         width: auto;
         padding: 0;
         height: auto;
+        position: static;
     }
     .tourAlliancePic img{
         height: auto;
@@ -534,6 +589,12 @@
 
 
     /*** --------------------- 物业外拓 Begin --------------------- ***/
+    .extent_waituo_l .extent_waituo_berif{
+        padding: 15px;
+    }
+    .extent_waituo_r .extent_waituo_berif{
+        padding: 15px;
+    }
     .extent_waituo_l .extent_waituo_pic img,.extent_waituo_r .extent_waituo_pic img{
         left: auto;
         right: auto;
@@ -546,10 +607,13 @@
         margin: 0 15px;
     }
     .extent_waituo_button button, .extent_waituo_button a{
-        width: 90px;
+        width: 120px;
         height: 30px;
         line-height: 30px;
         border-radius: 30px;
+        padding: 0 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     /*** --------------------- 物业外拓 end --------------------- ***/
 
@@ -579,11 +643,19 @@
 
 
     /*** --------------------- 公司简介 Begin --------------------- ***/
+    .aboutNav{
+        width: 80%;
+        margin: 15px auto;
+    }
     .aboutView1{
         padding: 0 15px;
     }
+    .aboutView1,.aboutView2{
+        margin-top: 15px;
+    }
     .aboutView1_card{
         padding-left: 15px;
+        width: auto;
     }
     .aboutView1_card h2{
         font-size: 18px;
@@ -618,6 +690,20 @@
     .aboutView2{
         padding-bottom: 15px;
     }
+    .teamSwipePrevButton, .teamSwipeNextButton{
+        width: 18px;
+        height: 30px;
+        margin-top: -15px;
+    }
+    .teamSwipeNextButton{
+        right: -25px;
+    }
+    .teamSwipePrevButton{
+        left: -25px;
+    }
+    .teamSwipe{
+        margin: 0 30px;
+    }
     /*** --------------------- 公司简介 end --------------------- ***/
 
 
@@ -640,12 +726,13 @@
         position: relative;
         top: auto;
         right: auto;
-        padding-left: 30px;
+        padding: 15px;
     }
     .shortName{
         width: 30px;
         height: 30px;
         line-height: 30px;
+        display: none;
     }
     .concatUs_Info li{
         float: none;
@@ -724,6 +811,8 @@
     }
     .homeVideoView{
         margin: 15px;
+        height: auto;
+        padding-top: 0;
     }
     .homeVideo_video{
         float: none;
@@ -926,6 +1015,9 @@
 
 
     /*** --------------------- 首页 Begin --------------------- ***/
+    .homeModule{
+        margin: 15px auto 0;
+    }
     .homeNews{
         padding-left: 0;
     }
@@ -992,6 +1084,8 @@
     .homeCultureTabHeader{
         left: 15px;
         height: 440px;
+        width: 34px;
+        overflow: hidden;
     }
     .homeCultureTabContainer{
         height: auto;
@@ -1003,6 +1097,25 @@
     .homeCultureMore{
         position: static;
         text-align: center;
+    }
+    .newHomeCompanyNameSwipe{
+        margin: 0 auto;
+    }
+    .homeCompany{
+        padding-top: 15px;
+    }
+    .newHomeCompanyItem_info{
+        padding: 5px;
+    }
+    .newHomeCompanyItem_info a{
+        font-size: 14px;
+        right: 5px;
+    }
+    .newHomeCompanyItem_info h3{
+        margin-right: 55px;
+    }
+    .newHomeCompanyItem_info p{
+        display: none;
     }
     /*** --------------------- 首页 end --------------------- ***/
 
@@ -1032,8 +1145,6 @@
     /*** --------------------- 免责声明 end --------------------- ***/
 
 
-    /*** --------------------- 营销公司 Begin --------------------- ***/
-    /*** --------------------- 营销公司 end --------------------- ***/
 
 
     /*** --------------------- 营销公司 Begin --------------------- ***/
