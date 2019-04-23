@@ -300,18 +300,27 @@
     .customPagination .prev, .customPagination .next{
         display: none;
     }
+    .xdnySlide_pic{
+        right: 5px;
+        bottom: 24px;
+    }
+    .xdnySlide_info:hover .xdnySlide_pic{
+        bottom: 34px;
+    }
     .xdnySlide_name{
         height: auto;
         display: block;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        padding-right: 60px;
+        padding: 0 60px 0 5px;
+        line-height: 24px;
     }
     .xdnySlide_name span{
+        font-size: 12px;
     }
     .xdnySlide_link{
-        /*position: static;*/
+        right: 5px;
         font-size: 12px;
     }
     /*** --------------------- 现代农业 end --------------------- ***/
@@ -320,16 +329,25 @@
 
     /*** --------------------- 建业酒店 Begin --------------------- ***/
     .jyjd_management_info_pic{
+        position: static;
         float: none;
         width: auto;
         margin: 0 15px;
         height: auto;
+    }
+    .jyjd_management_info_pic img{
+        position: static;
     }
     .jyjd_management_info_pic:after,.jyjd_management_info_pic:before{
         display: none;
     }
     .jyjd_management_info_container{
         position: static;
+        margin-left: 0;
+    }
+    .jyjd_management_text_pic{
+        position: static;
+        width: auto;
     }
     .jyjd_management_textView{
         position: static;
@@ -344,9 +362,11 @@
     .jyjd_management_text{
         height: auto;
         padding: 0 15px 15px;
+        margin-left: 0;
     }
     .jyjd_management_link{
         position: static;
+        margin-left: 0;
     }
     .jyjd_management_link a{
         font-size: 14px;
@@ -970,8 +990,7 @@
         text-align: justify;
     }
     .articleInfo img{
-        max-width: 100% !important;
-        margin: 10px 0;
+        margin: 5px 0;
     }
     /*** --------------------- 公司快讯 end --------------------- ***/
 

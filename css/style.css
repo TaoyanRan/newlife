@@ -741,7 +741,7 @@ video::-webkit-media-controls-panel {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
     overflow: hidden;
- }
+}
 .homeNewsTabConatainer li{
     display: none;
 }
@@ -1612,8 +1612,8 @@ video::-webkit-media-controls-panel {
     margin: 20px 0;
 }
 /*.articleInfo{*/
-    /*font-size: 14px;*/
-    /*color: #666666;*/
+/*font-size: 14px;*/
+/*color: #666666;*/
 /*}*/
 .articleInfo p{
     line-height: 2em;
@@ -1623,6 +1623,7 @@ video::-webkit-media-controls-panel {
 .articleInfo img{
     display: block;
     margin: 10px auto;
+    height: auto !important;
 }
 .articleChange{
     margin-top: 50px;
@@ -2200,12 +2201,11 @@ video::-webkit-media-controls-panel {
     position: relative;
 }
 .jyjd_management_info_pic{
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
     width: 33.75%;
-    height: 0;
-    padding-top: 45%;
-    position: relative;
-    margin-right: 3.75%;
 }
 .jyjd_management_info_pic:after,.jyjd_management_info_pic:before{
     position: absolute;
@@ -2226,17 +2226,16 @@ video::-webkit-media-controls-panel {
 }
 .jyjd_management_info_pic img{
     width: 100%;
+    height: 100%;
     bottom: 0;
     left: 0;
     position: absolute;
     z-index: 3;
+    object-fit: cover;
 }
 .jyjd_management_info_container{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 38%;
+    position: relative;
+    margin-left: 38%;
     overflow: hidden;
 }
 .jyjd_management_honour{
@@ -2284,19 +2283,19 @@ video::-webkit-media-controls-panel {
 }
 .jyjd_management_textView{
     overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 100px;
+    position: relative;
+    /*margin-top: 100px;*/
 }
 .jyjd_management_text_pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
     width:  33.33%;
-    height: 100%;
     overflow: hidden;
-    float: left;
     background: url(../images/test_jyjd_02.png) center center no-repeat;
     background-size: cover;
+
 }
 .jyjd_management_text_pic img{
     width: 100%;
@@ -2310,17 +2309,19 @@ video::-webkit-media-controls-panel {
     padding: 0 25px 60px;
     box-sizing: border-box;
     text-indent: 2em;
+    margin-left: 33.33%;
 }
 .jyjd_management_text p{
     text-align: justify;
 }
 .jyjd_management_link{
-    position: absolute;
-    left: 33.33%;
-    right: 0;
-    bottom: 0;
+    /*position: absolute;*/
+    /*left: 33.33%;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
     text-align: center;
     font-size: 0;
+    margin-left: 33.33%;
 }
 .jyjd_management_link a{
     background: #09499b;
@@ -2828,7 +2829,7 @@ video::-webkit-media-controls-panel {
 .aboutNav{
     width: 34%;
     margin: 30px auto 50px;
- }
+}
 .aboutModuleName{
     /*margin-bottom: 55px;*/
 }
@@ -3805,15 +3806,14 @@ video::-webkit-media-controls-panel {
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    height: 0;
-    padding-top: 38%;
 }
 .aboutJlh_l img{
-    width: 100%;
+    height: 100%;
+    max-width: none;
 }
 
 .aboutJlh_c{
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
     width: 45%;
@@ -3843,7 +3843,7 @@ video::-webkit-media-controls-panel {
 }
 .aboutJlh_l:after{
     position: absolute;
-    right: 0;
+    right: -1px;
     top: 0;
     bottom: 0;
     width: 20.5%;
@@ -3861,7 +3861,8 @@ video::-webkit-media-controls-panel {
     /*border: 1px solid red;*/
 }
 .aboutJlh_r img{
-    width: 100%;
+    height: 100%;
+    max-width: none;
 }
 
 .jlhService{
@@ -3962,15 +3963,10 @@ video::-webkit-media-controls-panel {
     overflow: hidden;
     color: #fff;
     font-size: 14px;
-    height: 0;
-    padding-top: 33%;
 }
 
 .xyny_about_brief{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    margin-left: 60%;
     width: 40%;
     background: #0b499c;
 }
@@ -4119,11 +4115,18 @@ video::-webkit-media-controls-panel {
     line-height: 44px;
     color: #fff;
     font-size: 18px;
-    padding: 0 18px;
+    padding: 0 120px 0 18px;
     box-sizing: border-box;
+}
+.xdnySlide_name span{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .xdnySlide_link{
     position: absolute;
+    top: 0;
     right: 20px;
     color: #fff;
 }
