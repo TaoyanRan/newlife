@@ -94,19 +94,21 @@
 
     /*** --------------------- 建业物业 Begin --------------------- ***/
     .jywy_about_list dt{
-        float: none;
+        position: relative;
         width: 100%;
-        padding: 0 15px;
+        padding: 140% 0 15px 0;
         box-sizing: border-box;
         height: auto !important;
         margin-bottom: 15px;
     }
     .jywy_about_list dd{
         margin-bottom: 0;
+        margin-left: 0;
     }
     .jywy_about_list p{
         line-height: 20px;
         padding: 0 15px;
+        min-height: auto;
     }
     .jywy_about_honour{
         margin: 15px 0 0;
@@ -114,6 +116,7 @@
     }
     .jywy_about_honour li{
         padding: 15px 0;
+        position: static;
     }
     .jywy_about_link{
         position: static;
@@ -1166,9 +1169,96 @@
 
 
 
+    /*** --------------------- 智慧社区 Begin --------------------- ***/
+    .jydy_about_Pic{
+        position: relative;
+        height: 180px;
+        width: 100%;
+    }
+    .jydy_about_info{
+        padding: 0 15px;
+        margin-left: 0;
+    }
+    .jydy_about_text{
+        min-height: auto;
+    }
+
+    .zhsh{
+        padding-bottom: 35px;
+    }
+    .zhsh .zhshItem:first-child{
+        padding-right: 5px;
+    }
+    .zhsh .zhshItem:last-child{
+        padding-left: 5px;
+    }
+    .zhshItemFooter{
+        margin-top: -20px;
+        height:      40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+    .zhshItemFooterText{
+        padding: 3px 15px;
+        border-width: 2px;
+    }
+    .zhshItemFooterText:after{
+        width: 4px;
+        height: 4px;
+        border-width: 3px;
+        top:   -5px;
+        right: -5px;
+    }
+    /*** --------------------- 智慧社区 end --------------------- ***/
+
+
+    /*** --------------------- 建业大食堂 Begin --------------------- ***/
+    .datAbout{
+        padding: 0;
+    }
+    .dstImgView{
+        position: static;
+        width: 100%;
+        height: 250px;
+    }
+    .dstInfo{
+        margin-left: 0;
+    }
+    .dstInfoText{
+        min-height: auto;
+    }
+
+    .characteristic{
+        margin: 0;
+    }
+    .characteristicItem{
+        float: none;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .characteristicItemInner{
+        margin: 8px 0;
+    }
+    .characteristicImg{
+        top: 0;
+        right: 0;
+    }
+    /*** --------------------- 建业大食堂 end --------------------- ***/
+
     /*** --------------------- 营销公司 Begin --------------------- ***/
     /*** --------------------- 营销公司 end --------------------- ***/
 
+    /*** --------------------- 营销公司 Begin --------------------- ***/
+    /*** --------------------- 营销公司 end --------------------- ***/
+
+    /*** --------------------- 营销公司 Begin --------------------- ***/
+    /*** --------------------- 营销公司 end --------------------- ***/
+
+    /*** --------------------- 营销公司 Begin --------------------- ***/
+    /*** --------------------- 营销公司 end --------------------- ***/
+
+    /*** --------------------- 营销公司 Begin --------------------- ***/
+    /*** --------------------- 营销公司 end --------------------- ***/
 
     /*** --------------------- 营销公司 Begin --------------------- ***/
     /*** --------------------- 营销公司 end --------------------- ***/

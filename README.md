@@ -1,3 +1,13 @@
+
+#### 1905121511
+
+    新增 智慧社区页面：/company/zhsq.html
+    新增 建业大食堂页面：/company/jydst.html
+    修改 建业物业：/company/jywy.html
+        建业物业模块   class="jywy_about_list"
+    修改 所有页面
+        by嵩云科技 -->  嵩云北京
+
 #### 1904171140
 
     多元业务 - 商业管理: /company/syzx.html

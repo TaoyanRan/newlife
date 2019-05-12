@@ -58,6 +58,11 @@ body::-webkit-scrollbar{
     display: table-cell;
     vertical-align: middle;
 }
+.cover{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 body{
     padding-top: 50px;
 }
@@ -1758,24 +1763,38 @@ video::-webkit-media-controls-panel {
 }
 .jywy_about_list{
     overflow: hidden;
+    position: relative;
 }
 .jywy_about_list dt{
-    float: left;
+    /*float: left;*/
+    /*width: 36%;*/
+    /*margin-right: 3%;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
     width: 36%;
-    margin-right: 3%;
+    overflow: hidden;
 }
-.jywy_about_list dt img{
-    width: 100%;
+/*.jywy_about_list dt img{*/
+    /*width: 100%;*/
+/*}*/
+.jywyAboutImg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 .jywy_about_list dd{
     overflow: hidden;
-    margin-bottom: 70px;
-    /*position: relative;*/
+    margin-left: 39%;
 }
 .jywy_about_list p{
     font-size: 14px;
-    line-height: 30px;
-    text-indent: 2em;
+    line-height: 2em;
+    min-height: 20em;
+    /*text-indent: 2em;*/
     color: #666666;
     text-align: justify;
 }
@@ -1787,30 +1806,36 @@ video::-webkit-media-controls-panel {
     text-align: center;
     margin-top: 45px;
     border: 1px solid #d4d4d4;
+    overflow: unset;
+    position: relative;
 }
 .jywy_about_honour li{
     padding: 0.6em 0;
     position: relative;
     cursor: default;
-    background: #eeeeee;
+    background: #f2f7fc;
 }
 .jywy_about_honour li:after{
     position: absolute;
     top: 0;
-    right: 0;
+    right: -1px;
     bottom: 0;
     width: 1px;
     background: #d4d4d4;
+    z-index: auto;
     content: '';
 }
 .jywy_about_honour li:last-child:after{
     display: none;
 }
-.jywy_about_honour li.active{
+.jywy_about_honour li:hover{
     background: #09499b;
     color: #fefefe;
 }
-.jywy_about_honour li.active sup{
+.jywy_about_honour li:hover .jywyHonourText{
+    display: block;
+}
+.jywy_about_honour li:hover  sup{
     color: #fefefe;
 }
 .jywy_about_honour sup{
@@ -1822,12 +1847,28 @@ video::-webkit-media-controls-panel {
     display: inline-block;
 }
 .jywy_about_link{
-    position: absolute;
-    left: 40%;
-    right: 0;
-    bottom: 0;
+    margin-top: 40px;
     text-align: center;
     font-size: 0;
+}
+.jywyHonourText{
+    background: rgba(9,73,155,.8);
+    color: #fff;
+    font-size: 14px;
+    text-align: justify;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 2;
+    line-height: 1.5em;
+    height: 7em;
+    display: none;
+    margin-bottom: 1px;
 }
 .jywy_about_link a{
     display: inline-block;
@@ -2470,17 +2511,23 @@ video::-webkit-media-controls-panel {
 /*** --------------------- 建业东英 Begin --------------------- ***/
 .jydy_about_Pic{
     overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
 }
 .jydy_about_Pic:hover{
 }
-.jydy_about_Pic img{
+.jydy_about_Pic .jydy_about_PicView{
     width: 100%;
+    height: 100%;
     -webkit-animation: jydyScale2 .8s 1 forwards;
     -moz-animation:    jydyScale2 .8s 1 forwards;
     -o-animation:      jydyScale2 .8s 1 forwards;
     animation:         jydyScale2 .8s 1 forwards;
 }
-.jydy_about_Pic img:hover{
+.jydy_about_Pic .jydy_about_PicView:hover{
     -webkit-animation: jydyScale1 .8s 1 forwards;
     -moz-animation:    jydyScale1 .8s 1 forwards;
     -o-animation:      jydyScale1 .8s 1 forwards;
@@ -2492,6 +2539,7 @@ video::-webkit-media-controls-panel {
 .jydy_about_info{
     padding: 0 30px;
     box-sizing: border-box;
+    margin-left: 50%;
 }
 .jydy_about_title{
     position: relative;
@@ -2526,6 +2574,7 @@ video::-webkit-media-controls-panel {
     color: #666666;
     font-size: 14px;
     line-height: 2.5em;
+    min-height: 20em;
     margin: 15px 0;
 }
 .jydy_about_button{
@@ -4122,7 +4171,7 @@ video::-webkit-media-controls-panel {
     line-height: 44px;
     color: #fff;
     font-size: 18px;
-    padding: 0 120px 0 18px;
+    padding: 0 18px 0 18px;
     box-sizing: border-box;
 }
 .xdnySlide_name span{
@@ -4136,6 +4185,7 @@ video::-webkit-media-controls-panel {
     top: 0;
     right: 20px;
     color: #fff;
+    display: none;
 }
 .xdnySlide_info:hover{
     background: #ff840d;
@@ -5315,11 +5365,149 @@ video::-webkit-media-controls-panel {
 }
 /*** --------------------- 商业管理 End --------------------- ***/
 
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
+/*** --------------------- 智慧社区 Begin --------------------- ***/
+.zhsh{
+    padding-bottom: 85px;
+}
 
-/*** --------------------- Begin --------------------- ***/
-/*** --------------------- End --------------------- ***/
+.zhshItem{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.zhsh .zhshItem:first-child{
+    padding-right: 30px;
+}
+.zhsh .zhshItem:last-child{
+    padding-left: 30px;
+}
+.zhshItemInner{
+    height: 0;
+    position: relative;
+    padding-top: 63.5%;
+}
+.zhshItemPicView{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.zhshItemFooter{
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 66%;
+    height: 90px;
+    margin-top: -45px;
+    background: #f3f7ff;
+    z-index: 2;
+    text-align: center;
+    line-height: 90px;
+    font-size: 18px;
+}
+.zhshItemFooterText{
+    border: 4px solid #f79332;
+    color: #f79332;
+    padding: 10px 50px;
+    position: relative;
+}
+.zhshItemFooterText:after{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -15px;
+    right: -15px;
+    background: #f79332;
+    border: 7px solid #f3f7ff;
+    box-sizing: content-box;
+    content: '';
+}
+
+.zhshItemInner:hover .zhshItemFooter{
+    background: #f79332;
+}
+.zhshItemInner:hover .zhshItemFooterText{
+    color: #f3f7ff;
+    border-color: #f3f7ff;
+}
+.zhshItemInner:hover .zhshItemFooterText:after{
+    background: #f3f7ff;
+    border: 7px solid #f79332;
+}
+
+
+/*** --------------------- 智慧社区 End --------------------- ***/
+
+/*** --------------------- 建业大食堂 Begin --------------------- ***/
+.datAbout{
+    position: relative;
+    padding: 100px 0;
+}
+.dstImgView{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+}
+.dstImg{
+    height: 100%;
+}
+.dstInfo{
+    margin-left: 37.5%;
+    background: #09499b;
+    color: #fff;
+    padding: 30px 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+.dstInfoHeader{
+    font-size: 16px;
+    margin-bottom: 1.5em;
+}
+.dstInfoText{
+    font-size: 14px;
+    line-height: 2em;
+    text-align: justify;
+    min-height: 12em;
+}
+
+.characteristic{
+    margin: 0 -15px;
+}
+.characteristicItem{
+    float: left;
+    width: 33.333%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+.characteristicItemInner{
+    margin-right: 40px;
+    margin-top: 45px;
+}
+.characteristicImgView{
+    background: #f0f7ff;
+    height: 0;
+    padding-top: 74%;
+    position: relative;
+}
+.characteristicImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -45px;
+    right: -40px;
+    box-shadow:0 0 12px rgba(255,213,172,.7);
+}
+/*** --------------------- 建业大食堂 End --------------------- ***/
 
 /*** --------------------- Begin --------------------- ***/
 /*** --------------------- End --------------------- ***/
